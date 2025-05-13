@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌪️ Twister Money Transfer
 
-## Getting Started
+## 🚀 About
 
-First, run the development server:
+Twister Money Transfer is a modern, multilingual platform for international money transfers. Our service provides fast, secure, and affordable money transfer solutions to over 200 countries worldwide.
+
+## ✨ Features
+
+- 🌍 **Multilingual Support**: Available in English, Polish, and Ukrainian
+- 💸 **Competitive Rates**: Transparent pricing with low fees
+- 🔒 **Secure Transfers**: Industry-standard security protocols
+- 📱 **Responsive Design**: Optimized for all devices
+- 🚀 **Fast Processing**: Quick money transfers worldwide
+- 🤝 **Western Union Partnership**: Leveraging established global networks
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **[Next.js 15](https://nextjs.org/)** - React framework with App Router, Server Components, and improved rendering
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[TypeScript](https://www.typescriptlang.org/)** - Static type checking
+- **[Lucide Icons](https://lucide.dev/)** - Beautiful open-source icons
+
+### Backend & CMS
+
+- **[Sanity.io](https://www.sanity.io/)** - Headless CMS for structured content
+- **[Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)** - Serverless functions
+- **[Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)** - Form handling and data mutations
+
+### Email & Communication
+
+- **[Resend](https://resend.com/)** - Email API for transactional emails
+- **[React Email](https://react.email/)** - Beautiful, responsive email templates
+
+### Deployment & Infrastructure
+
+- **[Vercel](https://vercel.com/)** - Platform for frontend deployment
+- **[Vercel Analytics](https://vercel.com/analytics)** - Web analytics and performance monitoring
+
+## 📋 Prerequisites
+
+- Node.js 18.17.0 or later
+- npm or yarn or pnpm
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/twister-money-transfer.git
+cd twister-money-transfer
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

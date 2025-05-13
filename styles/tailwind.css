@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist', sans-serif;
+  --font-serif: 'Merriweather', serif;
+
+  --radius-4xl: 2rem;
+  
+  --color-wu-official: #ffcc33;
+  
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
+
+/* Add global styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+  /* Add these styles to hide scrollbar but keep functionality */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    }
+    .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: #ffcc33;
+      border-radius: 3px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ffcc33;
+    }
+  
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #ffcc33 transparent;
+    }
+}

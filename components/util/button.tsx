@@ -4,16 +4,16 @@ import { Link } from "@/components/util/link";
 
 const variants = {
   primary: clsx(
-    "inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]",
+    "inline-flex items-center justify-center px-6 py-[calc(--spacing(3)-1px)]",
     "rounded-full border border-transparent bg-wu-official shadow-md",
     "text-base font-medium whitespace-nowrap text-black",
     "data-disabled:bg-wu-official data-disabled:opacity-40 data-hover:bg-wu-official/90 cursor-pointer"
   ),
   secondary: clsx(
-    "cursor-pointer relative inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]",
+    "cursor-pointer relative inline-flex items-center justify-center px-4 py-[calc(--spacing(3)-1px)]",
     "rounded-full border border-wu-official bg-black shadow-md ring-1 ring-wu-official",
     "after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff1a]",
-    "text-base font-medium whitespace-nowrap text-white",
+    "text-base font-medium whitespace-nowrap text-wu-official",
     "data-disabled:bg-black data-disabled:opacity-40 data-hover:bg-gray-900 data-hover:ring-wu-official/90",
     "transition-colors duration-150"
   ),

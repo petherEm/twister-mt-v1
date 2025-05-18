@@ -25,8 +25,8 @@ function getLinks(dict: any, lang: string = "pl") {
       label: dict?.navbar?.westernUnion || "Western Union",
     },
     {
-      href: `/${lang}/sledz-przekaz`,
-      label: dict?.navbar?.trackTransfer || "Śledź przekaz",
+      href: `/${lang}/wyslij-odbierz`,
+      label: dict?.navbar?.trackTransfer || "Wyślij/odbierz",
     },
     { href: `/${lang}#footer`, label: dict?.navbar?.contact || "Kontakt" },
   ];
@@ -42,8 +42,8 @@ function LanguageSwitcher({
 }) {
   // Define available languages with their flags
   const languages = [
-    { code: "en", flag: "/flags/gb.svg", alt: "English" },
     { code: "pl", flag: "/flags/pl.svg", alt: "Polski" },
+    { code: "en", flag: "/flags/gb.svg", alt: "English" },
     { code: "ua", flag: "/flags/ua.svg", alt: "Українська" },
   ];
 
@@ -204,18 +204,18 @@ export function Navbar({
               <Link href={`/${lang}`} title="Home">
                 <div className="flex items-center justify-start">
                   <Image
-                    src="/mt-logo-2.png"
+                    src="/wu-official-partner-3.png"
+                    alt="Logo"
+                    width={120}
+                    height={100}
+                    className="bg-black"
+                  />
+                  <Image
+                    src="/mt-logo-4.png"
                     alt="Logo"
                     width={120}
                     height={100}
                     className="bg-black mt-1"
-                  />
-                  <Image
-                    src="/wu-official-partner.png"
-                    alt="Logo"
-                    width={110}
-                    height={100}
-                    className="bg-black"
                   />
                 </div>
               </Link>

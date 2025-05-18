@@ -12,11 +12,11 @@ import { motion } from "framer-motion";
 
 function ContactCard({ dict }: { dict: any }) {
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden bg-white shadow-xl">
+    <div className="relative w-full max-w-5xl mx-auto overflow-hidden bg-black shadow-xl">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left side - Contact information */}
-        <div className="p-8 md:p-12 bg-gradient-to-br from-[#f8f8f8] to-[#f0f0f0]">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+        <div className="p-8 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
             {dict.footer.contact.title
               .split(dict.footer.contact.highlightSend)
               .map((part: string, i: number, array: string[]) => {
@@ -24,7 +24,7 @@ function ContactCard({ dict }: { dict: any }) {
                 return (
                   <React.Fragment key={i}>
                     {part}
-                    <span className="text-[#ffcc00]">
+                    <span className="text-wu-official font-bold">
                       {dict.footer.contact.highlightSend}
                     </span>
                     {i < array.length - 2 && " "}
@@ -33,7 +33,7 @@ function ContactCard({ dict }: { dict: any }) {
               })}{" "}
           </h2>
 
-          <p className="text-black mb-10">{dict.footer.contact.description}</p>
+          <p className="text-white mb-10">{dict.footer.contact.description}</p>
 
           <div className="space-y-6">
             <div className="flex items-start">
@@ -41,10 +41,10 @@ function ContactCard({ dict }: { dict: any }) {
                 <MapPin className="h-5 w-5 text-[#ffcc00]" />
               </div>
               <div className="ml-4">
-                <h3 className="text-sm font-semibold text-black">
+                <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.address}
                 </h3>
-                <div className="mt-1 text-sm text-black">
+                <div className="mt-1 text-sm text-white">
                   <p className="font-medium">
                     {dict.footer.contact.companyName}
                   </p>
@@ -61,10 +61,10 @@ function ContactCard({ dict }: { dict: any }) {
                 <Phone className="h-5 w-5 text-[#ffcc00]" />
               </div>
               <div className="ml-4">
-                <h3 className="text-sm font-semibold text-black">
+                <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.phone}
                 </h3>
-                <p className="mt-1 text-sm text-black">
+                <p className="mt-1 text-sm text-white">
                   {dict.footer.contact.phoneNumber}
                 </p>
               </div>
@@ -75,10 +75,10 @@ function ContactCard({ dict }: { dict: any }) {
                 <Mail className="h-5 w-5 text-[#ffcc00]" />
               </div>
               <div className="ml-4">
-                <h3 className="text-sm font-semibold text-black">
+                <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.email}
                 </h3>
-                <p className="mt-1 text-sm text-black">
+                <p className="mt-1 text-sm text-white">
                   {dict.footer.contact.emailAddress}
                 </p>
               </div>
@@ -175,8 +175,8 @@ function LanguageSwitcher({
 }) {
   // Define available languages with their flags
   const languages = [
-    { code: "en", flag: "/flags/gb.svg", alt: "English" },
     { code: "pl", flag: "/flags/pl.svg", alt: "Polski" },
+    { code: "en", flag: "/flags/gb.svg", alt: "English" },
     { code: "ua", flag: "/flags/ua.svg", alt: "Українська" },
   ];
 
@@ -259,13 +259,27 @@ export function Footer({
           <div className="mt-24 grid grid-cols-2 md:grid-cols-12 gap-8">
             {/* Logo and description */}
             <div className="col-span-2 md:col-span-6">
-              <Image
-                src="/logo-black-nobg.png"
-                alt="Twister MT Logo"
-                width={240}
-                height={72}
-                className="mb-6"
-              />
+              <div className="flex flex-wrap items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/wu-official-partner-3.png"
+                    alt="WU Official Partner"
+                    width={140}
+                    height={72}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/logo-black-nobg-3.png"
+                    alt="Twister MT Logo"
+                    width={170}
+                    height={72}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
               <p className="text-black text-sm mt-4 pr-4">
                 {dict.footer?.company?.description}
               </p>

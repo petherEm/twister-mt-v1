@@ -5,6 +5,7 @@ import AboutPrices from "@/components/main/about-prices";
 import { Testimonials } from "@/components/testimonials";
 import { MidBannerLogo } from "@/components/mid-banner-logo";
 import { getDictionary } from "@/lib/dictionary";
+import BecomeAgentMain from "@/components/main/become-agent-main";
 
 export default async function Home({
   params,
@@ -19,13 +20,16 @@ export default async function Home({
       <Hero dict={dict} />
       <main>
         <MidBannerLogo dict={dict} />
-        <div id="o-nas" className="bg-wu-official">
+        {/* <div id="o-nas" className="bg-wu-official">
           <AboutUs dict={dict} lang={lang} />
+        </div> */}
+        <div id="o-nas" className="bg-wu-official">
+          <BecomeAgentMain dict={dict} lang={lang} />
         </div>
         <div className="bg-black">
           <AboutWU dict={dict} lang={lang} />
         </div>
-        <div id="wyslij" className="bg-wu-official">
+        <div id="wyslij" className="bg-black">
           <AboutPrices dict={dict} lang={lang} />
         </div>
       </main>

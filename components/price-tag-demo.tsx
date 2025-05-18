@@ -17,11 +17,11 @@ export default function DemoPage() {
   // };
 
   return (
-    <div className="h-12 w-full bg-wu-official flex items-center justify-center relative">
+    <div className="h-6 w-full bg-wu-official flex items-center justify-center relative">
       {showTag && <PriceTag key={tagKey} price="6 999" label="Promocja" />}
-      <div className="text-md font-bold text-black  px-2 py-1 rounded-md">
-        🚧 Under Construction 🚧 Robię co mogę 🚧
-      </div>
+      {/* <div className="text-md font-bold text-black  px-2 py-1 rounded-md">
+        🚧 Wersja 2 🚧
+      </div> */}
     </div>
   );
 }

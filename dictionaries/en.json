@@ -3,9 +3,9 @@
     "becomeAgent": "Become an Agent",
     "aboutUs": "About Us",
     "westernUnion": "Western Union",
-    "trackTransfer": "Send / Receive",
+    "trackTransfer": "Transfers",
     "contact": "Contact",
-    "login": "Agent Area"
+    "login": "Agent Zone"
   },
   "aboutUs": {
     "title": "About Us",
@@ -311,5 +311,27 @@
   "midBanner": {
     "partnerText": "Official Western Union Partner in Poland - ",
     "becomeAgent": "Become an Agent"
+  },
+  "becomeAgent": {
+    "title": "Join our network of Western Union agents and start earning today.",
+    "lead": "Twister Poland has been an official partner and Master Agent of Western Union for 25 years. We proudly support our customers' money transfer needs with fast and secure service.",
+    "description": [
+      "TWISTER was established in May 1999. Our main business profile includes financial services and international tourism services. For over two decades, we've been helping people stay connected through fast and secure money transfers. As the official Western Union Master Agent in Poland, we proudly manage a nationwide network of over 200 trusted agents.",
+      "Our partners include currency exchange offices, travel agencies, and payment agencies. All partner locations are properly marked and process money transfers while maintaining the highest standards of customer service. Whether you're sending money to loved ones or receiving support from abroad, we're here to ensure every transaction is smooth, secure, and stress-free.",
+      "Want to become a Western Union agent? Join our growing network and benefit from preferential rates, professional consulting, and individual support at every stage of cooperation."
+    ],
+    "stats": {
+      "yearsOnMarket": "Years in market",
+      "numberOfAgents": "Subagents in Poland",
+      "officialPartner": "Official Partner for 25 years"
+    },
+    "buttons": {
+      "becomeAgent": "Become an agent",
+      "callUs": "Call us"
+    },
+    "imageAlt": {
+      "conceptStore": "Become an agent",
+      "secondImage": "Partner location"
+    }
   }
 }

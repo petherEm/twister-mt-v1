@@ -65,7 +65,15 @@ function ContactCard({ dict }: { dict: any }) {
                   {dict.footer.contact.phone}
                 </h3>
                 <p className="mt-1 text-sm text-white">
-                  {dict.footer.contact.phoneNumber}
+                  <a
+                    href={`tel:${dict.footer.contact.phoneNumber.replace(
+                      /\s+/g,
+                      ""
+                    )}`}
+                    className="hover:text-wu-official transition-colors"
+                  >
+                    {dict.footer.contact.phoneNumber}
+                  </a>
                 </p>
               </div>
             </div>
@@ -79,17 +87,30 @@ function ContactCard({ dict }: { dict: any }) {
                   {dict.footer.contact.email}
                 </h3>
                 <p className="mt-1 text-sm text-white">
-                  {dict.footer.contact.emailAddress}
+                  <a
+                    href={`mailto:${dict.footer.contact.emailAddress}`}
+                    className="hover:text-wu-official transition-colors"
+                  >
+                    {dict.footer.contact.emailAddress}
+                  </a>
                 </p>
               </div>
             </div>
           </div>
 
           <div className="mt-10">
-            <Button className="group">
-              {dict.footer.contact.contactUs}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <a
+              href={`tel:${dict.footer.contact.phoneNumber.replace(
+                /\s+/g,
+                ""
+              )}`}
+              className="inline-flex"
+            >
+              <Button className="group">
+                {dict.footer.contact.contactUs}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -105,15 +126,15 @@ function ContactCard({ dict }: { dict: any }) {
             priority
           />
           <div className="absolute bottom-4 right-4 z-20">
-            <a
-              href="https://maps.google.com"
+            <Link
+              href="https://maps.app.goo.gl/dTfPhYNquSFDnxzh8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium text-gray-900 hover:bg-white transition-colors"
             >
               <span>{dict.footer.contact.viewMap}</span>
               <ExternalLink className="h-3.5 w-3.5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -125,10 +146,12 @@ function FooterLink({
   href,
   children,
   lang = "pl",
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   lang?: string;
+  className?: string;
 }) {
   // If href starts with "/" but not with a language code, add the language
   const formattedHref =
@@ -140,7 +163,7 @@ function FooterLink({
     <li>
       <Link
         href={formattedHref}
-        className="text-black hover:text-gray-700 transition-colors duration-200 text-sm"
+        className={`hover:opacity-80 transition-colors duration-200 text-sm ${className}`}
       >
         {children}
       </Link>
@@ -203,7 +226,7 @@ function LanguageSwitcher({
   };
 
   return (
-    <div className="flex items-center gap-3 mt-6">
+    <div className="flex items-center gap-3">
       <div className="flex items-center gap-3">
         {languages.map((language) => (
           <Link
@@ -211,13 +234,13 @@ function LanguageSwitcher({
             href={getLanguageUrl(language.code)}
             className={`relative flex items-center justify-center rounded-md overflow-hidden w-8 h-6 border ${
               currentLang === language.code
-                ? "ring-2 ring-[#ffcc00] border-[#ffcc00]"
-                : "border-gray-200 opacity-70 hover:opacity-100 hover:border-gray-300"
+                ? "ring-2 ring-wu-official border-wu-official"
+                : "border-gray-700 opacity-70 hover:opacity-100 hover:border-wu-official"
             } transition-all duration-200`}
             title={language.alt}
           >
             <Image
-              src={language.flag}
+              src={language.flag || "/placeholder.svg"}
               alt={language.alt}
               fill
               className="object-cover"
@@ -256,18 +279,23 @@ export function Footer({
           </motion.div>
 
           {/* Footer links and info */}
-          <div className="mt-24 grid grid-cols-2 md:grid-cols-12 gap-8">
-            {/* Logo and description */}
-            <div className="col-span-2 md:col-span-6">
+          <div className="mt-24 grid grid-cols-1 md:grid-cols-12 gap-8">
+            {/* Logo and description - on the left */}
+            <div className="col-span-2 md:col-span-8 order-1 md:order-1">
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <Image
-                    src="/wu-official-partner-3.png"
-                    alt="WU Official Partner"
-                    width={140}
-                    height={72}
-                    className="object-contain"
-                  />
+                {/* Official Partner */}
+                <div className="flex flex-col w-fit text-center items-center">
+                  <div className="relative h-12 w-36">
+                    <Image
+                      src="/wu-logo-black.svg"
+                      alt="WU logo black"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <dt className="text-xs text-black">
+                    Officjalny Partner od 25 lat
+                  </dt>
                 </div>
                 <div className="flex-shrink-0">
                   <Image
@@ -280,13 +308,13 @@ export function Footer({
                 </div>
               </div>
 
-              <p className="text-black text-sm mt-4 pr-4">
+              <p className="text-black max-w-[500px] text-sm mt-4 pr-4">
                 {dict.footer?.company?.description}
               </p>
             </div>
 
-            {/* Footer links columns */}
-            <div className="col-span-1 md:col-span-2">
+            {/* Footer links columns - moved to the far right */}
+            <div className="col-span-1 md:col-span-2 order-2 md:order-2 !text-black">
               <FooterColumn title={dict.footer?.columns?.becomeAgent}>
                 <FooterLink href={`/${lang}/agent`} lang={lang}>
                   {dict.footer?.columns?.benefits}
@@ -300,7 +328,7 @@ export function Footer({
               </FooterColumn>
             </div>
 
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 md:col-span-2 order-3 md:order-3 !text-black">
               <FooterColumn title={dict.footer?.columns?.westernUnion}>
                 <FooterLink href={`/${lang}/western-union`} lang={lang}>
                   {dict.footer?.columns?.about}
@@ -316,27 +344,35 @@ export function Footer({
                 </FooterLink>
               </FooterColumn>
             </div>
-
-            {/* Language switcher as the last column */}
-            <div className="col-span-2 md:col-span-2">
-              <h3 className="text-sm font-bold text-black tracking-wider uppercase mb-4">
-                {dict.footer?.columns?.language}
-              </h3>
-              <LanguageSwitcher currentLang={lang} currentPath={currentPath} />
-            </div>
           </div>
+        </Container>
+      </div>
 
-          {/* Copyright bar */}
-          <div className="mt-16 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-black text-sm">
+      {/* Black background section with language switcher and copyright */}
+      <div className="bg-black py-6">
+        <Container>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-wu-official text-sm">
               {dict.footer?.company?.copyright?.replace(
                 "{year}",
                 year.toString()
               )}
             </p>
-            {/* <div className="mt-4 md:mt-0">
-              <p>{dict.footer?.company?.createdBy}</p>
-            </div> */}
+
+            <div className="flex flex-col md:flex-row items-center gap-6 mt-6 md:mt-0">
+              <Link
+                href={`/${lang}/cookies`}
+                className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200"
+              >
+                {dict.footer?.company?.privacyPolicy || "Cookies"}
+              </Link>
+              <div className="mt-4 md:mt-0">
+                <LanguageSwitcher
+                  currentLang={lang}
+                  currentPath={currentPath}
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </div>

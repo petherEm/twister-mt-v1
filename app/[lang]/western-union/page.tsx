@@ -6,6 +6,12 @@ import { Heading, Lead, Subheading } from "@/components/util/text";
 import type { Metadata } from "next";
 import { getDictionary } from "@/lib/dictionary";
 import { FAQ_ITEMS } from "@/lib/constants";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
   title: "Western Union",
@@ -102,14 +108,30 @@ function Header({ dict }: HeaderProps) {
           <Lead className="mt-6 text-white">{dict.westernUnion.lead}</Lead>
         </div>
         <div className="mt-6 lg:mt-0 lg:ml-8 lg:flex-shrink-0">
-          <Image
-            src="/wu-hq-03.webp"
-            alt={dict.westernUnion.images.headquarters}
-            width={600}
-            height={300}
-            className="mx-auto w-full lg:mx-0 lg:max-w-[480px]"
-            priority
-          />
+          <div className="w-full lg:max-w-[480px] mx-auto lg:mx-0 relative">
+            <video
+              src="/WU_animated_logo.mp4"
+              poster="/wu-hq-03.webp"
+              width={600}
+              height={300}
+              className="w-full"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+            {/* Fallback for browsers that don't support video */}
+            <noscript>
+              <Image
+                src="/wu-hq-03.webp"
+                alt={dict.westernUnion.images.headquarters}
+                width={600}
+                height={300}
+                className="mx-auto w-full lg:mx-0 lg:max-w-[480px]"
+                priority
+              />
+            </noscript>
+          </div>
         </div>
       </div>
 
@@ -132,9 +154,6 @@ function Header({ dict }: HeaderProps) {
           </ul>
         </div>
         <div className="text-white">
-          <Subheading className="text-white">
-            {dict.westernUnion.stats.title}
-          </Subheading>
           <hr className="mt-6 border-t border-gray-800" />
           <dl className="mt-6 grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-x-8">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-800 pb-4">
@@ -158,7 +177,7 @@ function Header({ dict }: HeaderProps) {
                 {dict.westernUnion.stats.locations}
               </dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={500} decimals={1} />k
+                <AnimatedNumber start={0} end={500} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2">
@@ -262,6 +281,44 @@ function WUHistory({ dict }: WUHistoryProps) {
                 </p>
               </div>
             </div>
+            <div className="overflow-hidden">
+              <Image
+                src="/wu-old-telecar.webp"
+                alt={
+                  dict.westernUnion.history?.images?.telegraphOperator ||
+                  "Telegraph Operator"
+                }
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+                priority
+              />
+              <div className="p-3">
+                <p className="text-sm font-medium text-black">
+                  {dict.westernUnion.history?.images?.telegraphOperator ||
+                    "Telegraph Operator"}
+                </p>
+              </div>
+            </div>
+            <div className="overflow-hidden">
+              <Image
+                src="/wu-old-location.jpg"
+                alt={
+                  dict.westernUnion.history?.images?.telegraphOperator ||
+                  "Telegraph Operator"
+                }
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+                priority
+              />
+              <div className="p-3">
+                <p className="text-sm font-medium text-black">
+                  {dict.westernUnion.history?.images?.telegraphOperator ||
+                    "Telegraph Operator"}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -270,7 +327,7 @@ function WUHistory({ dict }: WUHistoryProps) {
           <Heading as="h1" className="!font-bold text-black">
             {dict.westernUnion.history?.title || "History Brief"}
           </Heading>
-          <Lead className="mt-6 text-black">
+          <Lead className="mt-6 !text-black">
             {dict.westernUnion.history?.lead ||
               "Western Union was founded in 1851 as a telegraph company and has evolved into a global leader in cross-border, cross-currency money movement and payments."}
           </Lead>
@@ -329,17 +386,19 @@ function FrequentlyAskedQuestions({ dict, lang }: FAQProps) {
         <Heading as="div" className="mt-2 text-center">
           {dict.westernUnion.faq?.subtitle || "Your questions answered."}
         </Heading>
-        <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
-          {FAQ_ITEMS.slice(0, 5).map((item, index) => (
-            <dl key={index}>
-              <dt className="text-sm font-semibold">
-                {item.question[language as keyof typeof item.question]}
-              </dt>
-              <dd className="mt-4 text-sm/6 text-gray-400">
-                {item.answer[language as keyof typeof item.answer]}
-              </dd>
-            </dl>
-          ))}
+        <div className="mx-auto mt-16 mb-32 max-w-xl">
+          <Accordion type="single" collapsible className="w-full">
+            {FAQ_ITEMS.slice(0, 5).map((item, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-sm font-semibold text-left">
+                  {item.question[language as keyof typeof item.question]}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm/6 text-gray-400">
+                  {item.answer[language as keyof typeof item.answer]}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
     </Container>

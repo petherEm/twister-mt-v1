@@ -28,7 +28,7 @@ function getLinks(dict: any, lang: string = "pl") {
       href: `/${lang}/wyslij-odbierz`,
       label: dict?.navbar?.trackTransfer || "Wyślij/odbierz",
     },
-    { href: `/${lang}#footer`, label: dict?.navbar?.contact || "Kontakt" },
+    // { href: `/${lang}#footer`, label: dict?.navbar?.contact || "Kontakt" },
     { href: `/${lang}/login`, label: dict?.navbar?.login || "Strefa Agenta" },
   ];
 }

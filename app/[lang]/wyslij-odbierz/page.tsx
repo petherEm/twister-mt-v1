@@ -392,7 +392,7 @@ function Header({ dict }: HeaderProps) {
 
             <Image
               alt={dict.trackTransfer.image.alt}
-              src="/track-a-transfer.webp"
+              src="/concept-store.webp"
               width={700}
               height={900}
               className="object-contain lg:object-cover h-auto w-full"

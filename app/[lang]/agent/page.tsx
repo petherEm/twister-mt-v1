@@ -14,6 +14,12 @@ import AgentForm from "@/components/main/agent-form";
 import type { Metadata } from "next";
 import { BECOME_AGENT_FAQ } from "@/lib/constants";
 import { getDictionary } from "@/lib/dictionary";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
   title: "Zostań agentem",
@@ -192,7 +198,7 @@ function Testimonial({ dict }: { dict: any }) {
                 <div className="overflow-hidden rounded-3xl shadow-2xl  outline-1 -outline-offset-1 outline-black/10">
                   <Image
                     alt=""
-                    src="/testimonials/veronica-winton.jpg"
+                    src="/concept-store-4.jpg"
                     className="aspect-3/4 w-full object-cover"
                     width={384}
                     height={384}
@@ -242,18 +248,20 @@ function FrequentlyAskedQuestions({
         <Heading as="div" className="mt-2 text-center">
           {dict.agent.faq.heading}
         </Heading>
-        <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
-          {BECOME_AGENT_FAQ.map((faq, index) => (
-            <dl key={index}>
-              <dt className="text-sm font-semibold">
-                {faq.question[lang as keyof typeof faq.question] ||
-                  faq.question.en}
-              </dt>
-              <dd className="mt-4 text-sm/6 text-gray-400">
-                {faq.answer[lang as keyof typeof faq.answer] || faq.answer.en}
-              </dd>
-            </dl>
-          ))}
+        <div className="mx-auto mt-16 mb-32 max-w-xl">
+          <Accordion type="single" collapsible className="w-full">
+            {BECOME_AGENT_FAQ.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-sm font-semibold text-left">
+                  {faq.question[lang as keyof typeof faq.question] ||
+                    faq.question.en}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm/6 text-gray-400">
+                  {faq.answer[lang as keyof typeof faq.answer] || faq.answer.en}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
     </Container>

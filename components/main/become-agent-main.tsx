@@ -1,7 +1,7 @@
 import { AnimatedNumber } from "@/components/util/animated-number";
 import Image from "next/image";
 import { Container } from "@/components/util/container";
-import { Heading } from "@/components/util/text";
+import { Heading, Lead } from "@/components/util/text";
 import { Button } from "@/components/util/button";
 
 import { Globe, Clock, Users, Banknote } from "lucide-react";
@@ -53,10 +53,18 @@ export default function BecomeAgentMain({
             {/* Right content */}
             <div className="z-10">
               <Heading as="h1" className="!font-bold text-black">
-                Do you want become an agent? Join our network!
+                Z Nami dołączysz do sieci agentów Western Union i zaczniesz
+                zarabiać.
               </Heading>
+              <Lead className="mt-12 !text-black">
+                {" "}
+                Twister Poland od 25 lat ojest ficjalnym partnerem i Master
+                Agentem Western Union. Z dumą wspieramy potrzeby przekazów
+                pieniężnych naszych klientów, oferując szybki i bezpieczny
+                serwis.{" "}
+              </Lead>
 
-              <ul className="mt-8 space-y-4">
+              {/* <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <li className="flex items-start">
                   <Banknote className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-0.5" />
                   <span className="text-black">Real earnings every month</span>
@@ -75,28 +83,39 @@ export default function BecomeAgentMain({
                     Attract new and more customers
                   </span>
                 </li>
-              </ul>
+              </ul> */}
 
               <div className="mt-8 space-y-6">
                 <p className="text-black text-sm leading-relaxed">
-                  Twister is a well-established travel agency with over 30 years
-                  of experience on the market—and for more than 20 of those
-                  years, we've also been helping people stay connected through
-                  fast and secure money transfers. As the official Master Agent
-                  for Western Union in Poland, we proudly manage a nationwide
-                  network of over 120 trusted agents. Whether you're sending
-                  money to loved ones or receiving support from abroad, we're
-                  here to make every transaction easy, reliable, and
-                  stress-free. We offer full support to both customers and
-                  agents across the country.
+                  Firma TWISTER powstała w maju 1999 roku. Główny profil
+                  działalności to usługi finansowe oraz międzynarodowe usługi
+                  turystyczne. Od ponad dwóch dekad pomagamy ludziom pozostać w
+                  kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym.
+                  Jako oficjalny Master Agent Western Union w Polsce z dumą
+                  zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów.
+                  Nasi partnerzy to m.in. kantory wymiany walut, biura podróży,
+                  agencje płatnicze. Wszystkie placówki partnerskie są
+                  odpowiednio oznakowane i realizują przekazy pieniężne z
+                  zachowaniem najwyższych standardów obsługi Klienta.
                 </p>
                 <p className="text-black text-sm leading-relaxed">
-                  Interested in becoming a Western Union agent? Partner with us
-                  to join our growing network and enjoy preferred rates, expert
-                  guidance, and personalized support.
+                  Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy
+                  odbierasz wsparcie z zagranicy — jesteśmy tu, by każda
+                  transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego
+                  stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i
+                  partnerom w całej Polsce.
+                </p>
+                <p className="text-black text-sm font-bold leading-relaxed">
+                  Chcesz zostać agentem Western Union? Dołącz do naszej
+                  rozwijającej się sieci i skorzystaj z preferencyjnych stawek,
+                  profesjonalnego doradztwa i indywidualnego wsparcia na każdym
+                  etapie współpracy.
                 </p>
                 <Button variant="secondary" href={`/${lang}/agent`}>
-                  Become an agent
+                  Zostań agentem
+                </Button>
+                <Button variant="primary" href={`/${lang}/agent`}>
+                  Zadzwoń
                 </Button>
               </div>
             </div>
@@ -116,7 +135,7 @@ export default function BecomeAgentMain({
             <div className="flex flex-col gap-y-2 border-t border-b border-dotted border-gray-800 py-4 w-full text-center">
               <dt className="text-md text-black">Number of agents</dt>
               <dd className="order-first text-7xl font-medium tracking-tight text-black">
-                <AnimatedNumber start={1} end={123} />+
+                <AnimatedNumber start={1} end={200} />+
               </dd>
             </div>
 

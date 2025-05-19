@@ -29,9 +29,6 @@ export default async function Home({
         <div className="bg-black">
           <AboutWU dict={dict} lang={lang} />
         </div>
-        <div id="wyslij" className="bg-black">
-          <AboutPrices dict={dict} lang={lang} />
-        </div>
       </main>
       <Testimonials dict={dict} lang={lang} />
     </div>

@@ -4,11 +4,12 @@
     "aboutUs": "O nas",
     "westernUnion": "Western Union",
     "trackTransfer": "Wyślij / odbierz",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "login": "Strefa Agenta"
   },
   "hero": {
     "title": "Przekazy pieniężne Western Union",
-    "subtitle": "Od 20 lat jesteśmy partnerem Western Union w Polsce. Wysyłaj i odbieraj pieniądze bezpiecznie!",
+    "subtitle": "Od 25 lat jesteśmy partnerem Western Union w Polsce. Wysyłaj i odbieraj pieniądze bezpiecznie!",
     "becomeAgentButton": "Zostań agentem",
     "sendReceiveButton": "Wyślij / odbierz",
     "imageAlt": "Usługa Western Union"
@@ -53,23 +54,23 @@
         },
         {
           "title": "Wiele opcji przekazów",
-          "description": "Wysyłaj środki online, przez aplikację mobilną lub osobiście w ponad 500 000 lokalizacji agentów."
+          "description": "wysyłaj środki osobiście w ponad 500 000 lokalizacji agentów, zainicjowane za pośrednictwem aplikacji mobilnej."
         },
         {
           "title": "Elastyczne metody dostawy",
-          "description": "Odbiorcy mogą otrzymywać pieniądze bezpośrednio na swoje konta bankowe, portfele mobilne lub odbierać gotówkę w lokalizacjach agentów."
+          "description": "odbiorcy mogą otrzymywać pieniądze bezpośrednio na swoje konta bankowe, portfele mobilne lub odbierać gotówkę w lokalizacjach agentów."
         },
         {
           "title": "Śledzenie w czasie rzeczywistym",
-          "description": "Monitoruj swoje przekazy za pomocą unikalnego numeru kontrolnego przekazu pieniężnego (MTCN)."
+          "description": "monitoruj swoje przekazy za pomocą unikalnego numeru kontrolnego przekazu pieniężnego (MTCN)."
         },
         {
           "title": "Konkurencyjne kursy wymiany",
-          "description": "Korzystaj z kursów wymiany w czasie rzeczywistym i przejrzystych opłat."
+          "description": "korzystaj z kursów wymiany w czasie rzeczywistym i przejrzystych opłat."
         },
         {
           "title": "Bezpieczeństwo i niezawodność",
-          "description": "Ciesz się spokojem dzięki szyfrowanym transferom i solidnym środkom zapobiegania oszustwom."
+          "description": "ciesz się spokojem dzięki szyfrowanym transferom i solidnym środkom zapobiegania oszustwom."
         }
       ]
     },
@@ -82,11 +83,14 @@
     },
     "history": {
       "title": "Krótka historia",
-      "lead": "Western Union został założony w 1851 roku jako firma telegraficzna i ewoluował do globalnego lidera w transgranicznych i wielowalutowych transferach pieniężnych i płatnościach.",
+      "lead": "Western Union został założony w 1851 roku i z czasem stał się globalnym liderem w dziedzinie międzynarodowych i wielowalutowych transferów pieniędzy oraz płatności.",
       "paragraphs": [
-        "Firma rozpoczęła działalność jako dostawca usług telegraficznych, rewolucjonizując komunikację w Stanach Zjednoczonych. Do 1861 roku Western Union ukończył pierwszą transkontynentalną linię telegraficzną, łączącą wschodnie i zachodnie wybrzeże.",
-        "W 1871 roku Western Union wprowadził usługi transferu pieniędzy, które z czasem stały się główną działalnością firmy. Przez cały XX wiek Western Union kontynuował rozszerzanie swoich usług i globalnego zasięgu.",
-        "Dziś, z obecnością w ponad 200 krajach i terytoriach, WU dostosował się do zmieniających się potrzeb klientów, oferując szeroki zakres usług finansowych, które łączą ludzi i firmy na całym świecie.",
+        "WU swoja działalność zapoczątkował jako dostawca usług telegraficznych, rewolucjonizując komunikację w Stanach Zjednoczonych. ",
+        "Do 1861 roku Western Union ukończył pierwszą transkontynentalną linię telegraficzną, łączącą wschodnie i zachodnie wybrzeże.",
+
+        "W 1871 roku Western Union wprowadził usługi transferu pieniędzy, które z czasem stały się główną działalnością firmy.",
+
+        "Przez cały okres XX wieku Western Union nieprzerwanie rozwijał swoje usługi oraz globalny zasięg na całym świecie. Dziś, będąc obecny w ponad 200 krajach i terytoriach, WU dostosował się do zmieniających się potrzeb klientów. Oferuje szeroki zakres usług finansowych, które łączą ludzi oraz firmy na całym świecie.",
         "Dziedzictwo innowacji Western Union trwa nadal, gdy firma przyjmuje transformację cyfrową, jednocześnie utrzymując swoje zaangażowanie w obsługę społeczności na całym świecie."
       ],
       "images": {
@@ -103,11 +107,11 @@
       "description": "Łatwo sprawdź status swojego międzynarodowego przekazu pieniężnego za pomocą naszej bezpiecznej usługi śledzenia Western Union."
     },
     "title": "Śledź swój przekaz pieniężny",
-    "lead": "Łatwo sprawdź status swojego międzynarodowego przekazu pieniężnego za pomocą naszej bezpiecznej usługi śledzenia.",
+    "lead": "Łatwo sprawdź status przekazu pieniężnego za pomocą naszej bezpiecznej usługi.",
     "howItWorks": {
       "title": "Jak to działa",
-      "description1": "Bądź na bieżąco ze statusem swojego przekazu pieniężnego w czasie rzeczywistym. Nasz system śledzenia zapewnia natychmiastowe aktualizacje informujące, gdzie znajdują się Twoje pieniądze w procesie przekazu, od wysłania do dostarczenia.",
-      "description2": "Aby śledzić swój przekaz, potrzebujesz numeru kontrolnego przekazu pieniężnego (MTCN), który został podany przy inicjowaniu przekazu. Ze względów bezpieczeństwa zostaniesz przekierowany na oficjalną stronę śledzenia Western Union."
+      "description1": "Bądź na bieżąco ze statusem swojego przekazu pieniężnego w czasie rzeczywistym. Nasz system śledzenia zapewnia natychmiastową aktualizację i dostęp do informacji, gdzie znajdują się Twoje pieniądze w procesie przekazu, od wysłania do wypłaty.",
+      "description2": "Aby śledzić swój przekaz, potrzebujesz numeru kontrolnego przekazu pieniężnego (MTCN), który został wygenerowany przy inicjowaniu przekazu. Ze względów bezpieczeństwa zostaniesz przekierowany na oficjalną stronę śledzenia Western Union."
     },
     "trackButton": "Śledź swój przekaz teraz",
     "redirectNotice": "Zostaniesz przekierowany do oficjalnej usługi śledzenia przekazów Western Union.",
@@ -192,16 +196,16 @@
       "title": "Chcesz wysłać bądź odebrać przekaz?",
       "highlightSend": "wysłać",
       "highlightReceive": "odebrać",
-      "description": "Zapraszamy do naszego biura. Nasz zespół profesjonalistów pomoże Ci szybko i bezpiecznie zrealizować Twój przekaz pieniężny.",
+      "description": "Zapraszamy do naszego biura. Nasz zespół profesjonalistów pomoże Ci szybko i bezpiecznie zrealizować transakcje.",
       "address": "Adres",
-      "companyName": "Twister MT",
-      "street": "ul. Przykładowa 123",
-      "city": "00-000 Warszawa",
+      "companyName": "Twister Poland",
+      "street": "ul. T. Kościuszki 27",
+      "city": "50-011 Wrocław",
       "country": "Polska",
       "phone": "Telefon",
-      "phoneNumber": "+48 123 456 789",
+      "phoneNumber": "+48 71 343 90 26",
       "email": "Email",
-      "emailAddress": "kontakt@twistermt.pl",
+      "emailAddress": "kontakt@moneytransfer.pl",
       "contactUs": "Skontaktuj się z nami",
       "viewMap": "Zobacz na mapie"
     },
@@ -217,7 +221,7 @@
       "language": "Język"
     },
     "company": {
-      "description": "Profesjonalne usługi przekazów pieniężnych i obsługi klienta od ponad 20 lat.",
+      "description": "Profesjonalne usługi przekazów pieniężnych i obsługi klienta od ponad 25 lat.",
       "copyright": "© {year} Biuro Podróży Twister. Wszelkie prawa zastrzeżone.",
       "createdBy": "Wykonane przez AiVerge.io"
     }
@@ -228,20 +232,20 @@
       "description": "Dołącz do sieci agentów Western Union. Zacznij zarabiać dodatkowy dochód dzięki usługom przekazów pieniężnych Western Union."
     },
     "header": {
-      "title": "Zostań agentem już dziś!",
-      "subtitle": "Jesteśmy oficjalnym partnerem Western Union z ponad 120 agentami w Polsce. Pomożemy Ci zostać agentem i zacząć zarabiać. Oferujemy zestaw startowy, szkolenia i wsparcie marketingowe. Jesteśmy tu, aby pomóc Ci na każdym kroku."
+      "title": "Zostań partnerem Western Union",
+      "subtitle": "Nasza firma jest oficjalnym partnerem Western Union z 25 letnim doświadczeniem. Współpracujemy z ponad 200 agentami w Polsce. Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje opłat, punkty pocztowe i wiele innych. Oferujemy profesjonalne doradztwo, zestaw startowy z prezentem, szkolenia i wsparcie marketingowe."
     },
     "form": {
       "title": "Wypełnij formularz i zacznij zarabiać!",
-      "subtitle": "Sieć agentów Western Union — droga do nowych możliwości dla Twojego biznesu. Oto niektóre z korzyści, które możesz zyskać:",
+      "subtitle": "Otwórz się na nowe możliwości z Western Union! Dołącz do naszej sieci Agentów i zobacz, jakie korzyści czekają na Twój biznes:",
       "benefits": {
         "earnings": {
           "title": "Realne zarobki każdego miesiąca",
-          "description": "Zdywersyfikuj swój biznes, przyciągnij nowych klientów i zacznij zarabiać od pierwszego dnia. Transakcje WU zajmują mniej niż 2 minuty i przynoszą dodatkowy strumień dochodów."
+          "description": "Dodaj nową usługę, która napędzi Twój biznes! Przyciągnij kolejnych klientów i zacznij zarabiać. Realizacja transakcji Western Union zajmuje mniej niż 2 minuty i zapewnia dodatkowe źródło dochodu."
         },
         "global": {
           "title": "Silna globalna obecność",
-          "description": "Western Union jest liderem w międzynarodowych przekazach pieniężnych poprzez sieć setek tysięcy lokalizacji agentów Western Union w ponad 200 krajach i terytoriach."
+          "description": "Western Union jest światowym liderem w zakresie międzynarodowych przekazów pieniężnych dzięki rozbudowanej sieci ponad 500 tysięcy punktów partnerskich w ponad 200 krajach i regionach świata."
         },
         "innovative": {
           "title": "Innowacyjne przekazy pieniężne",
@@ -249,7 +253,7 @@
         },
         "customers": {
           "title": "Przyciągnij nowych klientów",
-          "description": "Dzięki reputacji Western Union i wsparciu, które oferujemy w promowaniu naszej usługi, będziesz mógł zwiększyć ruch w swojej lokalizacji."
+          "description": "Dzięki rozpoznawalności marki Western Union oraz wsparciu jakie przekazujemy, masz gwarancję zwiększenia liczby obsługiwanych klientów i zysków."
         }
       },
       "formFields": {
@@ -285,20 +289,20 @@
     },
     "brand": {
       "title": "Western Union, wiodąca i znana marka",
-      "description": "Z ponad 170-letnim doświadczeniem w przesyłaniu pieniędzy, Western Union jest liderem branży w globalnych transferach pieniężnych i usługach płatniczych. Western Union oferuje innowacyjne i efektywne przekazy pieniężne. Wysyłanie pieniędzy szybciej poprzez zainicjowanie transferu z aplikacji Western Union i płacenie bezpośrednio w lokalizacji agenta."
+      "description": "Z ponad 170-letnim doświadczeniem w przesyłaniu pieniędzy, Western Union jest światowym liderem branży w globalnych transferach pieniężnych i usługach płatniczych. Western Union oferuje innowacyjne i efektywne przekazy pieniężne. Wysyłanie pieniędzy bezpośrednio w lokalizacji agenta, zainicjowanie transferu z aplikacji Western Union, na konto bankowe lub do portfela mobilnego, jak tylko chcesz."
     },
     "offerings": {
       "tools": {
         "title": "Narzędzia na start",
-        "description": "Szkolenie krok po kroku - Western Union dba o zapewnienie wsparcia na początek. Od samego początku skorzystasz ze szkolenia w zakresie standardów doskonałości w przekazach pieniężnych, a także przepisów, których musisz przestrzegać."
+        "description": "Szkolenie krok po kroku - Western Union dba o zapewnienie wsparcia od samego początku. Weźmiesz udział w szkoleniach w zakresie standardów usług przekazów pieniężnych, a także przepisów prawnych, których będziesz musiał przestrzegać."
       },
       "starter": {
         "title": "Zestaw startowy",
-        "description": "Oferujemy za darmo zestaw startowy, który przeprowadzi Cię przez Twoją nową działalność i pomoże zwiększyć świadomość."
+        "description": "Oferujemy za darmo zestaw startowy oraz materiały reklamowe wspomagające zwiększyć świadomość produktu. Przeprowadzimy Cię sprawnie przez proces rejestracji nowej usługi."
       },
       "support": {
         "title": "Wsparcie Western Union",
-        "description": "Zapewniamy skuteczne i reaktywne wsparcie dla wszystkich naszych lokalizacji agentów. Łatwy kontakt telefoniczny i mailowy, zespół wsparcia jest gotowy odpowiedzieć na każde pytanie techniczne."
+        "description": "Zapewniamy skuteczne i realne wsparcie dla wszystkich naszych Agentów. Łatwy kontakt telefoniczny i mailowy. Nasz zespół wsparcia jest zawsze dostępny i gotowy, aby odpowiedzieć na wszelkie pytania."
       }
     },
     "testimonial": {

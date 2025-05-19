@@ -4,7 +4,8 @@
       "aboutUs": "Про нас",
       "westernUnion": "Western Union",
       "trackTransfer": "Відстежити переказ",
-      "contact": "Контакт"
+      "contact": "Контакт",
+      "login": "Увійти"
     },
     "hero": {
       "title": "Грошові перекази Western Union",
@@ -176,14 +177,14 @@
         "highlightReceive": "отримати",
         "description": "Запрошуємо до нашого офісу. Наша команда професіоналів допоможе вам швидко та безпечно здійснити грошовий переказ.",
         "address": "Адреса",
-        "companyName": "Twister MT",
-        "street": "вул. Прикладова 123",
-        "city": "00-000 Варшава",
+        "companyName": "Twister Poland",
+        "street": "ul. T. Kościuszki 27",
+        "city": "50-011 Wrocław",
         "country": "Польща",
         "phone": "Телефон",
-        "phoneNumber": "+48 123 456 789",
+        "phoneNumber": "+48 71 343 90 26",
         "email": "Email",
-        "emailAddress": "kontakt@twistermt.pl",
+        "emailAddress": "kontakt@moneytransfer.pl",
         "contactUs": "Зв'яжіться з нами",
         "viewMap": "Переглянути на мапі"
       },

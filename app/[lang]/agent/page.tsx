@@ -41,7 +41,7 @@ function Header({ dict }: { dict: any }) {
       <Heading className="mt-12 text-white text-center mb-10" as="h1">
         {dict.agent.header.title}
       </Heading>
-      <Lead className="mt-10 mb-10 text-center max-w-4xl text-white/75">
+      <Lead className="mt-10 mb-10 text-center max-w-5xl text-white/75">
         {dict.agent.header.subtitle}
       </Lead>
     </Container>
@@ -261,15 +261,19 @@ function FrequentlyAskedQuestions({
 }
 
 export default async function Agent({ params }: { params: { lang: string } }) {
-  const dict = await getDictionary(params.lang as "en" | "pl" | "ua");
+  // Await the params object before accessing lang
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang;
+
+  const dict = await getDictionary(lang as "en" | "pl" | "ua");
 
   return (
     <main className="overflow-hidden">
       <Header dict={dict} />
-      <FormContainer dict={dict} lang={params.lang} />
+      <FormContainer dict={dict} lang={lang} />
       <Benefits dict={dict} />
       <Testimonial dict={dict} />
-      <FrequentlyAskedQuestions dict={dict} lang={params.lang} />
+      <FrequentlyAskedQuestions dict={dict} lang={lang} />
     </main>
   );
 }

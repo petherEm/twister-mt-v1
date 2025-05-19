@@ -4,7 +4,8 @@
     "aboutUs": "About Us",
     "westernUnion": "Western Union",
     "trackTransfer": "Send / Receive",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Agent Area"
   },
   "aboutUs": {
     "title": "About Us",
@@ -181,16 +182,16 @@
       "title": "Want to send or receive a transfer?",
       "highlightSend": "send",
       "highlightReceive": "receive",
-      "description": "Visit our office. Our team of professionals will help you quickly and securely complete your money transfer.",
+      "description": "Visit our office. Our team of professionals will help you quickly and securely complete your transaction.",
       "address": "Address",
-      "companyName": "Twister MT",
-      "street": "123 Example St.",
-      "city": "00-000 Warsaw",
+      "companyName": "Twister Poland",
+      "street": "ul. T. Kościuszki 27",
+      "city": "50-011 Wrocław",
       "country": "Poland",
       "phone": "Phone",
-      "phoneNumber": "+48 123 456 789",
+      "phoneNumber": "+48 71 343 90 26",
       "email": "Email",
-      "emailAddress": "contact@twistermt.pl",
+      "emailAddress": "kontakt@moneytransfer.pl",
       "contactUs": "Contact Us",
       "viewMap": "View on map"
     },

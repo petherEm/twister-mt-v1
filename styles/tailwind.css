@@ -86,8 +86,14 @@ html, body {
   height: 0 !important;
 }
 
-/* Additional overflow protection for all elements */
-* {
+/* More selective overflow protection */
+.overflow-container, .full-width-container, main, section {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* Prevent box-sizing issues with * selector */
+/* * {
+  max-width: 100%;
+  box-sizing: border-box;
+} */

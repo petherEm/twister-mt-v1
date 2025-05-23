@@ -22,7 +22,7 @@ export const FAQ_ITEMS = [
     },
     answer: {
       en: "Western Union agent locations are independent businesses that provide money transfer services to their customers on behalf of Western Union.",
-      pl: "Lokalizacje agentów Western Union to niezależne firmy, które świadczą usługi przekazów pieniężnych w imieniu Western Union. Są to zazwyczaj biura podróży, kantory wymiany walut, sklepy, banki, punkty usługowe czy inne placówki, które współpracują z Western Union i oferują klientom możliwość nadawania oraz odbierania pieniędzy. Można je znaleźć w różnych miejscach, zarówno w miastach, jak i na obszarach wiejskich, umożliwiając łatwy dostęp do usług finansowych.",
+      pl: "Lokalizacje agentów Western Union to niezależne firmy, które świadczą usługi przekazów pieniężnych w imieniu Western Union. Są to zazwyczaj biura podróży, kantory wymiany walut, sklepy, banki, punkty usługowe czy inne placówki, które współpracują z Western Union. Oferują klientom możliwość nadawania oraz odbierania pieniędzy. Można je znaleźć w różnych miejscach, zarówno w miastach, jak i na obszarach wiejskich, umożliwiając łatwy dostęp do usług finansowych.",
       ua: "Пункти агентів Western Union - це незалежні підприємства, які надають послуги грошових переказів своїм клієнтам від імені Western Union."
     }
   },
@@ -41,25 +41,13 @@ export const FAQ_ITEMS = [
   },
   {
     question: {
-      en: "What do I need to send money from an agent location?",
-      pl: "Co jest potrzebne do wysłania pieniędzy z lokalizacji agenta?",
-      ua: "Що мені потрібно для відправлення грошей з пункту агента?"
-    },
-    answer: {
-      en: "You will need to bring your proof of identity to make transfers at an agent location. Sending money with Western Union from an agent location doesn't require credit cards, debit cards, bank accounts or memberships.",
-      pl: "Do dokonania przelewów w lokalizacji agenta potrzebny jest dowód tożsamości. Wysyłanie pieniędzy z Western Union z lokalizacji agenta nie wymaga kart kredytowych, kart debetowych, kont bankowych ani członkostwa.",
-      ua: "Вам потрібно буде мати при собі посвідчення особи, щоб здійснювати перекази в пункті агента. Відправлення грошей через Western Union з пункту агента не вимагає кредитних карток, дебетових карток, банківських рахунків або членства."
-    }
-  },
-  {
-    question: {
       en: "What are acceptable documents for picking up money?",
       pl: "Jakie dokumenty są akceptowane przy odbiorze pieniędzy?",
       ua: "Які документи приймаються для отримання грошей?"
     },
     answer: {
       en: "Depending on the country and the agent, where the receiver picks up the money, the acceptable IDs will vary. In general passports and national IDs are acceptable. A driver's license might not be valid.\n\nIn some cases the receiver might also need to verify their current address, for example with a utility bill.",
-      pl: "W zależności od kraju i agenta, w którym odbiorca odbiera pieniądze, akceptowane dokumenty tożsamości będą się różnić. Ogólnie akceptowane są paszporty i dowody osobiste. Prawo jazdy może nie być ważne.\n\nW niektórych przypadkach odbiorca może również potrzebować zweryfikować swój aktualny adres, na przykład rachunkiem za media.",
+      pl: "W zależności od kraju i agenta, w którym dokonywana jest wypłata pieniędzy, akceptowane dokumenty tożsamości będą się różnić. Standardowo, akceptowane są paszporty oraz dowody osobiste. Istnieje możliwość, że prawo jazdy nie będzie honorowane. W niektórych przypadkach, odbiorca może być poproszony również o zweryfikowanie swojego aktualnego adresu, na przykład rachunkiem za media.",
       ua: "Залежно від країни та агента, де одержувач отримує гроші, прийнятні посвідчення особи можуть відрізнятися. Загалом приймаються паспорти та національні посвідчення особи. Водійське посвідчення може бути недійсним.\n\nУ деяких випадках одержувач може також знадобитися підтвердити свою поточну адресу, наприклад, рахунком за комунальні послуги."
     }
   },

@@ -54,7 +54,7 @@ export default function BecomeAgentMain({
               </div>
 
               {/* Second image */}
-              <div className="relative h-[250px] overflow-hidden shadow-md mb-6">
+              <div className="relative h-[280px] overflow-hidden shadow-md mb-6">
                 <Image
                   src="/concept-store-3.webp"
                   alt={dict.becomeAgent.imageAlt.secondImage}
@@ -66,14 +66,14 @@ export default function BecomeAgentMain({
               </div>
 
               {/* Stats section - all 3 items in one row */}
-              <div className="grid grid-cols-3 gap-2 mb-6">
+              <div className="mt-2 grid grid-cols-3 gap-2 mb-6">
                 {/* Years on market counter */}
                 <div className="flex flex-col gap-y-1 border-t border-b border-dotted border-black py-3 w-full text-center">
                   <dt className="text-xs text-black mt-2">
                     {dict.becomeAgent.stats.yearsOnMarket}
                   </dt>
                   <dd className="order-first text-4xl font-medium tracking-tight text-black">
-                    <AnimatedNumber start={0} end={30} />
+                    <AnimatedNumber start={0} end={26} />
                   </dd>
                 </div>
 
@@ -129,20 +129,19 @@ export default function BecomeAgentMain({
                     </p>
                   ))}
                 </div>
-              </div>
-
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button variant="secondary" href={`/${lang}/agent`}>
-                  {dict.becomeAgent.buttons.becomeAgent}
-                </Button>
-                <Button
-                  variant="primary"
-                  href={`/${lang}/#footer`}
-                  className="flex items-center justify-center !border-2 !border-black"
-                >
-                  <Phone className="mr-2 h-4 w-4" />{" "}
-                  {dict.becomeAgent.buttons.callUs}
-                </Button>
+                <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                  <Button variant="secondary" href={`/${lang}/agent`}>
+                    {dict.becomeAgent.buttons.becomeAgent}
+                  </Button>
+                  <Button
+                    variant="primary"
+                    href={`/${lang}/#footer`}
+                    className="flex items-center justify-center !border-2 !border-black"
+                  >
+                    <Phone className="mr-2 h-4 w-4" />{" "}
+                    {dict.becomeAgent.buttons.callUs}
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

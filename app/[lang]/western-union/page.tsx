@@ -196,177 +196,118 @@ function Header({ dict }: HeaderProps) {
 }
 
 function WUHistory({ dict }: WUHistoryProps) {
+  // Historical events data
+  const historicalEvents = [
+    {
+      year: "1851",
+      title: "Foundation",
+      description: "Western Union was founded as a telegraph company.",
+      image: "/wu-telegraph-01.jpg",
+      imageAlt:
+        dict.westernUnion.history?.images?.telegraphEquipment ||
+        "Historical Telegraph Equipment",
+    },
+    {
+      year: "1861",
+      title: "Transcontinental Telegraph",
+      description:
+        "Western Union completed the first transcontinental telegraph line, connecting the east and west coasts.",
+      image: "/wu-telegraph-02.webp",
+      imageAlt:
+        dict.westernUnion.history?.images?.telegraphStation ||
+        "Telegraph Station",
+    },
+    {
+      year: "1871",
+      title: "Money Transfer Services",
+      description:
+        "Western Union introduced money transfer services, which would eventually become the company's primary business.",
+      image: "/wu-telegraph-03.jpg",
+      imageAlt:
+        dict.westernUnion.history?.images?.telegraphOperator ||
+        "Telegraph Operator",
+    },
+    {
+      year: "Early 1900s",
+      title: "Expansion Era",
+      description:
+        "Throughout the 20th century, Western Union continued to expand its services and global reach.",
+      image: "/wu-old-telecar.webp",
+      imageAlt: "Western Union Telegraph Car",
+    },
+    {
+      year: "Mid 1900s",
+      title: "Global Growth",
+      description:
+        "Western Union expanded its physical presence across the world.",
+      image: "/wu-old-location.jpg",
+      imageAlt: "Historical Western Union Location",
+    },
+    {
+      year: "Present Day",
+      title: "Global Leader",
+      description:
+        "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
+      image: "/wu-hq-03.webp",
+      imageAlt:
+        dict.westernUnion.history?.images?.headquarters ||
+        "Western Union Headquarters",
+    },
+  ];
+
   return (
     <Container className="mt-16 bg-wu-official py-16">
-      <div id="history" className="flex flex-col lg:flex-row lg:gap-12">
-        {/* Left column - Photo grid (swapped from right) */}
-        <div className="lg:w-1/2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-hq-03.webp"
-                alt={
-                  dict.westernUnion.history?.images?.headquarters ||
-                  "Western Union Headquarters"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.headquarters ||
-                    "Western Union Headquarters"}
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-telegraph-01.jpg"
-                alt={
-                  dict.westernUnion.history?.images?.telegraphEquipment ||
-                  "Historical Telegraph Equipment"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.telegraphEquipment ||
-                    "Historical Telegraph Equipment"}
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-telegraph-02.webp"
-                alt={
-                  dict.westernUnion.history?.images?.telegraphStation ||
-                  "Telegraph Station"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.telegraphStation ||
-                    "Telegraph Station"}
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-telegraph-03.jpg"
-                alt={
-                  dict.westernUnion.history?.images?.telegraphOperator ||
-                  "Telegraph Operator"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.telegraphOperator ||
-                    "Telegraph Operator"}
-                </p>
-              </div>
-            </div>
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-old-telecar.webp"
-                alt={
-                  dict.westernUnion.history?.images?.telegraphOperator ||
-                  "Telegraph Operator"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.telegraphOperator ||
-                    "Telegraph Operator"}
-                </p>
-              </div>
-            </div>
-            <div className="overflow-hidden">
-              <Image
-                src="/wu-old-location.jpg"
-                alt={
-                  dict.westernUnion.history?.images?.telegraphOperator ||
-                  "Telegraph Operator"
-                }
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                priority
-              />
-              <div className="p-3">
-                <p className="text-sm font-medium text-black">
-                  {dict.westernUnion.history?.images?.telegraphOperator ||
-                    "Telegraph Operator"}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Right column - Text content (swapped from left) */}
-        <div className="mt-8 lg:mt-0 lg:w-1/2">
+      <div id="history">
+        <div className="text-center mb-8">
           <Heading as="h1" className="!font-bold text-black">
-            {dict.westernUnion.history?.title || "History Brief"}
+            {dict.westernUnion.history?.title || "Our History"}
           </Heading>
-          <Lead className="mt-6 !text-black">
+          <Lead className="mt-4 !text-black max-w-3xl mx-auto">
             {dict.westernUnion.history?.lead ||
               "Western Union was founded in 1851 as a telegraph company and has evolved into a global leader in cross-border, cross-currency money movement and payments."}
           </Lead>
+        </div>
 
-          <div className="mt-8 space-y-6 text-black">
-            {dict.westernUnion.history?.paragraphs ? (
-              dict.westernUnion.history.paragraphs.map(
-                (paragraph: string, index: number) => (
-                  <p key={index}>{paragraph}</p>
-                )
-              )
-            ) : (
-              <>
-                <p>
-                  The company began as a telegraph service provider,
-                  revolutionizing communication across the United States. By
-                  1861, Western Union had completed the first transcontinental
-                  telegraph line, connecting the east and west coasts.
-                </p>
-                <p>
-                  In 1871, Western Union introduced money transfer services,
-                  which would eventually become the company's primary business.
-                  Throughout the 20th century, Western Union continued to expand
-                  its services and global reach.
-                </p>
-                <p>
-                  Today, with a presence in over 200 countries and territories,
-                  WU has adapted to the changing needs of customers, offering a
-                  wide range of financial services that connect people and
-                  businesses worldwide.
-                </p>
-                <p>
-                  Western Union's legacy of innovation continues as it embraces
-                  digital transformation while maintaining its commitment to
-                  serving communities globally.
-                </p>
-              </>
-            )}
-          </div>
+        {/* Grid layout for historical events */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {historicalEvents.map((event, index) => (
+            <div key={index} className="shadow-md">
+              <div className="bg-black h-full flex flex-col">
+                {/* Image section - larger */}
+                <div className="w-full h-44 overflow-hidden">
+                  <Image
+                    src={event.image || "/placeholder.svg"}
+                    alt={event.imageAlt}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Text section - smaller */}
+                <div className="p-2 text-white">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-bold">{event.title}</h3>
+                    <span className="text-yellow-500 font-bold text-xs">
+                      {event.year}
+                    </span>
+                  </div>
+                  <p className="text-gray-300 text-xs mt-0.5 line-clamp-2">
+                    {event.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-6 text-center">
+          <p className="text-black italic text-sm">
+            Western Union's legacy of innovation continues as it embraces
+            digital transformation while maintaining its commitment to serving
+            communities globally.
+          </p>
         </div>
       </div>
     </Container>
@@ -380,13 +321,11 @@ function FrequentlyAskedQuestions({ dict, lang }: FAQProps) {
   return (
     <Container className="py-16">
       <section id="faqs" className="scroll-mt-8">
-        <Subheading className="text-center text-wu-official">
+        <Heading className="text-center text-wu-official">
           {dict.westernUnion.faq?.title || "Frequently asked questions"}
-        </Subheading>
-        <Heading as="div" className="mt-2 text-center">
-          {dict.westernUnion.faq?.subtitle || "Your questions answered."}
         </Heading>
-        <div className="mx-auto mt-16 mb-32 max-w-xl">
+
+        <div className="mx-auto mt-12 mb-10 max-w-xl">
           <Accordion type="single" collapsible className="w-full">
             {FAQ_ITEMS.slice(0, 5).map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
@@ -410,14 +349,16 @@ export default async function WesternUnion({
 }: {
   params: { lang: string };
 }) {
-  const dict = await getDictionary(params.lang as "en" | "pl" | "ua");
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang;
+  const dict = await getDictionary(lang as "en" | "pl" | "ua");
 
   return (
     <main className="overflow-hidden">
       <GradientBackground />
       <Header dict={dict} />
       <WUHistory dict={dict} />
-      <FrequentlyAskedQuestions dict={dict} lang={params.lang} />
+      <FrequentlyAskedQuestions dict={dict} lang={lang} />
     </main>
   );
 }

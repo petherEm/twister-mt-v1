@@ -81,14 +81,14 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
         </div>
 
         {/* Image section - positioned absolutely relative to the viewport */}
-        <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full">
+        <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full overflow-hidden">
           {/* Gradient overlay - blending from left side of the image */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
           <Image
             src="/hero-4.jpg"
             alt="Money transfer service"
             fill
-            className="object-cover object-[center_30%]"
+            className="object-contain md:object-cover md:object-[center_30%] lg:object-[center_50%] xl:object-center"
             priority
             sizes="(max-width: 768px) 100vw, 55vw"
           />
@@ -101,7 +101,7 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
             src="/hero-3.jpg"
             alt="Money transfer service"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[center_40%] sm:object-center"
             priority
             sizes="100vw"
           />
@@ -411,12 +411,14 @@ export default async function TrackTransfer({
 }: {
   params: { lang: string };
 }) {
-  const dict = await getDictionary(params.lang as "en" | "pl" | "ua");
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang;
+  const dict = await getDictionary(lang as "en" | "pl" | "ua");
 
   return (
     <main className="overflow-hidden">
       <GradientBackground />
-      <AboutPrices dict={dict} lang={params.lang} />
+      <AboutPrices dict={dict} lang={lang} />
       <Header dict={dict} />
     </main>
   );

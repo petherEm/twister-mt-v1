@@ -62,7 +62,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
           <h2 className="text-2xl font-bold text-white mb-4">
             {dict.agent.form.title}
           </h2>
-          <p className="text-white/80 mb-6">{dict.agent.form.subtitle}</p>
+          {/* <p className="text-white/80 mb-6">{dict.agent.form.subtitle}</p> */}
 
           <div className="mt-12 space-y-10">
             <div className="flex gap-4">
@@ -242,13 +242,11 @@ function FrequentlyAskedQuestions({
   return (
     <Container>
       <section id="faqs" className="scroll-mt-8">
-        <Subheading className="text-center">
+        <Heading className="text-center text-wu-official">
           {dict.agent.faq.subheading}
-        </Subheading>
-        <Heading as="div" className="mt-2 text-center">
-          {dict.agent.faq.heading}
         </Heading>
-        <div className="mx-auto mt-16 mb-32 max-w-xl">
+
+        <div className="mx-auto mt-12 mb-10 max-w-xl">
           <Accordion type="single" collapsible className="w-full">
             {BECOME_AGENT_FAQ.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>

@@ -1,22 +1,31 @@
 "use client";
 
-import React from "react";
-
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Container } from "./util/container";
 import { Link } from "./util/link";
-import { MapPin, Phone, Mail, ArrowRight, ExternalLink } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  ArrowRight,
+  ExternalLink,
+  ChevronRight,
+} from "lucide-react";
 import { Button } from "./util/button";
 import { motion } from "framer-motion";
 
 function ContactCard({ dict }: { dict: any }) {
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden bg-black shadow-xl">
+    <div className="relative w-full max-w-5xl mx-auto overflow-hidden bg-gradient-to-br from-black to-gray-900 shadow-2xl">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left side - Contact information */}
-        <div className="p-8 md:p-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
+        <div className="p-8 md:p-12 relative">
+          {/* Decorative element */}
+          <div className="absolute top-0 left-0 w-24 h-24 bg-wu-official/10"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-wu-official/5 rounded-tl-full"></div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 relative">
             {dict.footer.contact.title
               .split(dict.footer.contact.highlightSend)
               .map((part: string, i: number, array: string[]) => {
@@ -33,18 +42,20 @@ function ContactCard({ dict }: { dict: any }) {
               })}{" "}
           </h2>
 
-          <p className="text-white mb-10">{dict.footer.contact.description}</p>
+          <p className="text-gray-300 mb-10 max-w-md">
+            {dict.footer.contact.description}
+          </p>
 
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#ffcc00]/10 flex items-center justify-center">
-                <MapPin className="h-5 w-5 text-[#ffcc00]" />
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-wu-official/20 flex items-center justify-center">
+                <MapPin className="h-5 w-5 text-wu-official" />
               </div>
               <div className="ml-4">
                 <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.address}
                 </h3>
-                <div className="mt-1 text-sm text-white">
+                <div className="mt-1 text-sm text-gray-300">
                   <p className="font-medium">
                     {dict.footer.contact.companyName}
                   </p>
@@ -57,14 +68,14 @@ function ContactCard({ dict }: { dict: any }) {
             </div>
 
             <div className="flex items-start">
-              <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#ffcc00]/10 flex items-center justify-center">
-                <Phone className="h-5 w-5 text-[#ffcc00]" />
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-wu-official/20 flex items-center justify-center">
+                <Phone className="h-5 w-5 text-wu-official" />
               </div>
               <div className="ml-4">
                 <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.phone}
                 </h3>
-                <p className="mt-1 text-sm text-white">
+                <p className="mt-1 text-sm text-gray-300">
                   <a
                     href={`tel:${dict.footer.contact.phoneNumber.replace(
                       /\s+/g,
@@ -79,14 +90,14 @@ function ContactCard({ dict }: { dict: any }) {
             </div>
 
             <div className="flex items-start">
-              <div className="flex-shrink-0 h-10 w-10 rounded-full bg-[#ffcc00]/10 flex items-center justify-center">
-                <Mail className="h-5 w-5 text-[#ffcc00]" />
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-wu-official/20 flex items-center justify-center">
+                <Mail className="h-5 w-5 text-wu-official" />
               </div>
               <div className="ml-4">
                 <h3 className="text-sm font-semibold text-white">
                   {dict.footer.contact.email}
                 </h3>
-                <p className="mt-1 text-sm text-white">
+                <p className="mt-1 text-sm text-gray-300">
                   <a
                     href={`mailto:${dict.footer.contact.emailAddress}`}
                     className="hover:text-wu-official transition-colors"
@@ -106,7 +117,7 @@ function ContactCard({ dict }: { dict: any }) {
               )}`}
               className="inline-flex"
             >
-              <Button className="group">
+              <Button className="group bg-wu-official hover:bg-wu-official/90 text-black font-bold">
                 {dict.footer.contact.contactUs}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
@@ -115,8 +126,8 @@ function ContactCard({ dict }: { dict: any }) {
         </div>
 
         {/* Right side - Map */}
-        <div className="relative h-[300px] md:h-full">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="relative h-[350px] md:h-full">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 pointer-events-none"></div>
           <Image
             alt={dict.aboutUs.images.map}
             src="/company/6.png"
@@ -125,16 +136,24 @@ function ContactCard({ dict }: { dict: any }) {
             sizes="(max-width: 768px) 100vw, 50vw"
             priority
           />
-          <div className="absolute bottom-4 right-4 z-20">
+          <div className="absolute bottom-6 right-6 z-20">
             <Link
-              href="https://maps.app.goo.gl/dTfPhYNquSFDnxzh8"
+              href="https://maps.app.goo.gl/KwGeNnCGxegPNdHaA"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium text-gray-900 hover:bg-white transition-colors"
+              className="flex items-center gap-2 bg-wu-official px-4 py-3 text-sm font-bold text-black hover:bg-white transition-colors shadow-lg"
             >
               <span>{dict.footer.contact.viewMap}</span>
               <ExternalLink className="h-3.5 w-3.5" />
             </Link>
+          </div>
+
+          {/* Location pin */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+            <div className="h-8 w-8 rounded-full bg-wu-official flex items-center justify-center shadow-lg">
+              <MapPin className="h-5 w-5 text-black" />
+            </div>
+            <div className="h-4 w-4 bg-wu-official transform rotate-45 -mt-2 mx-auto"></div>
           </div>
         </div>
       </div>
@@ -163,7 +182,7 @@ function FooterLink({
     <li>
       <Link
         href={formattedHref}
-        className={`hover:opacity-80 transition-colors duration-200 text-sm ${className}`}
+        className={`group flex items-center hover:text-black transition-colors duration-200 text-sm ${className}`}
       >
         {children}
       </Link>
@@ -180,7 +199,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h3 className="text-sm font-bold text-black tracking-wider uppercase mb-4">
+      <h3 className="text-sm font-bold text-black tracking-wider uppercase mb-4 border-b border-black/20 pb-2">
         {title}
       </h3>
       <ul className="space-y-3">{children}</ul>
@@ -232,7 +251,7 @@ function LanguageSwitcher({
           <Link
             key={language.code}
             href={getLanguageUrl(language.code)}
-            className={`relative flex items-center justify-center rounded-md overflow-hidden w-8 h-6 border ${
+            className={`relative flex items-center justify-center overflow-hidden w-8 h-6 border ${
               currentLang === language.code
                 ? "ring-2 ring-wu-official border-wu-official"
                 : "border-gray-700 opacity-70 hover:opacity-100 hover:border-wu-official"
@@ -265,8 +284,15 @@ export function Footer({
   const [year] = useState(new Date().getFullYear());
 
   return (
-    <footer id="footer" className="bg-wu-official">
+    <footer
+      id="footer"
+      className="bg-gradient-to-b from-wu-official to-yellow-500"
+    >
       <div className="relative py-24 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-20 bg-black/5 -skew-y-2"></div>
+        <div className="absolute bottom-0 right-0 w-1/3 h-64 bg-black/5 rounded-tl-full"></div>
+
         <Container>
           {/* Contact card with map */}
           <motion.div
@@ -279,10 +305,10 @@ export function Footer({
           </motion.div>
 
           {/* Footer links and info */}
-          <div className="mt-24 grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="mt-24 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Logo and description - on the left */}
-            <div className="col-span-2 md:col-span-8 order-1 md:order-1">
-              <div className="flex flex-wrap items-center gap-4 mb-6">
+            <div className="col-span-2 md:col-span-6 order-1 md:order-1">
+              <div className="flex flex-wrap items-center gap-8 mb-6">
                 {/* Official Partner */}
                 <div className="flex flex-col w-fit text-center items-center">
                   <div className="relative h-12 w-36">
@@ -293,7 +319,7 @@ export function Footer({
                       className="object-contain"
                     />
                   </div>
-                  <dt className="text-xs text-black">
+                  <dt className="text-xs font-bold text-black mt-2">
                     Officjalny Partner od 25 lat
                   </dt>
                 </div>
@@ -308,12 +334,12 @@ export function Footer({
                 </div>
               </div>
 
-              <p className="text-black max-w-[500px] text-sm mt-4 pr-4">
+              <p className="text-black/80 max-w-[500px] text-sm mt-6 pr-4 leading-relaxed border-l-4 border-black/20 pl-4">
                 {dict.footer?.company?.description}
               </p>
             </div>
 
-            {/* Footer links columns - moved to the far right */}
+            {/* Footer links columns - reorganized to include Agent Area */}
             <div className="col-span-1 md:col-span-2 order-2 md:order-2 !text-black">
               <FooterColumn title={dict.footer?.columns?.becomeAgent}>
                 <FooterLink href={`/${lang}/agent`} lang={lang}>
@@ -344,6 +370,14 @@ export function Footer({
                 </FooterLink>
               </FooterColumn>
             </div>
+
+            <div className="col-span-1 md:col-span-2 order-4 md:order-4 !text-black">
+              <FooterColumn title="Agent Area">
+                <FooterLink href={`/${lang}/login`} lang={lang}>
+                  Agent Login
+                </FooterLink>
+              </FooterColumn>
+            </div>
           </div>
         </Container>
       </div>
@@ -351,8 +385,8 @@ export function Footer({
       {/* Black background section with language switcher and copyright */}
       <div className="bg-black py-6">
         <Container>
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-wu-official text-sm">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p className="text-wu-official text-sm font-medium">
               {dict.footer?.company?.copyright?.replace(
                 "{year}",
                 year.toString()
@@ -362,9 +396,15 @@ export function Footer({
             <div className="flex flex-col md:flex-row items-center gap-6 mt-6 md:mt-0">
               <Link
                 href={`/${lang}/cookies`}
-                className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200"
+                className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200 underline-offset-4"
               >
                 {dict.footer?.company?.privacyPolicy || "Cookies"}
+              </Link>
+              <Link
+                href={`/${lang}/privacy-policy`}
+                className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200 underline-offset-4"
+              >
+                {dict.footer?.company?.privacyPolicy || "Privacy Policy"}
               </Link>
               <div className="mt-4 md:mt-0">
                 <LanguageSwitcher

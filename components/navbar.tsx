@@ -17,19 +17,20 @@ function getLinks(dict: any, lang: string = "pl") {
   return [
     {
       href: `/${lang}/agent`,
-      label: dict?.navbar?.becomeAgent || "Zostań agentem",
+      label: dict?.navbar?.becomeAgent || "Zostań agentem WU",
     },
-    { href: `/${lang}#o-nas`, label: dict?.navbar?.aboutUs || "O nas" },
     {
       href: `/${lang}/western-union`,
       label: dict?.navbar?.westernUnion || "Western Union",
     },
+    { href: `/${lang}#o-nas`, label: dict?.navbar?.aboutUs || "O nas" },
+
     {
       href: `/${lang}/wyslij-odbierz`,
       label: dict?.navbar?.trackTransfer || "Wyślij/odbierz",
     },
-    // { href: `/${lang}#footer`, label: dict?.navbar?.contact || "Kontakt" },
-    { href: `/${lang}/login`, label: dict?.navbar?.login || "Strefa Agenta" },
+    { href: `/${lang}#footer`, label: dict?.navbar?.contact || "Kontakt" },
+    // { href: `/${lang}/login`, label: dict?.navbar?.login || "Strefa Agenta" },
   ];
 }
 
@@ -197,7 +198,7 @@ export function Navbar({
   const links = getLinks(dict, lang);
 
   return (
-    <Disclosure as="header" className="pt-2 sm:pt-2 ">
+    <Disclosure as="header" className="pt-2 sm:pt-2">
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
@@ -207,14 +208,14 @@ export function Navbar({
                   <Image
                     src="/wu-official-partner-3.png"
                     alt="Logo"
-                    width={120}
+                    width={140}
                     height={100}
                     className="bg-black"
                   />
                   <Image
                     src="/mt-logo-4.png"
                     alt="Logo"
-                    width={120}
+                    width={140}
                     height={100}
                     className="bg-black mt-1"
                   />

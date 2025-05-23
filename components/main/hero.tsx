@@ -57,7 +57,7 @@ export default function Hero({ dict }: HeroProps) {
           src={selectedImage || "/placeholder.svg"}
           alt={dict.hero.imageAlt}
           fill
-          className="object-cover object-[center_30%]"
+          className="object-contain" // Keep object-contain for desktop to show the full image
           priority
           sizes="(max-width: 768px) 100vw, 55vw"
         />
@@ -70,7 +70,7 @@ export default function Hero({ dict }: HeroProps) {
           src={selectedImage || "/placeholder.svg"}
           alt={dict.hero.imageAlt}
           fill
-          className="object-cover object-center"
+          className="object-cover object-center" // Changed back to object-cover for mobile to take full width
           priority
           sizes="100vw"
         />

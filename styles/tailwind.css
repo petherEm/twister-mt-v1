@@ -23,10 +23,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
   }
   
   body {
     @apply bg-black text-white;
+    /* Additional overflow control for body */
+    overflow-x: hidden;
+    width: 100%;
   }
   /* Add these styles to hide scrollbar but keep functionality */
   .scrollbar-hide::-webkit-scrollbar {
@@ -40,7 +45,7 @@
     ::-webkit-scrollbar {
       -webkit-appearance: none;
       width: 6px;
-      height: 6px;
+      height: 0px; /* Set horizontal scrollbar height to 0 */
     }
   
     ::-webkit-scrollbar-track {
@@ -63,8 +68,26 @@
     }
 }
 
-/* Always show scrollbars */
+/* Modify root scrollbar behavior */
 :root {
   overflow-y: scroll;
-  overflow-x: visible;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Windows Chrome specific fixes */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+/* Aggressive horizontal scrollbar hiding */
+::-webkit-scrollbar:horizontal {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* Additional overflow protection for all elements */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
 }

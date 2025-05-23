@@ -44,7 +44,7 @@ export default function BecomeAgentMain({
               {/* First image */}
               <div className="relative h-[400px] md:h-[450px] overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/concept-store-5.jpg"
+                  src="/concept-store-3.webp"
                   alt={dict.becomeAgent.imageAlt.conceptStore}
                   fill
                   className="object-cover"
@@ -56,7 +56,7 @@ export default function BecomeAgentMain({
               {/* Second image */}
               <div className="relative h-[280px] overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/concept-store-3.webp"
+                  src="/concept-store-4.jpg"
                   alt={dict.becomeAgent.imageAlt.secondImage}
                   fill
                   className="object-cover"

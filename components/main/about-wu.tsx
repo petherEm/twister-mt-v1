@@ -57,7 +57,7 @@ function Header({ dict, lang }: { dict: any; lang: string }) {
                 {dict.westernUnion.stats.yearsInBusiness}
               </dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={170} />
+                <AnimatedNumber start={0} end={175} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-800 pb-4">
@@ -81,7 +81,7 @@ function Header({ dict, lang }: { dict: any; lang: string }) {
                 {dict.westernUnion.stats.transactionsPerSecond}
               </dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0} end={100} />
+                <AnimatedNumber start={0} end={10} />
               </dd>
             </div>
           </dl>

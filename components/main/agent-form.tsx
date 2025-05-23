@@ -33,7 +33,7 @@ const AgentForm = ({
   lang?: string;
 }) => {
   // Form dictionary fallbacks in case translations are missing
-  const formDict = dict.agent?.form?.formFields || {
+  const fallbackFormDict = {
     companyName: {
       label: "Company Name",
       placeholder: "Enter your company name",
@@ -63,6 +63,9 @@ const AgentForm = ({
     success: "Thanks for your submission! We'll be in touch soon.",
     error: "There was a problem submitting your form. Please try again.",
   };
+
+  // Use actual form fields from translations if available, otherwise fallback
+  const formDict = dict.agent?.form?.formFields || fallbackFormDict;
 
   // Define form with hook
   const form = useForm<z.infer<typeof formSchema>>({

@@ -208,7 +208,7 @@ export const BECOME_AGENT_FAQ = [
   {
     question: {
       en: "How much does it cost to become a Western Union agent?",
-      pl: "Ile kosztuje zostanie agentem Western Union?",
+      pl: "Z jakimi opłatami związane jest rozpoczęcie współpracy jako Agent Western Union?",
       ua: "Скільки коштує стати агентом Western Union?"
     },
     answer: {
@@ -226,6 +226,42 @@ export const BECOME_AGENT_FAQ = [
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
       pl: "Czas oczekiwania na aktywację Agenta Western Union po złożeniu wniosku to 4-8 tygodni. Obejmuje on przegląd dokumentacji, kontrole zgodności, szkolenia, instalację systemu oraz  ostateczną aktywację. Pracujemy sumiennie, aby proces ten był jak najbardziej efektywny.",
+      ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
+    }
+  },
+  {
+    question: {
+      en: "How do I apply to become a Western Union agent?",
+      pl: "Jak aplikować na agenta Western Union?",
+      ua: "Jak aplikować na agenta Western Union?"
+    },
+    answer: {
+      en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
+      pl: "Należy wypełnić formularz online / tu link /. Po jego otrzymaniu, skontaktuje się z Tobą nasz przedstawiciel celem mówienie oferty i procedury rejestracji. Po zatwierdzeniu dokumentów ze strony Western Union, otrzymasz pakiet startowy, dostęp do oprogramowania i wsparcie nie tylko na rozpoczęcie działalności.",
+      ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
+    }
+  },
+  {
+    question: {
+      en: "Do I need a special license?",
+      pl: "Czy potrzebuję specjalnej licencji?",
+      ua: "Czy potrzebuję specjalnej licencji?"
+    },
+    answer: {
+      en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
+      pl: "Tak, ale to My zajmiemy się formalnościami związanymi z jej otrzymaniem na Twoją rzecz oraz wszelkimi regulacjami prawnymi w tym zakresie.",
+      ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
+    }
+  },
+  {
+    question: {
+      en: "What kind of support we provide to our partners?",
+      pl: "Jakie wsparcie oferujemy naszym Partnerom?",
+      ua: "Czy potrzebuję specjalnej licencji?"
+    },
+    answer: {
+      en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
+      pl: "Nasi Partnerzy uczestniczą w szkoleniu z zakresu obsługi systemu Western Union oraz szkoleniach online dot. programu zgodności z przepisami (AML) i w zakresie przeciwdziałania praniu pieniędzy. Ponad to, otrzymujesz dedykowaną obsługę Agenta i wsparcie techniczne dostępne 24/7.",
       ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
     }
   }

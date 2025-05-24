@@ -1,4 +1,3 @@
-
 // FAQ ITEMS - GENERAL INFORMATION
 
 export const FAQ_ITEMS = [
@@ -257,7 +256,7 @@ export const BECOME_AGENT_FAQ = [
     question: {
       en: "What kind of support we provide to our partners?",
       pl: "Jakie wsparcie oferujemy naszym Partnerom?",
-      ua: "Czy potrzebuję specjalnej licencji?"
+      ua: "Czy потребую спеціальної ліцензії?"
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
@@ -431,5 +430,62 @@ export const TESTIMONIALS = [
     nameKey: "monika",
     titleKey: "ukReceiver",
     quoteKey: "convenience"
+  }
+];
+
+// HISTORICAL EVENTS
+export const HISTORICAL_EVENTS = [
+  {
+    year: "1851",
+    title: "Foundation",
+    description: "Western Union was founded as a telegraph company.",
+    image: "/wu-telegraph-01.jpg",
+    imageAltKey: "telegraphEquipment",
+    defaultAlt: "Historical Telegraph Equipment"
+  },
+  {
+    year: "1861",
+    title: "Transcontinental Telegraph",
+    description:
+      "Western Union completed the first transcontinental telegraph line, connecting the east and west coasts.",
+    image: "/wu-telegraph-02.webp",
+    imageAltKey: "telegraphStation",
+    defaultAlt: "Telegraph Station"
+  },
+  {
+    year: "1871",
+    title: "Money Transfer Services",
+    description:
+      "Western Union introduced money transfer services, which would eventually become the company's primary business.",
+    image: "/wu-telegraph-03.jpg",
+    imageAltKey: "telegraphOperator",
+    defaultAlt: "Telegraph Operator"
+  },
+  {
+    year: "Early 1900s",
+    title: "Expansion Era",
+    description:
+      "Throughout the 20th century, Western Union continued to expand its services and global reach.",
+    image: "/wu-old-telecar.webp",
+    imageAltKey: null,
+    defaultAlt: "Western Union Telegraph Car"
+  },
+  {
+    year: "Mid 1900s",
+    title: "Global Growth",
+    description:
+      "Western Union expanded its physical presence across the world.",
+    image: "/wu-old-location.jpg",
+    imageAltKey: null,
+    defaultAlt: "Historical Western Union Location"
+  },
+  {
+    year: "Present Day",
+    title: "Global Leader",
+    description:
+      "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
+    image: "/wu-hq-03.webp",
+    imageAltKey: "headquarters",
+    defaultAlt: "Western Union Headquarters"
   }
 ];

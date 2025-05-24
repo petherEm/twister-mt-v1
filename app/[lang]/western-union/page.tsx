@@ -12,6 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HistoryPage } from "@/components/history";
 
 export const metadata: Metadata = {
   title: "Western Union",
@@ -195,125 +196,6 @@ function Header({ dict }: HeaderProps) {
   );
 }
 
-function WUHistory({ dict }: WUHistoryProps) {
-  // Historical events data
-  const historicalEvents = [
-    {
-      year: "1851",
-      title: "Foundation",
-      description: "Western Union was founded as a telegraph company.",
-      image: "/wu-telegraph-01.jpg",
-      imageAlt:
-        dict.westernUnion.history?.images?.telegraphEquipment ||
-        "Historical Telegraph Equipment",
-    },
-    {
-      year: "1861",
-      title: "Transcontinental Telegraph",
-      description:
-        "Western Union completed the first transcontinental telegraph line, connecting the east and west coasts.",
-      image: "/wu-telegraph-02.webp",
-      imageAlt:
-        dict.westernUnion.history?.images?.telegraphStation ||
-        "Telegraph Station",
-    },
-    {
-      year: "1871",
-      title: "Money Transfer Services",
-      description:
-        "Western Union introduced money transfer services, which would eventually become the company's primary business.",
-      image: "/wu-telegraph-03.jpg",
-      imageAlt:
-        dict.westernUnion.history?.images?.telegraphOperator ||
-        "Telegraph Operator",
-    },
-    {
-      year: "Early 1900s",
-      title: "Expansion Era",
-      description:
-        "Throughout the 20th century, Western Union continued to expand its services and global reach.",
-      image: "/wu-old-telecar.webp",
-      imageAlt: "Western Union Telegraph Car",
-    },
-    {
-      year: "Mid 1900s",
-      title: "Global Growth",
-      description:
-        "Western Union expanded its physical presence across the world.",
-      image: "/wu-old-location.jpg",
-      imageAlt: "Historical Western Union Location",
-    },
-    {
-      year: "Present Day",
-      title: "Global Leader",
-      description:
-        "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
-      image: "/wu-hq-03.webp",
-      imageAlt:
-        dict.westernUnion.history?.images?.headquarters ||
-        "Western Union Headquarters",
-    },
-  ];
-
-  return (
-    <Container className="mt-16 bg-wu-official py-16">
-      <div id="history">
-        <div className="text-center mb-8">
-          <Heading as="h1" className="!font-bold text-black">
-            {dict.westernUnion.history?.title || "Our History"}
-          </Heading>
-          <Lead className="mt-4 !text-black max-w-3xl mx-auto">
-            {dict.westernUnion.history?.lead ||
-              "Western Union was founded in 1851 as a telegraph company and has evolved into a global leader in cross-border, cross-currency money movement and payments."}
-          </Lead>
-        </div>
-
-        {/* Grid layout for historical events */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {historicalEvents.map((event, index) => (
-            <div key={index} className="shadow-md">
-              <div className="bg-black h-full flex flex-col">
-                {/* Image section - larger */}
-                <div className="w-full h-44 overflow-hidden">
-                  <Image
-                    src={event.image || "/placeholder.svg"}
-                    alt={event.imageAlt}
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                    priority
-                  />
-                </div>
-
-                {/* Text section - smaller */}
-                <div className="p-2 text-white">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-bold">{event.title}</h3>
-                    <span className="text-yellow-500 font-bold text-xs">
-                      {event.year}
-                    </span>
-                  </div>
-                  <p className="text-gray-300 text-xs mt-0.5 line-clamp-2">
-                    {event.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-6 text-center">
-          <p className="text-black italic text-sm">
-            Western Union's legacy of innovation continues as it embraces
-            digital transformation while maintaining its commitment to serving
-            communities globally.
-          </p>
-        </div>
-      </div>
-    </Container>
-  );
-}
-
 function FrequentlyAskedQuestions({ dict, lang }: FAQProps) {
   // Default to English if the current language is not supported
   const language = ["en", "pl", "ua"].includes(lang) ? lang : "en";
@@ -357,7 +239,7 @@ export default async function WesternUnion({
     <main className="overflow-hidden">
       <GradientBackground />
       <Header dict={dict} />
-      <WUHistory dict={dict} />
+      <HistoryPage dict={dict} />
       <FrequentlyAskedQuestions dict={dict} lang={lang} />
     </main>
   );

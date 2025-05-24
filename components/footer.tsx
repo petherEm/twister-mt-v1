@@ -320,7 +320,7 @@ export function Footer({
                     />
                   </div>
                   <dt className="text-xs font-bold text-black mt-2">
-                    Officjalny Partner od 25 lat
+                    Officjalny Partner
                   </dt>
                 </div>
                 <div className="flex-shrink-0">

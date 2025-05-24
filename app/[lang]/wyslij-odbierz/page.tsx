@@ -58,19 +58,19 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-[50vh] overflow-hidden">
+      <div className="relative min-h-[90vh] md:min-h-[90vh] overflow-hidden">
         {/* Background color for the entire hero */}
         <div className="absolute inset-0 bg-black -z-10"></div>
 
         {/* Main content container with proper alignment */}
         <div className="lg:max-w-7xl mx-auto px-4 sm:px-4 md:px-4 lg:px-6 relative z-10 h-full">
-          <div className="flex flex-col md:flex-row md:items-center min-h-[auto] md:min-h-[50vh] py-12 sm:py-16 md:py-20">
+          <div className="flex flex-col md:flex-row md:items-center min-h-[auto] md:min-h-[90vh] py-16 sm:py-24 md:py-32">
             {/* Left content - aligned with container */}
             <div className="md:max-w-[45%] z-10">
-              <Heading as="h1" className="!font-bold text-white">
+              <h1 className="font-display text-5xl font-bold tracking-normal text-balance text-wu-official sm:text-7xl md:text-7xl">
                 {dict.prices.title}
-              </Heading>
-              <p className="mt-6 max-w-lg text-lg/7 font-medium text-white sm:text-xl/8">
+              </h1>
+              <p className="mt-8 max-w-lg text-lg/7 font-medium text-white sm:text-xl/8">
                 We are waiting for you at our office in Wrocław.
               </p>
               <Button variant="primary" className="mt-8" href="/wyslij-odbierz">
@@ -88,20 +88,20 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
             src="/hero-4.jpg"
             alt="Money transfer service"
             fill
-            className="object-contain md:object-cover md:object-[center_30%] lg:object-[center_50%] xl:object-center"
+            className="object-contain" // Keep object-contain for desktop to show the full image
             priority
             sizes="(max-width: 768px) 100vw, 55vw"
           />
         </div>
 
         {/* Mobile image - shown only on smaller screens */}
-        <div className="md:hidden relative w-full min-h-[250px] mx-auto">
+        <div className="md:hidden relative w-full min-h-[300px] mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
           <Image
             src="/hero-3.jpg"
             alt="Money transfer service"
             fill
-            className="object-cover object-[center_40%] sm:object-center"
+            className="object-cover object-center" // Changed back to object-cover for mobile to take full width
             priority
             sizes="100vw"
           />
@@ -382,7 +382,7 @@ function Header({ dict }: HeaderProps) {
         </div>
 
         {/* Right image column - takes 6 of 12 columns and extends to edge */}
-        <div className="lg:col-span-6 mt-16 lg:mt-0 relative lg:-mr-[calc(((100vw-1280px)/2))]">
+        <div className="lg:col-span-6 mt-16 lg:mt-0 relative ">
           <div className="relative overflow-hidden h-full">
             {/* Gradient overlay - stronger gradient from left */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/10 z-10"></div>
@@ -393,8 +393,8 @@ function Header({ dict }: HeaderProps) {
             <Image
               alt={dict.trackTransfer.image.alt}
               src="/concept-store.webp"
-              width={700}
-              height={900}
+              width={900}
+              height={1000}
               className="object-contain lg:object-cover h-auto w-full"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority

@@ -43,13 +43,28 @@ export const metadata: Metadata = {
 
 function Header({ dict }: { dict: any }) {
   return (
-    <Container className="mt-16 flex items-center justify-center">
-      <Heading className="mt-12 text-white text-center mb-10" as="h1">
-        {dict.agent.header.title}
-      </Heading>
-      <Lead className="mt-10 mb-10 text-center max-w-5xl text-white/75">
-        {dict.agent.header.subtitle}
-      </Lead>
+    <Container className="mt-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[500px]">
+        <div className="flex flex-col justify-center">
+          <Heading className="mt-12 text-white text-left mb-6" as="h1">
+            {dict.agent.header.title}
+          </Heading>
+          <Lead className="text-left max-w-2xl text-white/75">
+            {dict.agent.header.subtitle}
+          </Lead>
+        </div>
+        <div className="flex justify-center lg:justify-end">
+          <div className="relative w-full">
+            <Image
+              src="/concept-store-4.jpg"
+              alt="Become an agent"
+              width={800}
+              height={900}
+              className="object-cover w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
     </Container>
   );
 }
@@ -59,11 +74,6 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
     <Container className="mt-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <div className="prose prose-lg prose-invert">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            {dict.agent.form.title}
-          </h2>
-          {/* <p className="text-white/80 mb-6">{dict.agent.form.subtitle}</p> */}
-
           <div className="mt-12 space-y-10">
             <div className="flex gap-4">
               <div className="flex-shrink-0 text-wu-official">
@@ -123,8 +133,13 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
           </div>
         </div>
 
-        <div className="bg-white/5 rounded-2xl p-6 shadow-lg backdrop-blur-sm border border-wu-official">
-          <AgentForm dict={dict} lang={lang} />
+        <div>
+          <h2 className="mt-12 text-2xl font-bold text-white mb-4">
+            {dict.agent.form.title}
+          </h2>
+          <div className="bg-white/5 rounded-2xl p-6 shadow-lg backdrop-blur-sm border border-wu-official">
+            <AgentForm dict={dict} lang={lang} />
+          </div>
         </div>
       </div>
     </Container>
@@ -198,8 +213,8 @@ function Testimonial({ dict }: { dict: any }) {
                 <div className="overflow-hidden rounded-3xl shadow-2xl  outline-1 -outline-offset-1 outline-black/10">
                   <Image
                     alt=""
-                    src="/concept-store-4.jpg"
-                    className="aspect-3/4 w-full object-cover"
+                    src="/concept-store-3.webp"
+                    className="aspect-6/7 w-full object-cover"
                     width={384}
                     height={384}
                   />

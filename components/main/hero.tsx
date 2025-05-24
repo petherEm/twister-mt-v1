@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/util/button";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 type HeroProps = {
   dict: {
@@ -17,9 +20,15 @@ export default function Hero({ dict }: HeroProps) {
   // Array of hero images
   const heroImages = ["/hero-1.jpg", "/hero-2.jpg", "/hero-3.jpg"];
 
-  // Select a random image on the server during component render
-  const randomIndex = Math.floor(Math.random() * heroImages.length);
-  const selectedImage = heroImages[randomIndex];
+  const [selectedImage, setSelectedImage] = useState(heroImages[0]); // Default to first image
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Select random image on client side
+    const randomIndex = Math.floor(Math.random() * heroImages.length);
+    setSelectedImage(heroImages[randomIndex]);
+    setIsLoaded(true);
+  }, []);
 
   return (
     <div className="relative min-h-[90vh] md:min-h-[90vh] overflow-hidden">
@@ -57,7 +66,9 @@ export default function Hero({ dict }: HeroProps) {
           src={selectedImage || "/placeholder.svg"}
           alt={dict.hero.imageAlt}
           fill
-          className="object-contain" // Keep object-contain for desktop to show the full image
+          className={`object-contain transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
           priority
           sizes="(max-width: 768px) 100vw, 55vw"
         />
@@ -70,7 +81,9 @@ export default function Hero({ dict }: HeroProps) {
           src={selectedImage || "/placeholder.svg"}
           alt={dict.hero.imageAlt}
           fill
-          className="object-cover object-center" // Changed back to object-cover for mobile to take full width
+          className={`object-cover object-center transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
           priority
           sizes="100vw"
         />

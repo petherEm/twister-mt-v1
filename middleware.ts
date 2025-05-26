@@ -56,4 +56,3 @@ export const matcher = [
   // /_next/, /api/, /static/, /studio/, and files with extensions
   "/((?!_next|api|static|studio|.*\\.[^/]*$).*)",
 ]
-

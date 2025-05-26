@@ -61,6 +61,7 @@ function Header({ dict }: { dict: any }) {
               width={800}
               height={900}
               className="object-cover w-full h-auto"
+              priority
             />
           </div>
         </div>

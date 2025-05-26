@@ -529,10 +529,10 @@ export function Footer({
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
                 <Link
-                  href={`/${lang}/cookies`}
+                  href={`/${lang}/rodo`}
                   className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200 underline-offset-4 hover:underline"
                 >
-                  {dict.footer?.company?.privacyPolicy || "Cookies"}
+                  {dict.footer?.company?.privacyPolicy || "RODO/GDPR"}
                 </Link>
               </motion.div>
               <motion.div
@@ -542,10 +542,11 @@ export function Footer({
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Link
-                  href={`/${lang}/privacy-policy`}
+                  href={`/${lang}/polityka-prywatnosci`}
                   className="text-wu-official text-sm hover:opacity-80 transition-colors duration-200 underline-offset-4 hover:underline"
                 >
-                  {dict.footer?.company?.privacyPolicy || "Privacy Policy"}
+                  {dict.footer?.company?.privacyPolicy ||
+                    "Privacy Policy/Cookies"}
                 </Link>
               </motion.div>
               <motion.div

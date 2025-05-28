@@ -115,7 +115,7 @@ export default function BecomeAgentMain({
                   {dict.becomeAgent.lead}
                 </Lead>
 
-                <div className="mt-8 space-y-6">
+                <div className="mt-8 space-y-3">
                   {dict.becomeAgent.description.map((paragraph, index) => (
                     <p
                       key={index}

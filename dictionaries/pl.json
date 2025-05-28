@@ -178,14 +178,15 @@
     },
     "titles": {
       "ukraineSender": "regularnie wysyła do Ukrainy",
+      "moldovaSender": "wysyła pieniądze do Mołdawii",
       "georgiaSupporter": "wspiera swoją rodzinę w Gruzji",
       "ukReceiver": "otrzymuje pieniądze z UK",
       "zimbabweSupporter": "wspiera krewnych w Zimbabwe"
     },
     "quotes": {
       "customerSupport": "Obsługa klienta jest na najwyższym poziomie. Zawsze mogę na nich liczyć, gdy potrzebuję pomocy.",
-      "security": "Czuję się bezpieczniej korzystając z usług Twister - Money Transfer niż z innych dostawców.",
-      "proficiency": "Są najbardziej profesjonalni w wysyłaniu pieniędzy do Ukrainy. Zawsze pomocni i przyjaźni.",
+      "security": "Wybierając Twister – Money Transfer czuje się bezpiecznie i mam pewność, że moje pieniądze są w dobrych rękach",
+      "proficiency": "Są najbardziej profesjonalni w wysyłaniu pieniędzy do Mołdawii. Zawsze pomocni i przyjaźni.",
       "availability": "Zawsze mają środki do wypłaty, w przeciwieństwie do innych agentów czy konkurencji.",
       "efficiency": "Szybka usługa, która pozwala mi wspierać rodzinę, gdy najbardziej tego potrzebują.",
       "convenience": "Korzystam z ich usług od lat. Transakcja maksymalnie 5 minut, w pełnym poczuciu bezpieczeństwa."
@@ -193,12 +194,12 @@
   },
   "footer": {
     "contact": {
-      "title": "Chcesz wysłać bądź odebrać przekaz?",
+      "title": "Chcesz wysłać lub odebrać przekaz?",
       "highlightSend": "wysłać",
       "highlightReceive": "odebrać",
       "description": "Zapraszamy do nas – profesjonalny zespół pomoże Ci w sprawnym i bezpiecznym sfinalizowaniu transakcji.",
       "address": "Adres",
-      "companyName": "Twister Poland",
+      "companyName": "Western Union Wrocław",
       "street": "ul. T. Kościuszki 27",
       "city": "50-011 Wrocław",
       "country": "Polska",
@@ -249,7 +250,7 @@
         },
         "innovative": {
           "title": "Innowacyjne przekazy pieniężne",
-          "description": "Nasi klienci mogą cieszyć się wysyłaniem pieniędzy bezpośrednio z lokalizacji agenta Western Union®."
+          "description": "Nasi klienci mogą cieszyć się wysyłaniem pieniędzy bezpośrednio z lokalizacji agenta Western Union."
         },
         "customers": {
           "title": "Przyciągnij nowych klientów",
@@ -288,7 +289,10 @@
       }
     },
     "brand": {
-      "title": "Western Union, wiodąca i znana marka",
+      "title": {
+        "part1": "Western Union,",
+        "part2": "wiodąca i znana marka"
+      },
       "description": "Z ponad 170-letnim doświadczeniem w przesyłaniu pieniędzy, Western Union jest światowym liderem branży w globalnych transferach pieniężnych i usługach płatniczych. Western Union oferuje innowacyjne i efektywne przekazy pieniężne. Wysyłanie pieniędzy bezpośrednio w lokalizacji agenta, zainicjowanie transferu z aplikacji Western Union, na konto bankowe lub do portfela mobilnego, jak tylko chcesz."
     },
     "offerings": {
@@ -306,7 +310,7 @@
       }
     },
     "testimonial": {
-      "quote": "Wspaniała współpraca z Master Agentem Twister. Od wielu lat wszystko na czas i bezproblemowo. Zawsze można liczyć na pomoc i wsparcie. Współpraca z nimi to czysta przyjemność. Zdecydowanie polecam!",
+      "quote": "Wspaniała współpraca z Twister Poland. Od wielu lat wszystko na czas i bezproblemowo. Zawsze można liczyć na pomoc i wsparcie. Współpraca z nimi to czysta przyjemność. Zdecydowanie polecam!",
       "name": "Kantor Wymiany Walut Eldolar",
       "title": "Subagent Western Union"
     },

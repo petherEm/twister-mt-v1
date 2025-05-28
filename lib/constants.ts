@@ -34,7 +34,7 @@ export const FAQ_ITEMS = [
     },
     answer: {
       en: "You'll need to complete a \"To Send Money\" form and pay the agent the amount you want to send, plus fees, in cash.\n\nTo pick up the money, the receiver will complete a \"To Receive Money\" form at any Western Union agent location and provide proper identification. The agent then pays the transfer amount to the receiver.",
-      pl: "Musisz okazać sie ważnym dokumentem tożsamości / dowód osobisty, paszport, karta pobytu, dokuemnt podróżyny / wskazać dane odbiorcy i zapłacić agentowi całą kwotę, wraz z opłatami, w gotówce. Aby odebrać środki finansowe odbiorca również musi okazać się ważnym dokumentem tożsamości oraz przedstawić szczegóły transakcji w tym m.in. numer MTCN. Po przeprowadzeniu pozytywnej weryfikacji Agent wypłaci transferowaną kwotę. Ważne – Western Union w lokalizacji agenta nie wymaga kart kredytowych, kart debetowych, kont bankowych ani członkostwa.",
+      pl: "Musisz okazać sie ważnym dokumentem tożsamości / dowód osobisty, paszport, karta pobytu, dokument podróżyny / wskazać dane odbiorcy i zapłacić agentowi całą kwotę, wraz z opłatami, w gotówce. Aby odebrać środki finansowe odbiorca również musi okazać się ważnym dokumentem tożsamości oraz przedstawić szczegóły transakcji w tym m.in. numer MTCN. Po przeprowadzeniu pozytywnej weryfikacji Agent wypłaci transferowaną kwotę. Ważne – Western Union w lokalizacji agenta nie wymaga kart kredytowych, kart debetowych, kont bankowych ani członkostwa.",
       ua: "Вам потрібно буде заповнити форму \"Щоб відправити гроші\" і сплатити агенту суму, яку ви хочете відправити, плюс комісію, готівкою.\n\nЩоб отримати гроші, одержувач заповнить форму \"Щоб отримати гроші\" в будь-якому пункті агента Western Union і надасть належне посвідчення особи. Потім агент виплачує суму переказу одержувачу."
     }
   },
@@ -53,12 +53,12 @@ export const FAQ_ITEMS = [
   {
     question: {
       en: "How much money can I send from an agent location?",
-      pl: "Ile pieniędzy mogę wysłać z lokalizacji agenta?",
+      pl: "Jaką maksymalną kwotę mogę przesłać z punktu obsługi agenta?",
       ua: "Скільки грошей я можу відправити з пункту агента?"
     },
     answer: {
       en: "You can usually send any amount. However, for certain amounts and transfers, you may be subject to additional security and asked to provide additional information or documentation.",
-      pl: "Zazwyczaj możesz wysłać dowolną kwotę. Jednak w przypadku określonych kwot i przelewów możesz podlegać dodatkowym zabezpieczeniom i zostać poproszony o dostarczenie dodatkowych informacji lub dokumentów.",
+      pl: "Na ogół możesz przesyłać dowolną sumę pieniędzy. Jednak w przypadku niektórych kwot lub rodzajów przekazów mogą zostać zastosowane dodatkowe środki bezpieczeństwa, a Ty możesz zostać poproszony o przedstawienie dodatkowych informacji lub dokumentów.",
       ua: "Зазвичай ви можете відправити будь-яку суму. Однак для певних сум і переказів ви можете підлягати додатковій перевірці безпеки та вас можуть попросити надати додаткову інформацію або документи."
     }
   },
@@ -200,14 +200,14 @@ export const BECOME_AGENT_FAQ = [
     },
     answer: {
       en: "To become a Western Union agent, you need to have a registered business, a physical location accessible to customers, meet compliance and anti-money laundering requirements, and have basic internet connectivity. Our team will guide you through the entire application process.",
-      pl: "Aby zostać agentem Western Union, musisz przede wszystkim mieć zarejestrowaną i prowadzić działalność, posiadać fizyczną lokalizację otwartą dla klientów oraz zapewnić dostęp do internetu. Nasz zespół przeprowadzi Cię przez cały proces rejestracji tak abyś finalnie mógł zostać autoryzowanym Agentem Western Union.",
+      pl: "Warunkiem zostania agentem Western Union jest posiadanie zarejestrowanej działalności, prowadzenie punktu stacjonarnego dostępnego dla klientów oraz zapewnienie łączności z internetem. Nasz zespół przeprowadzi Cię przez cały proces rejestracji tak abyś finalnie mógł zostać autoryzowanym Agentem Western Union.",
       ua: "Щоб стати агентом Western Union, вам потрібно мати зареєстрований бізнес, фізичне місце, доступне для клієнтів, відповідати вимогам щодо відповідності та протидії відмиванню грошей, а також мати базове підключення до Інтернету. Наша команда проведе вас через весь процес подання заявки."
     }
   },
   {
     question: {
       en: "How much does it cost to become a Western Union agent?",
-      pl: "Z jakimi opłatami związane jest rozpoczęcie współpracy jako Agent Western Union?",
+      pl: "Z jakimi opłatami związana jest współpraca jako Agent Western Union?",
       ua: "Скільки коштує стати агентом Western Union?"
     },
     answer: {
@@ -224,7 +224,7 @@ export const BECOME_AGENT_FAQ = [
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
-      pl: "Czas oczekiwania na aktywację Agenta Western Union po złożeniu wniosku to 4-8 tygodni. Obejmuje on przegląd dokumentacji, kontrole zgodności, szkolenia, instalację systemu oraz  ostateczną aktywację. Pracujemy sumiennie, aby proces ten był jak najbardziej efektywny.",
+      pl: "Czas oczekiwania na aktywację Agenta Western Union po złożeniu wniosku to od 4 do 8 tygodni. Obejmuje on przegląd dokumentacji, kontrole zgodności, szkolenia, instalację systemu oraz  ostateczną aktywację. Pracujemy sumiennie, aby proces ten był jak najbardziej efektywny.",
       ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
     }
   },
@@ -260,7 +260,7 @@ export const BECOME_AGENT_FAQ = [
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
-      pl: "Nasi Partnerzy uczestniczą w szkoleniu z zakresu obsługi systemu Western Union oraz szkoleniach online dot. programu zgodności z przepisami (AML) i w zakresie przeciwdziałania praniu pieniędzy. Ponad to, otrzymujesz dedykowaną obsługę Agenta i wsparcie techniczne dostępne 24/7.",
+      pl: "Nasi Partnerzy uczestniczą w szkoleniu z zakresu obsługi systemu Western Union oraz szkoleniach online dot. programu zgodności z przepisami (AML) oraz w zakresie przeciwdziałania praniu pieniędzy. Ponad to, otrzymujesz dedykowaną obsługę Agenta i wsparcie techniczne dostępne 24/7.",
       ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
     }
   }
@@ -415,7 +415,7 @@ export const TESTIMONIALS = [
   {
     img: "/testimonials/amy-chase.jpg",
     nameKey: "tatiana",
-    titleKey: "ukraineSender",
+    titleKey: "moldovaSender",
     quoteKey: "proficiency"
   },
 

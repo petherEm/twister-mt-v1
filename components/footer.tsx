@@ -199,7 +199,7 @@ function ContactCard({ dict }: { dict: any }) {
           </motion.div>
 
           {/* Location pin with animation */}
-          <motion.div
+          {/* <motion.div
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -210,7 +210,7 @@ function ContactCard({ dict }: { dict: any }) {
               <MapPin className="h-5 w-5 text-black" />
             </div>
             <div className="h-4 w-4 bg-wu-official transform rotate-45 -mt-2 mx-auto"></div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>
@@ -408,7 +408,7 @@ export function Footer({
             {/* Logo and description - on the left */}
             <div className="col-span-2 md:col-span-5 order-1 md:order-1">
               <motion.div
-                className="flex flex-wrap items-center gap-8 mb-6"
+                className="flex flex-wrap items-center gap-4 mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -416,7 +416,7 @@ export function Footer({
               >
                 {/* Official Partner */}
                 <div className="flex flex-col w-fit text-center items-center">
-                  <div className="relative h-12 w-36">
+                  <div className="relative h-14 w-36">
                     <Image
                       src="/wu-logo-black.svg"
                       alt="WU logo black"
@@ -424,8 +424,8 @@ export function Footer({
                       className="object-contain mt-2"
                     />
                   </div>
-                  <dt className="text-xs font-bold text-black mt-2">
-                    Officjalny Partner
+                  <dt className="text-[10px] font-bold text-black mt-1">
+                    OFFICIAL PARTNER
                   </dt>
                 </div>
                 <div className="flex-shrink-0">

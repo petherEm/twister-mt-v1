@@ -235,7 +235,7 @@
         },
         "innovative": {
           "title": "Innovative money transfer",
-          "description": "Our customers can enjoy sending money right from the Western Union® agent location."
+          "description": "Our customers can enjoy sending money right from the Western Union agent location."
         },
         "customers": {
           "title": "Attract new and more customers",
@@ -274,7 +274,10 @@
       }
     },
     "brand": {
-      "title": "Western Union, a leading and well-known brand",
+      "title": {
+        "part1": "Western Union,",
+        "part2": "wiodąca i znana marka"
+      },
       "description": "With more than 170 years' experience moving money, Western Union is an industry leader in global money transfer and payment services. Western Union offers innovative and effective money transfers. Sending money faster by initiating the transfer from the Western Union app and paying directly at an agent location."
     },
     "offerings": {

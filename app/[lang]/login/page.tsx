@@ -17,8 +17,14 @@ export default function Login() {
   return (
     <main className="overflow-hidden bg-black text-black">
       <div className="isolate flex min-h-dvh items-center justify-center p-6 lg:p-8">
-        <div className="w-full max-w-md rounded-xl bg-wu-official shadow-md ring-1 ring-black/5">
-          <form action="#" method="POST" className="p-7 sm:p-11">
+        <div className="relative w-full max-w-md rounded-xl bg-gradient-to-b from-wu-official to-yellow-500 shadow-md ring-1 ring-black/5">
+          {/* Decorative elements - with proper z-index values */}
+          <div className="absolute top-0 left-0 w-full h-20 bg-black/5 -skew-y-2 z-0"></div>
+          <div className="absolute bottom-0 right-0 w-1/3 h-64 bg-black/5 rounded-tl-full z-0"></div>
+          <div className="absolute top-40 right-10 w-20 h-20 rounded-full bg-black/5 z-0"></div>
+          <div className="absolute bottom-40 left-10 w-32 h-32 rounded-full bg-black/5 z-0"></div>
+
+          <form action="#" method="POST" className="relative p-7 sm:p-11 z-10">
             <div className="flex items-center justify-center">
               <Image
                 src="/logo-black-nobg-3.png"

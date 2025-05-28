@@ -153,7 +153,10 @@ function Benefits({ dict }: { dict: any }) {
       <div className="rounded-2xl py-16 px-8">
         <div className="max-w-3xl mx-auto text-center">
           <Heading className="text-black" as="h1">
-            {dict.agent.brand.title}
+            {dict.agent.brand.title.part1}
+          </Heading>
+          <Heading className="text-black" as="h1">
+            {dict.agent.brand.title.part2}
           </Heading>
 
           <p className="mt-10 text-lg text-black/90 leading-relaxed">

@@ -4,6 +4,21 @@ import { Button } from "@/components/util/button";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+// Container component (assuming you have this)
+const Container = ({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <div
+    className={`lg:max-w-7xl mx-auto px-4 sm:px-4 md:px-4 lg:px-6 ${className}`}
+  >
+    {children}
+  </div>
+);
+
 type HeroProps = {
   dict: {
     hero: {
@@ -35,11 +50,11 @@ export default function Hero({ dict }: HeroProps) {
       {/* Background color for the entire hero */}
       <div className="absolute inset-0 bg-black -z-10"></div>
 
-      {/* Main content container with proper alignment */}
-      <div className="lg:max-w-7xl mx-auto px-4 sm:px-4 md:px-4 lg:px-6 relative z-10 h-full">
-        <div className="flex flex-col md:flex-row md:items-center min-h-[auto] md:min-h-[90vh] py-16 sm:py-24 md:py-32">
-          {/* Left content - aligned with container */}
-          <div className="md:max-w-[45%] z-10">
+      {/* Main content using grid layout */}
+      <Container className="relative">
+        <div className="grid grid-cols-1 lg:grid-cols-16 lg:gap-8 lg:items-center min-h-[auto] md:min-h-[90vh]">
+          {/* Left content column - takes 7 of 16 columns */}
+          <div className="lg:col-span-7 z-10 flex flex-col justify-center h-full">
             <h1 className="font-display text-5xl font-bold tracking-normal text-balance text-wu-official sm:text-7xl md:text-7xl">
               {dict.hero.title}
             </h1>
@@ -55,27 +70,34 @@ export default function Hero({ dict }: HeroProps) {
               </Button>
             </div>
           </div>
+
+          {/* Right image column - takes 9 of 16 columns */}
+          <div className="lg:col-span-9 mt-4 lg:mt-0 relative">
+            <div className="relative overflow-hidden h-full max-h-[90vh]">
+              {/* Gradient overlay - blending from left side of the image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+
+              {/* Additional vignette effect */}
+              <div className="absolute inset-0 bg-radial-gradient z-10 opacity-40"></div>
+
+              <Image
+                src={selectedImage || "/placeholder.svg"}
+                alt={dict.hero.imageAlt}
+                width={900}
+                height={1000}
+                className={`object-contain lg:object-cover h-auto w-full max-h-[90vh] transition-opacity duration-300 ${
+                  isLoaded ? "opacity-100" : "opacity-0"
+                }`}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </Container>
 
-      {/* Image section - positioned absolutely relative to the viewport */}
-      <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full">
-        {/* Gradient overlay - blending from left side of the image */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
-        <Image
-          src={selectedImage || "/placeholder.svg"}
-          alt={dict.hero.imageAlt}
-          fill
-          className={`object-contain transition-opacity duration-300 ${
-            isLoaded ? "opacity-100" : "opacity-0"
-          }`}
-          priority
-          sizes="(max-width: 768px) 100vw, 55vw"
-        />
-      </div>
-
-      {/* Mobile image - shown only on smaller screens */}
-      <div className="md:hidden relative w-full min-h-[300px] mx-auto">
+      {/* Mobile image fallback - shown only on smaller screens if needed */}
+      {/* <div className="lg:hidden relative w-full min-h-[300px] mx-auto mt-8">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
         <Image
           src={selectedImage || "/placeholder.svg"}
@@ -87,7 +109,7 @@ export default function Hero({ dict }: HeroProps) {
           priority
           sizes="100vw"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

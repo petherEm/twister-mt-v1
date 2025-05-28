@@ -149,7 +149,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
 
 function Benefits({ dict }: { dict: any }) {
   return (
-    <Container className="mt-24 mb-24 bg-wu-official">
+    <Container className="mt-24 mb-42 bg-wu-official">
       <div className="rounded-2xl py-16 px-8">
         <div className="max-w-3xl mx-auto text-center">
           <Heading className="text-black" as="h1">
@@ -165,8 +165,8 @@ function Benefits({ dict }: { dict: any }) {
         </div>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
+        <div className="bg-gradient-to-b from-wu-official to-yellow-500 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-black rounded-full flex items-center justify-center">
             <Award size={40} className="text-wu-official" />
           </div>
@@ -178,7 +178,7 @@ function Benefits({ dict }: { dict: any }) {
           </p>
         </div>
 
-        <div className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
+        <div className="bg-gradient-to-b from-wu-official to-yellow-500 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-black rounded-full flex items-center justify-center">
             <Medal size={40} className="text-wu-official" />
           </div>
@@ -190,7 +190,7 @@ function Benefits({ dict }: { dict: any }) {
           </p>
         </div>
 
-        <div className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
+        <div className="bg-gradient-to-b from-wu-official to-yellow-500 rounded-xl p-6 backdrop-blur-sm border border-white/10 relative pt-16">
           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-black rounded-full flex items-center justify-center">
             <Phone size={40} className="text-wu-official" />
           </div>
@@ -208,26 +208,28 @@ function Benefits({ dict }: { dict: any }) {
 
 function Testimonial({ dict }: { dict: any }) {
   return (
-    <div className="mx-2 my-24 rounded-4xl bg-wu-official pt-72 pb-24 lg:pt-36">
+    <div className="mx-2 my-24 rounded-4xl bg-wu-official pt-64 pb-24 lg:pt-32">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
-          <div className="-mt-96 lg:-mt-52">
-            <div className="-m-2 rounded-4xl bg-white/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
-              <div className="rounded-4xl p-2 shadow-md shadow-black/5">
-                <div className="overflow-hidden rounded-3xl shadow-2xl  outline-1 -outline-offset-1 outline-black/10">
+        <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr] gap-y-8">
+          <div className="-mt-80 lg:-mt-64 flex justify-center lg:justify-start">
+            <div className="-m-2 rounded-4xl bg-white/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:max-w-xs w-full h-full">
+              <div className="rounded-4xl p-2 shadow-md shadow-black/5 h-full">
+                <div className="relative aspect-[4/5] w-full h-full overflow-hidden rounded-3xl shadow-2xl outline-1 -outline-offset-1 outline-black/10">
                   <Image
-                    alt=""
+                    alt={dict.agent.testimonial.name || "Testimonial"}
                     src="/concept-store-3.webp"
-                    className="aspect-6/7 w-full object-cover"
-                    width={384}
-                    height={384}
+                    className="object-cover object-left-top lg:object-left"
+                    fill
+                    priority
+                    quality={100}
+                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 384px, 384px"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex max-lg:mt-16 lg:col-span-2 lg:px-16">
-            <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
+          <div className="flex max-lg:mt-8 lg:col-span-2 lg:px-16">
+            <figure className="mx-auto flex max-w-xl flex-col gap-12 max-lg:text-center">
               <blockquote>
                 <p className="relative text-3xl tracking-tight text-black before:absolute before:-translate-x-full lg:text-4xl">
                   {dict.agent.testimonial.quote}
@@ -238,7 +240,7 @@ function Testimonial({ dict }: { dict: any }) {
                   {dict.agent.testimonial.name}
                 </p>
                 <p className="text-sm/6 font-medium">
-                  <span className="text-wu-official bg-clip-text ">
+                  <span className="text-wu-official bg-clip-text">
                     {dict.agent.testimonial.title}
                   </span>
                 </p>

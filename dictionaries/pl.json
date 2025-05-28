@@ -16,10 +16,10 @@
   },
   "aboutUs": {
     "title": "O nas",
-    "lead": "Jesteśmy zaufanym biurem podróży i oficjalnym Master Agentem Western Union w Polsce, z dumą łącząc ludzi i miejsca od ponad 30 lat.",
+    "lead": "Jesteśmy zaufanym biurem podróży i oficjalnym partnerem Western Union w Polsce, z dumą łącząc ludzi i miejsca od ponad 30 lat.",
     "mission": {
       "title": "Nasza misja",
-      "paragraph1": "Twister to renomowane biuro podróży z ponad 30-letnim doświadczeniem na rynku. Od ponad dwóch dekad pomagamy ludziom pozostać w kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym. Jako oficjalny Master Agent Western Union w Polsce z dumą zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów. Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy odbierasz wsparcie z zagranicy — jesteśmy tu, by każda transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i partnerom w całej Polsce.",
+      "paragraph1": "Twister to renomowane biuro podróży z ponad 30-letnim doświadczeniem na rynku. Od ponad dwóch dekad pomagamy ludziom pozostać w kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym. Jako oficjalny partner Western Union w Polsce z dumą zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów. Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy odbierasz wsparcie z zagranicy — jesteśmy tu, by każda transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i partnerom w całej Polsce.",
       "paragraph2": "Chcesz zostać agentem Western Union? Dołącz do naszej rozwijającej się sieci i skorzystaj z preferencyjnych stawek, profesjonalnego doradztwa i indywidualnego wsparcia na każdym etapie współpracy."
     },
     "stats": {
@@ -222,7 +222,7 @@
       "language": "Język"
     },
     "company": {
-      "description": "Twister Poland od 25 lat jest oficjalnym partnerem i Master Agentem Western Union. Z dumą wspieramy potrzeby przekazów pieniężnych naszych klientów, oferując szybki i bezpieczny serwis.",
+      "description": "Twister Poland od 25 lat jest oficjalnym partnerem Western Union. Z dumą wspieramy potrzeby przekazów pieniężnych naszych klientów, oferując szybki i bezpieczny serwis.",
       "copyright": "© {year} Twister Poland. Wszelkie prawa zastrzeżone.",
       "createdBy": "Wykonane przez AiVerge.io"
     }
@@ -321,9 +321,9 @@
   },
   "becomeAgent": {
     "title": "Z Nami dołączysz do sieci agentów Western Union i zaczniesz zarabiać.",
-    "lead": "Twister Poland od 25 lat jest oficjalnym partnerem i Master Agentem Western Union. Z dumą wspieramy potrzeby przekazów pieniężnych naszych klientów, oferując szybki i bezpieczny serwis.",
+    "lead": "Twister Poland od 25 lat jest oficjalnym partnerem Western Union. Z dumą wspieramy potrzeby przekazów pieniężnych naszych klientów, oferując szybki i bezpieczny serwis.",
     "description": [
-      "Firma TWISTER powstała w maju 1999 roku. Główny profil działalności to usługi finansowe oraz międzynarodowe usługi turystyczne. Od ponad dwóch dekad pomagamy ludziom pozostać w kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym. Jako oficjalny Master Agent Western Union w Polsce z dumą zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów.",
+      "Firma TWISTER powstała w maju 1999 roku. Główny profil działalności to usługi finansowe oraz międzynarodowe usługi turystyczne. Od ponad dwóch dekad pomagamy ludziom pozostać w kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym. Jako oficjalny partner Western Union w Polsce z dumą zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów.",
       "Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje płatnicze. Wszystkie placówki partnerskie są odpowiednio oznakowane i realizują przekazy pieniężne z zachowaniem najwyższych standardów obsługi Klienta. Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy odbierasz wsparcie z zagranicy — jesteśmy tu, by każda transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i partnerom w całej Polsce.",
       "Chcesz zostać agentem Western Union? Dołącz do naszej rozwijającej się sieci i skorzystaj z preferencyjnych stawek."
     ],

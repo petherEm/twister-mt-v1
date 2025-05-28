@@ -57,7 +57,7 @@ type HeaderProps = {
 function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
   return (
     <>
-      {/* Hero Section */}
+      {/* About Prices Hero Section */}
       <Container className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-16 lg:gap-8 lg:items-start">
           {/* Left content column - takes 6 of 12 columns */}
@@ -359,7 +359,7 @@ function Header({ dict }: HeaderProps) {
             </p>
           </div>
 
-          <div className="mt-16 mb-16 max-w-lg">
+          <div className="mt-10 mb-18 max-w-lg">
             <h2 className="text-2xl font-medium tracking-tight">
               {dict.trackTransfer.howItWorks.title}
             </h2>

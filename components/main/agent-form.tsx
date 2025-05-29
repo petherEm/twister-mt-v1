@@ -19,7 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
-// The schema remains the same, but we'll add more validation messages
+// Updated schema with city instead of locationCount
 const formSchema = z.object({
   companyName: z
     .string()
@@ -40,13 +40,13 @@ const formSchema = z.object({
     .max(15, {
       message: "Phone number must not exceed 15 digits.",
     }),
-  locationCount: z
+  city: z
     .string()
-    .min(1, {
-      message: "Please enter the number of locations.",
+    .min(2, {
+      message: "City must be at least 2 characters.",
     })
-    .max(3, {
-      message: "Number of locations must not exceed 3 digits.",
+    .max(50, {
+      message: "City must not exceed 50 characters.",
     }),
   businessType: z.string().optional(),
   message: z.string().optional(),
@@ -72,9 +72,9 @@ const AgentForm = ({
       placeholder: "Enter your company name",
       description: "",
     },
-    locationCount: {
-      label: "Number of Locations",
-      placeholder: "How many locations do you have?",
+    city: {
+      label: "City",
+      placeholder: "Enter your city",
       description: "",
     },
     email: {
@@ -112,7 +112,7 @@ const AgentForm = ({
       companyName: "",
       email: "",
       phoneNumber: "",
-      locationCount: "",
+      city: "",
       businessType: "",
       message: "",
     },
@@ -207,22 +207,24 @@ const AgentForm = ({
 
             <FormField
               control={form.control}
-              name="locationCount"
+              name="city"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-white">
-                    {formDict.locationCount.label}
+                    {formDict.city?.label || "City"}
                   </FormLabel>
                   <FormControl>
                     <Input
-                      placeholder={formDict.locationCount.placeholder}
+                      placeholder={
+                        formDict.city?.placeholder || "Enter your city"
+                      }
                       {...field}
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                     />
                   </FormControl>
-                  {formDict.locationCount.description && (
+                  {formDict.city?.description && (
                     <FormDescription className="text-white/70">
-                      {formDict.locationCount.description}
+                      {formDict.city.description}
                     </FormDescription>
                   )}
                   <FormMessage className="text-red-400" />

@@ -29,9 +29,10 @@ type HeroProps = {
       imageAlt: string;
     };
   };
+  lang: string;
 };
 
-export default function Hero({ dict }: HeroProps) {
+export default function Hero({ dict, lang }: HeroProps) {
   // Array of hero images
   const heroImages = ["/hero-1.jpg", "/hero-2.jpg", "/hero-3.jpg"];
 
@@ -62,10 +63,15 @@ export default function Hero({ dict }: HeroProps) {
               {dict.hero.subtitle}
             </p>
             <div className="mt-8 mb-6 md:mb-0 md:mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-              <Button variant="primary" className="" href="/wyslij-odbierz">
+              <Button
+                variant="primary"
+                className=""
+                href={`/${lang}/wyslij-odbierz`}
+              >
                 {dict.hero.sendReceiveButton}
               </Button>
-              <Button variant="secondary" className="" href="/agent">
+
+              <Button variant="secondary" className="" href={`/${lang}/agent`}>
                 {dict.hero.becomeAgentButton}
               </Button>
             </div>

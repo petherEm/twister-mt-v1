@@ -69,7 +69,10 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
               We are waiting for you at our office in Wrocław.
             </p>
             <div className="mt-10">
-              <Button variant="primary" href="/wyslij-odbierz">
+              <Button
+                variant="primary"
+                href={`/${lang}/wyslij-odbierz/#footer`}
+              >
                 Contact us
               </Button>
             </div>
@@ -347,7 +350,6 @@ function Header({ dict }: HeaderProps) {
           </Lead>
           <div className="mt-10">
             <Button
-              as="a"
               href="https://www.westernunion.com/web/global-service/track-transfer"
               target="_blank"
               rel="noopener noreferrer"

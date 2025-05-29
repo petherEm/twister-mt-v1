@@ -32,6 +32,7 @@ type WUHistoryProps = {
       };
     };
   };
+  lang?: string;
 };
 
 function HistoryCard({
@@ -117,7 +118,7 @@ function HistoryCard({
   );
 }
 
-export function WUHistory({ dict }: WUHistoryProps) {
+export function WUHistory({ dict, lang = "en" }: WUHistoryProps) {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const { scrollX } = useScroll({ container: scrollRef });
   const [setReferenceWindowRef, bounds] = useMeasure();
@@ -135,16 +136,30 @@ export function WUHistory({ dict }: WUHistoryProps) {
     scrollRef.current!.scrollTo({ left: (width + gap) * index });
   }
 
+  // Default titles in case translations are not available
+  const defaultTitle =
+    {
+      en: "Western Union Timeline",
+      pl: "Historia Western Union",
+      ua: "Історія Western Union",
+    }[lang] || "Western Union Timeline";
+
+  const defaultLead =
+    {
+      en: "From telegraph company to global financial services leader",
+      pl: "Od firmy telegraficznej do globalnego lidera usług finansowych",
+      ua: "Від телеграфної компанії до світового лідера фінансових послуг",
+    }[lang] || "From telegraph company to global financial services leader";
+
   return (
-    <div className="overflow-hidden py-24 bg-black">
+    <div id="history" className="overflow-hidden py-24 bg-black">
       <Container>
         <div ref={setReferenceWindowRef}>
           <Heading as="h2" className="mt-2 text-white">
-            {dict.westernUnion?.history?.title || "Western Union Timeline"}
+            {dict.westernUnion?.history?.title || defaultTitle}
           </Heading>
           <Lead className="text-white/80">
-            {dict.westernUnion?.history?.lead ||
-              "From telegraph company to global financial services leader"}
+            {dict.westernUnion?.history?.lead || defaultLead}
           </Lead>
         </div>
       </Container>
@@ -169,12 +184,29 @@ export function WUHistory({ dict }: WUHistoryProps) {
                 ]
               : event.defaultAlt;
 
+          // Get localized content if available
+          const title =
+            typeof event.title === "object"
+              ? event.title[lang as string] || event.title.en
+              : event.title;
+
+          const description =
+            typeof event.description === "object"
+              ? event.description[lang as string] || event.description.en
+              : event.description;
+
+          // Handle year as a localizable field too
+          const year =
+            typeof event.year === "object"
+              ? event.year[lang as string] || event.year.en
+              : event.year;
+
           return (
             <HistoryCard
               key={index}
-              year={event.year}
-              title={event.title}
-              description={event.description}
+              year={year}
+              title={title}
+              description={description}
               image={event.image}
               imageAlt={imageAlt || "Western Union historical image"}
               dict={dict}
@@ -209,10 +241,10 @@ export function WUHistory({ dict }: WUHistoryProps) {
 // Keep the HistoryPage component for backward compatibility
 export function HistoryPage({
   dict = {},
-  lang = "pl",
+  lang = "pl", // <-- This is defaulting to Polish
 }: {
   dict?: any;
   lang?: string;
 }) {
-  return <WUHistory dict={dict} />;
+  return <WUHistory dict={dict} lang={lang} />;
 }

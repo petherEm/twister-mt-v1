@@ -239,7 +239,7 @@ export default async function WesternUnion({
     <main className="overflow-hidden">
       <GradientBackground />
       <Header dict={dict} />
-      <HistoryPage dict={dict} />
+      <HistoryPage dict={dict} lang={lang} />
       <FrequentlyAskedQuestions dict={dict} lang={lang} />
     </main>
   );

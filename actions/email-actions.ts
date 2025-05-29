@@ -6,12 +6,12 @@ import { Resend } from "resend"
 // Initialize Resend with your API key
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-// Form validation schema
+// Updated form validation schema with city instead of locationCount
 const formSchema = z.object({
   companyName: z.string().min(2).max(50),
   email: z.string().email(),
   phoneNumber: z.string().min(7).max(15),
-  locationCount: z.string().min(1).max(3),
+  city: z.string().min(2).max(50),
   businessType: z.string().optional(),
   message: z.string().optional(),
 })
@@ -23,7 +23,7 @@ export async function sendAgentFormEmail(formData: FormData) {
       companyName: formData.get("companyName") as string,
       email: formData.get("email") as string,
       phoneNumber: formData.get("phoneNumber") as string,
-      locationCount: formData.get("locationCount") as string,
+      city: formData.get("city") as string,
       businessType: formData.get("businessType") as string,
       message: formData.get("message") as string,
     }
@@ -42,7 +42,7 @@ export async function sendAgentFormEmail(formData: FormData) {
         <p><strong>Nazwa firmy:</strong> ${validatedData.companyName}</p>
         <p><strong>Email:</strong> ${validatedData.email}</p>
         <p><strong>Telefon:</strong> ${validatedData.phoneNumber}</p>
-        <p><strong>Liczba lokalizacji:</strong> ${validatedData.locationCount}</p>
+        <p><strong>Miasto:</strong> ${validatedData.city}</p>
         <p><strong>Typ biznesu:</strong> ${validatedData.businessType || "Nie wskazano"}</p>
         <p><strong>Dodatkowa wiadomość:</strong> ${validatedData.message || "Brak"}</p>
       `,
@@ -69,7 +69,7 @@ export async function sendAgentFormEmail(formData: FormData) {
           <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin: 20px 0;">
             <h3 style="margin-top: 0;">Aplikacja:</h3>
             <p><strong>Nazwa Firmy:</strong> ${validatedData.companyName}</p>
-            <p><strong>Liczba lokalizacji:</strong> ${validatedData.locationCount}</p>
+            <p><strong>Miasto:</strong> ${validatedData.city}</p>
             <p><strong>Typ działalności:</strong> ${validatedData.businessType || "Nie wskazano"}</p>
           </div>
           
@@ -79,6 +79,15 @@ export async function sendAgentFormEmail(formData: FormData) {
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #666;">
             <p>To jest wiadomość automatyczna. Nie odpowiadaj. Napisz na kontakt@moneytransfer.pl</p>
+          </div>
+
+          <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; font-size: 14px; color: #666;">
+            <h4 style="color: #333; margin-bottom: 10px;">Nasze dane kontaktowe:</h4>
+            <p><strong>Western Union Wrocław</strong></p>
+            <p>ul. T. Kościuszki 27</p>
+            <p>50-011 Wrocław, Polska</p>
+            <p>Tel: +48 71 343 90 26</p>
+            <p>Email: kontakt@moneytransfer.pl</p>
           </div>
         </div>
       `,

@@ -103,7 +103,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   §1 Usługi elektroniczne
                 </h2>
                 <div className="space-y-6">
-                  <div>
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="mb-2 font-semibold">
                       1. Administrator przetwarza dane osobowe w niżej
                       wymienionych celach:
@@ -144,7 +144,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </ul>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       2. Administrator jest uprawniony do przetwarzania danych
                       osobowych w celu rejestracji i prowadzenia konta Klienta,
@@ -154,7 +154,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       3. Podanie wyżej wskazanych danych osobowych przez Klienta
                       jest dobrowolne, jednakże niezbędne w przypadku chęci
@@ -169,7 +169,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       4. Administrator jest uprawniony do przetwarzania
                       uzyskanych danych osobowych przez okres konieczny do
@@ -177,7 +177,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       5. Adekwatnie do postanowień zawartych w przepisach ustawy
                       Prawo telekomunikacyjne oraz ustawy o świadczeniu usług
@@ -189,7 +189,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       6. W granicach koniecznych do prawidłowego wykonania
                       umowy, Administrator zastrzega sobie możliwość przekazania
@@ -205,7 +205,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
                       7. Administrator jest uprawniony do przekazywania danych
                       osobowych Klienta osobom upoważnionym przez
@@ -221,7 +221,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                     </p>
                   </div>
 
-                  <div>
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="mb-2 font-semibold">
                       8. Klientowi przysługują w związku z przetwarzaniem przez
                       Administratora danych osobowych następujące uprawnienia:
@@ -297,10 +297,10 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
 
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
-                  §3 Formularz Kontaktowy
+                  §2 Formularz Kontaktowy
                 </h2>
                 <div className="space-y-6">
-                  <div>
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="mb-2 font-semibold">
                       1. Administrator przetwarza dane osobowe w niżej
                       wymienionych celach:
@@ -337,12 +337,9 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">2</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
-                        Administrator jest uprawniony do przetwarzania danych
+                        2. Administrator jest uprawniony do przetwarzania danych
                         osobowych w celu udzielenia odpowiedzi na zgłoszone
                         przez Klienta pytanie, a w szczególności danych
                         następujących: imię, nazwisko, numer telefonu, adres
@@ -353,28 +350,22 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">3</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
-                        Podanie wyżej wskazanych danych osobowych przez Klienta
-                        jest dobrowolne, jednakże niezbędne w przypadku chęci
-                        uzyskania odpowiedzi na postawione pytanie. W przypadku
-                        braku uzyskania wyżej wymienionych danych osobowych,
-                        Klient pozbawiony będzie możliwości uzyskania odpowiedzi
-                        na zadane przez niego pytanie.
+                        3. Podanie wyżej wskazanych danych osobowych przez
+                        Klienta jest dobrowolne, jednakże niezbędne w przypadku
+                        chęci uzyskania odpowiedzi na postawione pytanie. W
+                        przypadku braku uzyskania wyżej wymienionych danych
+                        osobowych, Klient pozbawiony będzie możliwości uzyskania
+                        odpowiedzi na zadane przez niego pytanie.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">4</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
-                        Administrator jest uprawniony do przetwarzania
+                        4. Administrator jest uprawniony do przetwarzania
                         uzyskanych danych osobowych przez okres konieczny do
                         realizacji określonych w niniejszym paragrafie celów.
                       </p>
@@ -382,14 +373,11 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">5</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
-                        Adekwatnie do postanowień zawartych w przepisach ustawy
-                        Prawo telekomunikacyjne oraz ustawy o świadczeniu usług
-                        drogą elektroniczną, Administrator przetwarza dane
+                        5. Adekwatnie do postanowień zawartych w przepisach
+                        ustawy Prawo telekomunikacyjne oraz ustawy o świadczeniu
+                        usług drogą elektroniczną, Administrator przetwarza dane
                         osobowe w celu dostarczania informacji handlowych
                         poprzez wykorzystanie poczty elektronicznej, a także do
                         celów marketingu bezpośredniego w drodze kontaktu
@@ -399,23 +387,35 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">6</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
-                        W granicach koniecznych do prawidłowego wykonania umowy,
-                        Administrator zastrzega sobie możliwość przekazania
-                        danych osobowych Klienta do państw znajdujących się poza
-                        Europejskim Obszarem Gospodarczym, które zdaniem Komisji
-                        Europejskiej gwarantują stosowny poziom ochrony, ale
-                        także i do państw, które nie zapewniają odpowiedniego
-                        poziomu ochrony danych osobowych Klienta. W takim
-                        wypadku Administrator zapewnia jednak, iż transfer
-                        danych wykonywany jest w sposób, który kontrolowany
-                        jest, a także zabezpieczany odpowiednimi umowami z
-                        odbiorcami danych. Umowy te spełniają warunki określone
-                        w V rozdziale RODO.
+                        6. W granicach koniecznych do prawidłowego wykonania
+                        umowy, Administrator zastrzega sobie możliwość
+                        przekazania danych osobowych Klienta do państw
+                        znajdujących się poza Europejskim Obszarem Gospodarczym,
+                        które zdaniem Komisji Europejskiej gwarantują stosowny
+                        poziom ochrony, ale także i do państw, które nie
+                        zapewniają odpowiedniego poziomu ochrony danych
+                        osobowych Klienta. W takim wypadku Administrator
+                        zapewnia jednak, iż transfer danych wykonywany jest w
+                        sposób, który kontrolowany jest, a także zabezpieczany
+                        odpowiednimi umowami z odbiorcami danych. Umowy te
+                        spełniają warunki określone w V rozdziale RODO.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <div className="pl-4 border-l-4 border-amber-200">
+                      <p>
+                        7. Administrator jest uprawniony do przekazywania danych
+                        osobowych Klienta osobom upoważnionym przez
+                        Administratora, a także innym podmiotom, z zachowaniem
+                        wszelkich gwarancji bezpieczeństwa. Podmiotami tymi są w
+                        szczególności podmioty uprawnione do otrzymywania danych
+                        przez obowiązujące przepisy prawa, inni administratorzy
+                        w graniach koniecznych do realizacji usług oraz wymogów
+                        prawnych, a także podmioty, które przetwarzają dane
+                        osobowe w imieniu Administratora.
                       </p>
                     </div>
                   </div>
@@ -423,7 +423,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   {/* More sections follow a similar pattern */}
 
                   {/* Rights section with highlighted box */}
-                  <div>
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="mb-2 font-semibold">
                       8. Klientowi przysługują w związku z przetwarzaniem przez
                       Administratora danych osobowych następujące uprawnienia:
@@ -500,75 +500,425 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
               {/* Adding additional sections in the same format */}
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
-                  §4 Formularz Zapytania o Ofertę
+                  §3 Formularz Zapytania o Ofertę
                 </h2>
-                <p className="mb-4 font-semibold text-gray-700">
-                  Wszelkie zapytania o ofertę podlegają podobnym zasadom
-                  przetwarzania danych jak w przypadku formularza kontaktowego,
-                  z naciskiem na przepisy RODO dotyczące prezentacji oferty
-                  handlowej.
-                </p>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                  <p>
-                    W przypadku zapytań o ofertę, Administrator przetwarza dane
-                    niezbędne do przedstawienia spersonalizowanej oferty imprez
-                    i/lub usług zgodnie z art. 6 ust. 1 lit. b RODO.
-                  </p>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
-                  §6 Infolinia
-                </h2>
-                <div className="space-y-4">
-                  <div className="pl-4 border-l-4 border-blue-200">
-                    <p className="font-semibold">
-                      1. Administrator przetwarza dane osobowe pozyskane podczas
-                      rozmów telefonicznych w niżej wymienionych celach:
+                <div className="space-y-6">
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="mb-2 font-semibold">
+                      1. Administrator przetwarza dane osobowe w niżej
+                      wymienionych celach:
                     </p>
-                    <ul className="list-disc pl-8 space-y-2 mt-2">
-                      <li>
-                        wypełnienia obowiązków prawnych ciążących na
-                        Administratorze
+                    <ul className="list-inside space-y-2 pl-4">
+                      <li className="flex">
+                        <span className="font-semibold mr-2">i.</span>
+                        <span>
+                          dostarczania Klientowi informacji marketingowych za
+                          zgodą Klienta na uczynienie użytku z danych w tym celu
+                          (zgodnie z art. 6 ust.1 lit. a RODO);
+                        </span>
                       </li>
-                      <li>
-                        modernizacja jakości usług świadczonych w Serwisie
+                      <li className="flex">
+                        <span className="font-semibold mr-2">ii.</span>
+                        <span>
+                          bezpośredniego marketingu, a w szczególności
+                          przygotowywania i prezentowania Klientowi
+                          spersonalizowanej oferty (zgodnie z art. 6 ust.1 lit.
+                          f RODO);
+                        </span>
                       </li>
-                      <li>ustalenia i dochodzenia roszczeń</li>
-                      <li>udzielenia odpowiedzi na pytania Klientów</li>
-                      <li>
-                        oceny prawidłowości realizowanych usług poprzez system
-                        nagrywania rozmów
+                      <li className="flex">
+                        <span className="font-semibold mr-2">iii.</span>
+                        <span>
+                          udzielenia odpowiedzi na zgłoszone zapytanie Klienta,
+                          w szczególności dotyczące przedstawienia oferty imprez
+                          i/lub usług turystycznych (zgodnie z art. 6 ust. 1
+                          lit. b RODO).
+                        </span>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="pl-4 border-l-4 border-blue-200">
+                  <div className="pl-4 border-l-4 border-amber-200">
                     <p className="font-semibold">
-                      2. Zapisy rozmów telefonicznych
+                      2. Administrator jest uprawniony do przetwarzania danych
+                      osobowych w celu odpowiedzi na zgłoszone zapytanie, a w
+                      szczególności danych następujących: imię, nazwisko, numer
+                      telefonu, adres zamieszkania, adres e-mail, adres IP, a
+                      także inne dane, które Klient przekaże dobrowolnie.
                     </p>
-                    <p>
-                      Zapisy utrwalone w systemie nagrywania rozmów
-                      telefonicznych będą przechowywane nie dłużej niż 3
-                      miesiące od dnia ich nagrania, poza przypadkiem, gdy
-                      stanowić one będą dowód w postępowaniu prowadzonym na
-                      podstawie obowiązujących przepisów prawa.
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      3. Podanie wyżej wskazanych danych osobowych przez Klienta
+                      jest dobrowolne, jednakże niezbędne do odpowiedzi na
+                      zgłoszone przez Klienta zapytanie.
                     </p>
+                    <p className="mt-2">
+                      W przypadku braku uzyskania wyżej wymienionych danych
+                      osobowych, Klient pozbawiony będzie możliwości uzyskania
+                      odpowiedzi na postawione przez niego pytanie, a w
+                      szczególności nie zostanie mu zaprezentowana oferta.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      4. Administrator jest uprawniony do przetwarzania
+                      uzyskanych danych osobowych przez okres konieczny do
+                      realizacji określonych w niniejszym paragrafie celów.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      5. Adekwatnie do postanowień zawartych w przepisach ustawy
+                      Prawo telekomunikacyjne oraz ustawy o świadczeniu usług
+                      drogą elektroniczną, Administrator przetwarza dane osobowe
+                      w celu dostarczania informacji handlowych poprzez
+                      wykorzystanie poczty elektronicznej, a także do celów
+                      marketingu bezpośredniego w drodze kontaktu
+                      telefonicznego.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      6. W granicach koniecznych do prawidłowego wykonania
+                      umowy, Administrator zastrzega sobie możliwość przekazania
+                      danych osobowych Klienta do państw znajdujących się poza
+                      Europejskim Obszarem Gospodarczym, które zdaniem Komisji
+                      Europejskiej gwarantują stosowny poziom ochrony, ale także
+                      i do państw, które nie zapewniają odpowiedniego poziomu
+                      ochrony danych osobowych Klienta.
+                    </p>
+                    <p className="mt-2">
+                      W takim wypadku Administrator zapewnia jednak, iż transfer
+                      danych wykonywany jest w sposób, który kontrolowany jest,
+                      a także zabezpieczany odpowiednimi umowami z odbiorcami
+                      danych. Umowy te spełniają warunki określone w V rozdziale
+                      RODO.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      7. Administrator jest uprawniony do przekazywania danych
+                      osobowych Klienta osobom upoważnionym przez
+                      Administratora, a także innym podmiotom, z zachowaniem
+                      wszelkich gwarancji bezpieczeństwa.
+                    </p>
+                    <p className="mt-2">
+                      Podmiotami tymi są w szczególności podmioty uprawnione do
+                      otrzymywania danych przez obowiązujące przepisy prawa,
+                      inni administratorzy w graniach koniecznych do realizacji
+                      usług oraz wymogów prawnych, a także podmioty, które
+                      przetwarzają dane osobowe w imieniu Administratora.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="mb-2 font-semibold">
+                      8. Klientowi przysługują w związku z przetwarzaniem przez
+                      Administratora danych osobowych następujące uprawnienia:
+                    </p>
+                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                      <ul className="list-inside space-y-2">
+                        <li className="flex">
+                          <span className="font-semibold mr-2">i.</span>
+                          <span>prawo dostępu do danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">ii.</span>
+                          <span>prawo usunięcia danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">iii.</span>
+                          <span>prawo do sprostowania danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">iv.</span>
+                          <span>
+                            prawo do przeniesienia danych osobowych do innego
+                            administratora;
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">v.</span>
+                          <span>
+                            prawo do ograniczenia przetwarzania danych
+                            osobowych;
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">vi.</span>
+                          <span>
+                            prawo do wniesienia sprzeciwu wobec przetwarzania
+                            danych osobowych (dot. przypadku gdy dane osobowe są
+                            przetwarzane ze względu na prawnie uzasadniony
+                            interes Administratora);
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">vii.</span>
+                          <span>
+                            prawo wniesienia skargi do Prezesa Urzędu Ochrony
+                            Danych Osobowych (dot. przypadku, gdy w subiektywnej
+                            opinii Klienta przetwarzanie jego danych osobowych
+                            narusza postanowienia Rozporządzenia);
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">viii.</span>
+                          <span>
+                            prawo do cofnięcia zgody na przetwarzanie danych
+                            osobowych Klienta w dowolny, wybrany przez Klienta
+                            sposób.
+                          </span>
+                        </li>
+                      </ul>
+                      <p className="mt-4 font-medium">
+                        Celem realizacji wyżej wskazanych uprawnień Klienta,
+                        zaleca się kontakt z Administratorem poprzez użycie
+                        poczty elektronicznej, pod adresem:{" "}
+                        <span className="text-blue-600">
+                          serwis@moneytransfer.pl
+                        </span>
+                        .
+                      </p>
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
-                  §7 Dane gromadzone automatycznie
+                  §4 Infolinia
                 </h2>
-                <div className="space-y-4">
-                  <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">1</span>
+                <div className="space-y-6">
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="mb-2 font-semibold">
+                      1. Administrator przetwarza dane osobowe w niżej
+                      wymienionych celach:
+                    </p>
+                    <ul className="list-inside space-y-2 pl-4">
+                      <li className="flex">
+                        <span className="font-semibold mr-2">i.</span>
+                        <span>
+                          wypełnienia obowiązków prawnych ciążących na
+                          Administratorze, m.in. udzielaniu informacja i
+                          sprawozdawczości rachunkowej (zgodnie z art. 6 ust.1
+                          lit. c RODO);
+                        </span>
+                      </li>
+                      <li className="flex">
+                        <span className="font-semibold mr-2">ii.</span>
+                        <span>
+                          modernizacja jakości usług świadczonych w Serwisie
+                          (zgodnie z art. 6 ust. 1 lit. f RODO);
+                        </span>
+                      </li>
+                      <li className="flex">
+                        <span className="font-semibold mr-2">iii.</span>
+                        <span>
+                          ustalenia i dochodzenia roszczeń, a także obrona przed
+                          roszczeniami, w celu realizacji prawnie uzasadnionego
+                          interesu Administratora (zgodnie z art. 6 ust.1 lit. f
+                          RODO);
+                        </span>
+                      </li>
+                      <li className="flex">
+                        <span className="font-semibold mr-2">iv.</span>
+                        <span>
+                          udzielenia odpowiedzi na postawione przez Klienta w
+                          czasie rozmowy telefonicznej pytanie (zgodnie z art. 6
+                          ust. 1 lit. f RODO);
+                        </span>
+                      </li>
+                      <li className="flex">
+                        <span className="font-semibold mr-2">v.</span>
+                        <span>
+                          gromadzenie i wykorzystanie danych osobowych przy
+                          pomocy systemu nagrywania rozmów telefonicznych w celu
+                          oceny prawidłowości realizowanych usług (zgodnie z
+                          art. 6 ust.1 lit. f RODO).
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      2. Administrator jest uprawniony do przetwarzania danych
+                      osobowych w celu odpowiedzi na postawione przez Klienta
+                      pytanie a w szczególności danych następujących: imię
+                      (imiona), nazwisko, płeć, data urodzenia, numer telefonu,
+                      adres zamieszkania, adres e-mail.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      3. Podanie wyżej wskazanych danych osobowych przez Klienta
+                      jest dobrowolne, jednakże niezbędne w przypadku chęci
+                      uzyskania odpowiedzi na postawione przez Klienta pytanie.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      4. Administrator jest uprawniony do przetwarzania
+                      uzyskanych danych osobowych przez okres konieczny do
+                      realizacji określonych w niniejszym paragrafie celów.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      5. Administrator jest podmiotem odpowiedzialnym za
+                      bezpieczeństwo przekazywanych przez Klienta w czasie
+                      rozmowy telefonicznej danych osobowych, a także za zgodne
+                      z przepisami obowiązującego prawa ich przetwarzanie.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      6. W granicach koniecznych do prawidłowego wykonania
+                      umowy, Administrator zastrzega sobie możliwość przekazania
+                      danych osobowych Klienta do państw znajdujących się poza
+                      Europejskim Obszarem Gospodarczym, które zdaniem Komisji
+                      Europejskiej gwarantują stosowny poziom ochrony, ale także
+                      i do państw, które nie zapewniają odpowiedniego poziomu
+                      ochrony danych osobowych Klienta.
+                    </p>
+                    <p className="mt-2">
+                      W takim wypadku Administrator zapewnia jednak, iż transfer
+                      danych wykonywany jest w sposób, który kontrolowany jest,
+                      a także zabezpieczany odpowiednimi umowami z odbiorcami
+                      danych. Umowy te spełniają warunki określone w V rozdziale
+                      RODO.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      7. Administrator jest uprawniony do przekazywania danych
+                      osobowych Klienta osobom upoważnionym przez
+                      Administratora, a także innym podmiotom, z zachowaniem
+                      wszelkich gwarancji bezpieczeństwa.
+                    </p>
+                    <p className="mt-2">
+                      Podmiotami tymi są w szczególności podmioty uprawnione do
+                      otrzymywania danych przez obowiązujące przepisy prawa,
+                      inni administratorzy w graniach koniecznych do realizacji
+                      usług oraz wymogów prawnych, a także podmioty, które
+                      przetwarzają dane osobowe w imieniu Administratora.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="font-semibold">
+                      8. W granicach koniecznych do prawidłowego wykonania
+                      umowy, Administrator zastrzega sobie możliwość zapisania
+                      rozmów w systemie nagrywania rozmów telefonicznych.
+                    </p>
+                    <p className="mt-2">
+                      Zapisy utrwalone w systemie nagrywania rozmów
+                      telefonicznych będą przechowywane nie dłużej niż 3
+                      miesiące od dnia ich nagrania, poza przypadkiem, gdy
+                      stanowić one będą dowód w postępowaniu prowadzonym na
+                      podstawie obowiązujących przepisów prawa. Okres ten może
+                      ulec również wydłużeniu w przypadku, gdy Administrator
+                      powziął wiadomość, iż niniejsze zapisy mogą stanowić dowód
+                      w postępowaniu. W obu przypadkach, termin ten ulega
+                      przedłużeniu do czasu prawomocnego zakończenia
+                      postępowania. Wraz z upływem tych okresów, zapisy
+                      zawierające dane osobowe, ulegną zniszczeniu.
+                    </p>
+                  </div>
+
+                  <div className="pl-4 border-l-4 border-amber-200">
+                    <p className="mb-2 font-semibold">
+                      9. Klientowi przysługują w związku z przetwarzaniem przez
+                      Administratora danych osobowych następujące uprawnienia:
+                    </p>
+                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                      <ul className="list-inside space-y-2">
+                        <li className="flex">
+                          <span className="font-semibold mr-2">i.</span>
+                          <span>prawo dostępu do danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">ii.</span>
+                          <span>prawo usunięcia danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">iii.</span>
+                          <span>prawo do sprostowania danych osobowych;</span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">iv.</span>
+                          <span>
+                            prawo do przeniesienia danych osobowych do innego
+                            administratora;
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">v.</span>
+                          <span>
+                            prawo do ograniczenia przetwarzania danych
+                            osobowych;
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">vi.</span>
+                          <span>
+                            prawo do wniesienia sprzeciwu wobec przetwarzania
+                            danych osobowych (dot. przypadku gdy dane osobowe są
+                            przetwarzane ze względu na prawnie uzasadniony
+                            interes Administratora);
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">vii.</span>
+                          <span>
+                            prawo wniesienia skargi do Prezesa Urzędu Ochrony
+                            Danych Osobowych (dot. przypadku, gdy w subiektywnej
+                            opinii Klienta przetwarzanie jego danych osobowych
+                            narusza postanowienia Rozporządzenia);
+                          </span>
+                        </li>
+                        <li className="flex">
+                          <span className="font-semibold mr-2">viii.</span>
+                          <span>
+                            prawo do cofnięcia zgody na przetwarzanie danych
+                            osobowych Klienta w dowolny, wybrany przez Klienta
+                            sposób.
+                          </span>
+                        </li>
+                      </ul>
+                      <p className="mt-4 font-medium">
+                        Celem realizacji wyżej wskazanych uprawnień Klienta,
+                        zaleca się kontakt z Administratorem poprzez użycie
+                        poczty elektronicznej, pod adresem:{" "}
+                        <span className="text-blue-600">
+                          serwis@moneytransfer.pl
+                        </span>
+                        .
+                      </p>
                     </div>
-                    <div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
+                  §5 Dane gromadzone automatycznie
+                </h2>
+                <div className="space-y-6">
+                  <div className="flex">
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
                         Administrator zastrzega do wiadomości Klientów, iż
                         każdorazowe skorzystanie z Serwisu pod adresem
@@ -583,10 +933,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">2</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
                         W dziennikach zdarzeń zapisywane są dane związane z
                         sesją Klienta, a więc w szczególności rodzaj i nazwa
@@ -597,10 +944,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">3</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
                         Analiza dzienników zdarzeń prowadzona w sposób
                         chronologiczny pełni funkcję jedynie materiału
@@ -613,10 +957,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                   </div>
 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
-                      <span className="font-semibold text-blue-800">4</span>
-                    </div>
-                    <div>
+                    <div className="pl-4 border-l-4 border-amber-200">
                       <p>
                         Do prawidłowego działania, Serwis wykorzystuje pliki
                         Cookies. Szczegółowe informacje na temat plików Cookies

@@ -244,7 +244,7 @@ export const BECOME_AGENT_FAQ = [
     question: {
       en: "Do I need a special license?",
       pl: "Czy potrzebuję specjalnej licencji?",
-      ua: "Czy potrzebuję specjalnej licencji?"
+      ua: "Czy potrzebuję спеціальної ліцензії?"
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
@@ -437,53 +437,100 @@ export const TESTIMONIALS = [
 export const HISTORICAL_EVENTS = [
   {
     year: "1851",
-    title: "Foundation",
-    description: "Western Union was founded as a telegraph company.",
+    title: {
+      en: "Foundation",
+      pl: "Założenie",
+      ua: "Заснування"
+    },
+    description: {
+      en: "Founded as The New York and Mississippi Valley Printing Telegraph Company in Rochester, New York. Renamed to Western Union Telegraph Company in 1856.",
+      pl: "Założona jako The New York and Mississippi Valley Printing Telegraph Company w Rochester w stanie Nowy Jork. Przemianowana na Western Union Telegraph Company w 1856 roku.",
+      ua: "Заснована як The New York and Mississippi Valley Printing Telegraph Company в Рочестері, Нью-Йорк. Перейменована на Western Union Telegraph Company у 1856 році."
+    },
     image: "/wu-telegraph-01.jpg",
     imageAltKey: "telegraphEquipment",
     defaultAlt: "Historical Telegraph Equipment"
   },
   {
     year: "1861",
-    title: "Transcontinental Telegraph",
-    description:
-      "Western Union completed the first transcontinental telegraph line, connecting the east and west coasts.",
-    image: "/wu-telegraph-02.webp",
+    title: {
+      en: "First Transcontinental Telegraph",
+      pl: "Pierwszy telegraf transkontynentalny",
+      ua: "Перший трансконтинентальний телеграф"
+    },
+    description: {
+      en: "Completed the first transcontinental telegraph line in the US, effectively rendering the Pony Express obsolete.",
+      pl: "Ukończenie pierwszej transkontynentalnej linii telegraficznej w USA, co skutecznie uczyniło Pony Express przestarzałym.",
+      ua: "Завершено першу трансконтинентальну телеграфну лінію в США, що фактично зробило Pony Express застарілим."
+    },
+    image: "/wu-telegraph-03.jpg",
     imageAltKey: "telegraphStation",
     defaultAlt: "Telegraph Station"
   },
   {
     year: "1871",
-    title: "Money Transfer Services",
-    description:
-      "Western Union introduced money transfer services, which would eventually become the company's primary business.",
-    image: "/wu-telegraph-03.jpg",
+    title: {
+      en: "Money Transfer Services",
+      pl: "Usługi przekazów pieniężnych",
+      ua: "Послуги грошових переказів"
+    },
+    description: {
+      en: "Introduced wire money transfer, allowing instant money remittance between distant locations—a service that would define its brand.",
+      pl: "Wprowadzenie przekazów pieniężnych drogą telegraficzną, umożliwiających natychmiastowe przesyłanie pieniędzy między odległymi lokalizacjami - usługa, która zdefiniowała markę.",
+      ua: "Впроваджено грошові перекази по дроту, що дозволило миттєво пересилати гроші між віддаленими місцями — послуга, яка визначила бренд."
+    },
+    image: "/wu-telegraph-02.webp",
     imageAltKey: "telegraphOperator",
     defaultAlt: "Telegraph Operator"
   },
   {
-    year: "Early 1900s",
-    title: "Expansion Era",
-    description:
-      "Throughout the 20th century, Western Union continued to expand its services and global reach.",
+    year: "1914",
+    title: {
+      en: "First Consumer Charge Card",
+      pl: "Pierwsza karta płatnicza dla konsumentów",
+      ua: "Перша споживча платіжна картка"
+    },
+    description: {
+      en: "Became one of the first companies to issue a charge card, allowing customers to defer payment for services.",
+      pl: "Stała się jedną z pierwszych firm, które wydały kartę płatniczą, umożliwiającą klientom odroczenie płatności za usługi.",
+      ua: "Стала однією з перших компаній, яка випустила платіжну картку, що дозволяла клієнтам відкласти оплату послуг."
+    },
     image: "/wu-old-telecar.webp",
     imageAltKey: null,
     defaultAlt: "Western Union Telegraph Car"
   },
   {
-    year: "Mid 1900s",
-    title: "Global Growth",
-    description:
-      "Western Union expanded its physical presence across the world.",
+    year: "1980-2000",
+    title: {
+      en: "Global Growth",
+      pl: "Globalny rozwój",
+      ua: "Глобальне зростання"
+    },
+    description: {
+      en: "After exiting the telegram business, Western Union pivoted towards global money transfers, expanding into over 200 countries and territories.",
+      pl: "Po wyjściu z biznesu telegraficznego, Western Union przeniósł się w kierunku globalnych przekazów pieniężnych, rozszerzając działalność na ponad 200 krajów i terytoriów.",
+      ua: "Після виходу з телеграфного бізнесу Western Union переорієнтувався на глобальні грошові перекази, розширивши свою присутність у понад 200 країнах і територіях."
+    },
     image: "/wu-old-location.jpg",
     imageAltKey: null,
     defaultAlt: "Historical Western Union Location"
   },
   {
-    year: "Present Day",
-    title: "Global Leader",
-    description:
-      "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
+    year: {
+      en: "Present Day",
+      pl: "Współcześnie",
+      ua: "Сьогодення"
+    },
+    title: {
+      en: "Global Leader",
+      pl: "Globalny lider",
+      ua: "Світовий лідер"
+    },
+    description: {
+      en: "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
+      pl: "Obecnie, z obecnością w ponad 200 krajach i terytoriach, WU dostosował się do zmieniających się potrzeb klientów, oferując szeroki zakres usług finansowych, które łączą ludzi i firmy na całym świecie.",
+      ua: "Сьогодні, маючи присутність у понад 200 країнах і територіях, WU адаптувався до мінливих потреб клієнтів, пропонуючи широкий спектр фінансових послуг, які з'єднують людей і бізнес по всьому світу."
+    },
     image: "/wu-hq-03.webp",
     imageAltKey: "headquarters",
     defaultAlt: "Western Union Headquarters"

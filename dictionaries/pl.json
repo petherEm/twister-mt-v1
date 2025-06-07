@@ -234,7 +234,7 @@
     },
     "header": {
       "title": "Zostań agentem Western Union",
-      "subtitle": "Nasza firma jest oficjalnym partnerem Western Union z 25 letnim doświadczeniem. Współpracujemy z ponad 200 agentami w Polsce. Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje opłat, punkty pocztowe i wiele innych. Oferujemy profesjonalne doradztwo, zestaw startowy z prezentem, szkolenia i wsparcie marketingowe. Nie czekaj, otwórz się na nowe możliwości i dołącz do naszej sieci agentów Western Union już dziś!"
+      "subtitle": "Oferujemy profesjonalne doradztwo, zestaw startowy z prezentem, szkolenia i wsparcie marketingowe. Nie czekaj, otwórz się na nowe możliwości i dołącz do naszej sieci agentów Western Union już dziś! Nasza firma jest oficjalnym partnerem Western Union z 25 letnim doświadczeniem. Współpracujemy z ponad 200 agentami w Polsce. Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje opłat, punkty pocztowe i wiele innych. "
     },
     "form": {
       "title": "Wypełnij formularz i zacznij zarabiać!",
@@ -284,7 +284,7 @@
           "description": ""
         },
         "submit": "Wyślij zgłoszenie",
-        "success": "Dziękujemy za zgłoszenie! Wkrótce się z Tobą skontaktujemy.",
+        "success": "Dziękujemy za zgłoszenie! Wkrótce skontaktujemy się z Tobą.",
         "error": "Wystąpił problem z przesłaniem formularza. Spróbuj ponownie."
       }
     },
@@ -293,7 +293,7 @@
         "part1": "Western Union,",
         "part2": "wiodąca i znana marka"
       },
-      "description": "Z ponad 170-letnim doświadczeniem w przesyłaniu pieniędzy, Western Union jest światowym liderem branży w globalnych transferach pieniężnych i usługach płatniczych. Western Union oferuje innowacyjne i efektywne przekazy pieniężne. Wysyłanie pieniędzy bezpośrednio w lokalizacji agenta, zainicjowanie transferu z aplikacji Western Union, na konto bankowe lub do portfela mobilnego, jak tylko chcesz."
+      "description": "Z ponad 170-letnim doświadczeniem w przesyłaniu pieniędzy, Western Union jest światowym liderem branży w globalnych transferach pieniężnych i usługach płatniczych. Globalna marka oferująca innowacyjne, efektywne przekazy pieniężne. Wysyłanie pieniędzy bezpośrednio w lokalizacji agenta, zainicjowanie transferu z aplikacji Western Union, na konto bankowe lub do portfela mobilnego, jak tylko chcesz."
     },
     "offerings": {
       "tools": {
@@ -310,7 +310,7 @@
       }
     },
     "testimonial": {
-      "quote": "Wspaniała współpraca z Twister Poland. Od wielu lat wszystko na czas i bezproblemowo. Zawsze można liczyć na pomoc i wsparcie. Współpraca z nimi to czysta przyjemność. Zdecydowanie polecam!",
+      "quote": "Wspaniała współpraca z Twister Poland. Od wielu lat wszystko bezproblemowo i na czas. Zawsze można liczyć na pomoc oraz szybkie wsparcie. Współpraca z nimi to czysta przyjemność. Zdecydowanie polecam!",
       "name": "Kantor Wymiany Walut Eldolar",
       "title": "Subagent Western Union"
     },
@@ -320,11 +320,11 @@
     }
   },
   "becomeAgent": {
-    "title": "Z Nami dołączysz do sieci agentów Western Union i zaczniesz zarabiać.",
+    "title": "Wspólnie z Nami zostań agentem Western Union i zacznij zarabiać!",
     "lead": "Twister Poland od 25 lat jest oficjalnym partnerem Western Union. Z dumą wspieramy potrzeby przekazów pieniężnych naszych klientów, oferując szybki i bezpieczny serwis.",
     "description": [
       "Firma TWISTER powstała w maju 1999 roku. Główny profil działalności to usługi finansowe oraz międzynarodowe usługi turystyczne. Od ponad dwóch dekad pomagamy ludziom pozostać w kontakcie dzięki szybkim i bezpiecznym przekazom pieniężnym. Jako oficjalny partner Western Union w Polsce z dumą zarządzamy ogólnopolską siecią ponad 200 zaufanych agentów.",
-      "Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje płatnicze. Wszystkie placówki partnerskie są odpowiednio oznakowane i realizują przekazy pieniężne z zachowaniem najwyższych standardów obsługi Klienta. Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy odbierasz wsparcie z zagranicy — jesteśmy tu, by każda transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i partnerom w całej Polsce.",
+      "Nasi partnerzy to m.in. kantory wymiany walut, biura podróży, agencje płatnicze, biura ubezpieczeń, sklepy branżowe i punkty usługowe. Wszystkie placówki partnerskie są odpowiednio oznakowane i realizują przekazy pieniężne z zachowaniem najwyższych standardów obsługi Klienta. Niezależnie od tego, czy wysyłasz pieniądze bliskim, czy odbierasz wsparcie z zagranicy — jesteśmy tu, by każda transakcja przebiegała sprawnie, bezpiecznie i bez zbędnego stresu. Zapewniamy pełne wsparcie zarówno klientom, jak i partnerom w całej Polsce.",
       "Chcesz zostać agentem Western Union? Dołącz do naszej rozwijającej się sieci i skorzystaj z preferencyjnych stawek."
     ],
     "stats": {

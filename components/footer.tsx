@@ -54,7 +54,7 @@ function ContactCard({ dict }: { dict: any }) {
               })}{" "}
           </h2>
 
-          <p className="text-gray-300 mb-10 max-w-md">
+          <p className="text-gray-300 mb-10 max-w-sm">
             {dict.footer.contact.description}
           </p>
 
@@ -440,7 +440,7 @@ export function Footer({
               </motion.div>
 
               <motion.p
-                className="text-black/80 max-w-[500px] text-sm mt-6 pr-4 leading-relaxed border-l-4 border-black/20 pl-4"
+                className="text-black/80 max-w-sm text-sm mt-6 pr-4 leading-relaxed border-l-4 border-black/20 pl-4"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -462,7 +462,7 @@ export function Footer({
                   <FooterLink href={`/${lang}/agent`} lang={lang}>
                     {dict.footer?.columns?.benefits}
                   </FooterLink>
-                  <FooterLink href={`/${lang}/agent`} lang={lang}>
+                  <FooterLink href={`/${lang}/agent#form`} lang={lang}>
                     {dict.footer?.columns?.form}
                   </FooterLink>
                   <FooterLink href={`/${lang}/agent/#faqs`} lang={lang}>

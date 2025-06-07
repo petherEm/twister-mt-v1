@@ -4,6 +4,7 @@ import { Testimonials } from "@/components/testimonials";
 import { MidBannerLogo } from "@/components/mid-banner-logo";
 import { getDictionary } from "@/lib/dictionary";
 import BecomeAgentMain from "@/components/main/become-agent-main";
+import YellowBanner from "@/components/util/yellow-banner";
 
 export default async function Home({
   params,
@@ -25,6 +26,10 @@ export default async function Home({
           <AboutWU dict={dict} lang={lang} />
         </div>
       </main>
+      <div className="relative bg-black">
+        <YellowBanner />
+      </div>
+
       <Testimonials dict={dict} lang={lang} />
     </div>
   );

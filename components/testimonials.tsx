@@ -139,7 +139,7 @@ export function Testimonials({
       <Container>
         <div ref={setReferenceWindowRef}>
           {/* <Subheading className="text-wu-official">Nasi Klienci</Subheading> */}
-          <Heading as="h3" className="mt-2 text-white">
+          <Heading as="h3" className="mt-2 text-white max-w-4xl">
             {dict.testimonials?.title || "We always put our clients first."}
           </Heading>
         </div>

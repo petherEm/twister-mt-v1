@@ -46,7 +46,7 @@ export const FAQ_ITEMS = [
     },
     answer: {
       en: "Depending on the country and the agent, where the receiver picks up the money, the acceptable IDs will vary. In general passports and national IDs are acceptable. A driver's license might not be valid.\n\nIn some cases the receiver might also need to verify their current address, for example with a utility bill.",
-      pl: "W zależności od kraju i agenta, w którym dokonywana jest wypłata pieniędzy, akceptowane dokumenty tożsamości będą się różnić. Standardowo, akceptowane są paszporty oraz dowody osobiste. Istnieje możliwość, że prawo jazdy nie będzie honorowane. W niektórych przypadkach, odbiorca może być poproszony również o zweryfikowanie swojego aktualnego adresu, na przykład rachunkiem za media.",
+      pl: "W zależności od kraju i agenta, w którym dokonywana jest wypłata pieniędzy, akceptowane dokumenty tożsamości będą się różnić. Standardowo, akceptowane są paszporty oraz dowody osobiste. Istnieje możliwość, że prawo jazdy nie będzie honorowane. W niektórych przypadkach, odbiorca może być poproszony o zweryfikowanie swojego aktualnego adresu, na przykład rachunkiem za media.",
       ua: "Залежно від країни та агента, де одержувач отримує гроші, прийнятні посвідчення особи можуть відрізнятися. Загалом приймаються паспорти та національні посвідчення особи. Водійське посвідчення може бути недійсним.\n\nУ деяких випадках одержувач може також знадобитися підтвердити свою поточну адресу, наприклад, рахунком за комунальні послуги."
     }
   },
@@ -58,7 +58,7 @@ export const FAQ_ITEMS = [
     },
     answer: {
       en: "You can usually send any amount. However, for certain amounts and transfers, you may be subject to additional security and asked to provide additional information or documentation.",
-      pl: "Na ogół możesz przesyłać dowolną sumę pieniędzy. Jednak w przypadku niektórych kwot lub rodzajów przekazów mogą zostać zastosowane dodatkowe środki bezpieczeństwa, a Ty możesz zostać poproszony o przedstawienie dodatkowych informacji lub dokumentów.",
+      pl: "Na ogół możesz przesyłać dowolną sumę pieniędzy. Jednak w przypadku niektórych kwot lub rodzajów przekazów mogą zostać zastosowane dodatkowe środki bezpieczeństwa, a Ty możesz zostać poproszony o przedstawienie uzupełniających informacji lub dokumentów.",
       ua: "Зазвичай ви можете відправити будь-яку суму. Однак для певних сум і переказів ви можете підлягати додатковій перевірці безпеки та вас можуть попросити надати додаткову інформацію або документи."
     }
   },
@@ -236,7 +236,7 @@ export const BECOME_AGENT_FAQ = [
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
-      pl: "Należy wypełnić formularz online / tu link /. Po jego otrzymaniu, skontaktuje się z Tobą nasz przedstawiciel celem mówienie oferty i procedury rejestracji. Po zatwierdzeniu dokumentów ze strony Western Union, otrzymasz pakiet startowy, dostęp do oprogramowania i wsparcie nie tylko na rozpoczęcie działalności.",
+      pl: "Należy wypełnić formularz online / tu link /. Po jego otrzymaniu, skontaktuje się z Tobą nasz przedstawiciel celem mówienie oferty i procedury rejestracji. Po zatwierdzeniu dokumentów ze strony Western Union, otrzymasz pakiet startowy dostęp do systemu WU online i wsparcie nie tylko na rozpoczęcie działalności.",
       ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
     }
   },
@@ -260,7 +260,7 @@ export const BECOME_AGENT_FAQ = [
     },
     answer: {
       en: "The typical timeframe from application to becoming an active Western Union agent is 4-8 weeks. This includes application review, compliance checks, training, equipment installation, and final activation. We work diligently to make this process as efficient as possible.",
-      pl: "Nasi Partnerzy uczestniczą w szkoleniu z zakresu obsługi systemu Western Union oraz szkoleniach online dot. programu zgodności z przepisami (AML) oraz w zakresie przeciwdziałania praniu pieniędzy. Ponad to, otrzymujesz dedykowaną obsługę Agenta i wsparcie techniczne dostępne 24/7.",
+      pl: "Nasi Partnerzy uczestniczą w szkoleniu z zakresu obsługi systemu Western Union, szkoleniach online dot. programu zgodności z przepisami (AML) oraz przeciwdziałania praniu pieniędzy. Ponad to, otrzymujesz dedykowaną obsługę Agenta i wsparcie techniczne dostępne 24/7.",
       ua: "Типовий термін від подання заявки до того, як ви станете активним агентом Western Union, становить 4-8 тижнів. Це включає розгляд заявки, перевірку відповідності, навчання, встановлення обладнання та остаточну активацію. Ми старанно працюємо, щоб зробити цей процес максимально ефективним."
     }
   }

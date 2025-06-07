@@ -155,7 +155,7 @@ export function WUHistory({ dict, lang = "en" }: WUHistoryProps) {
     <div id="history" className="overflow-hidden py-24 bg-black">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Heading as="h2" className="mt-2 text-white">
+          <Heading as="h2" className="mt-2 mb-8 text-white">
             {dict.westernUnion?.history?.title || defaultTitle}
           </Heading>
           <Lead className="text-white/80">

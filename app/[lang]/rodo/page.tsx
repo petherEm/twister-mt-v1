@@ -2,12 +2,7 @@ import { Container } from "@/components/util/container";
 import { Calendar } from "lucide-react";
 import { PrintButton } from "@/components/print-button";
 
-interface GDPRPageProps {
-  params: Promise<{ lang: string }>;
-}
-
-export default async function GDPRPage({ params }: GDPRPageProps) {
-  const { lang } = await params;
+export default function GDPRPage() {
   const lastUpdated = new Date("2024-05-26");
 
   return (

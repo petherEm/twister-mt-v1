@@ -2,14 +2,7 @@ import { Container } from "@/components/util/container";
 import { Calendar } from "lucide-react";
 import { PrintButton } from "@/components/print-button";
 
-interface PrivacyPolicyPageProps {
-  params: Promise<{ lang: string }>;
-}
-
-export default async function PrivacyPolicyPage({
-  params,
-}: PrivacyPolicyPageProps) {
-  const { lang } = await params;
+export default function PrivacyPolicyPage() {
   const lastUpdated = new Date("2024-05-26");
 
   return (

@@ -1,16 +1,15 @@
-"use client";
-
 import { Container } from "@/components/util/container";
-import { Printer, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
+import { PrintButton } from "@/components/print-button";
 
-interface PrivacyPolicyClientPageProps {
-  lang: string;
+interface PrivacyPolicyPageProps {
+  params: Promise<{ lang: string }>;
 }
 
-export default function PrivacyPolicyClientPage({
-  lang,
-}: PrivacyPolicyClientPageProps) {
-  // Last updated date - replace with your actual last updated date
+export default async function PrivacyPolicyPage({
+  params,
+}: PrivacyPolicyPageProps) {
+  const { lang } = await params;
   const lastUpdated = new Date("2024-05-26");
 
   return (
@@ -22,14 +21,7 @@ export default function PrivacyPolicyClientPage({
               <Calendar className="h-4 w-4 mr-2" />
               <span>05.2025</span>
             </div>
-
-            <button
-              onClick={() => window.print()}
-              className="mt-3 sm:mt-0 inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900"
-            >
-              <Printer className="h-4 w-4 mr-2" />
-              Drukuj
-            </button>
+            <PrintButton />
           </div>
 
           <div className="px-6 py-8 md:p-10 prose prose-gray max-w-none text-black">

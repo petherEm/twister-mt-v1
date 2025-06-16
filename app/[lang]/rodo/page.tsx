@@ -1,14 +1,13 @@
-"use client";
-
 import { Container } from "@/components/util/container";
-import { Printer, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
+import { PrintButton } from "@/components/print-button";
 
-interface GDPRClientPageProps {
-  lang: string;
+interface GDPRPageProps {
+  params: Promise<{ lang: string }>;
 }
 
-export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
-  // Last updated date - replace with your actual last updated date
+export default async function GDPRPage({ params }: GDPRPageProps) {
+  const { lang } = await params;
   const lastUpdated = new Date("2024-05-26");
 
   return (
@@ -20,14 +19,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
               <Calendar className="h-4 w-4 mr-2" />
               <span>05.2025</span>
             </div>
-
-            <button
-              onClick={() => window.print()}
-              className="mt-3 sm:mt-0 inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900"
-            >
-              <Printer className="h-4 w-4 mr-2" />
-              Drukuj
-            </button>
+            <PrintButton />
           </div>
 
           <div className="px-6 py-8 md:p-10 prose prose-gray max-w-none text-black">
@@ -114,7 +106,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           dostarczania Klientowi informacji marketingowych za
                           zgodą Klienta na uczynienie użytku z danych w tym celu
-                          (zgodnie z art. 6 ust.1 lit. a RODO);
+                          (zgodnie with art. 6 ust.1 lit. a RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -122,7 +114,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           zawarcia umowy o świadczenie usług elektronicznych, a
                           także rejestracji i prowadzenia konta Klienta w
-                          Serwisie (zgodnie z art. 6 ust.1 lit. b RODO);
+                          Serwisie (zgodnie with art. 6 ust.1 lit. b RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -130,15 +122,15 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           bezpośredniego marketingu, a w szczególności
                           przygotowywania i prezentowania Klientowi
-                          spersonalizowanej oferty (zgodnie z art. 6 ust.1 lit.
-                          f RODO);
+                          spersonalizowanej oferty (zgodnie with art. 6 ust.1
+                          lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
                         <span className="font-semibold mr-2">iv.</span>
                         <span>
                           dochodzenia roszczeń związanych z zwarciem Umowy
-                          (zgodnie z art. 6 ust.1 lit. f RODO).
+                          (zgodnie with art. 6 ust.1 lit. f RODO).
                         </span>
                       </li>
                     </ul>
@@ -311,7 +303,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           dostarczania Klientowi informacji marketingowych za
                           zgodą Klienta na uczynienie użytku z danych w tym celu
-                          (zgodnie z art. 6 ust.1 lit. a RODO);
+                          (zgodnie with art. 6 ust.1 lit. a RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -319,8 +311,8 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           bezpośredniego marketingu, a w szczególności
                           przygotowywania i prezentowania Klientowi
-                          spersonalizowanej oferty (zgodnie z art. 6 ust.1 lit.
-                          f RODO);
+                          spersonalizowanej oferty (zgodnie with art. 6 ust.1
+                          lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -330,7 +322,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                           Klienta pytanie za pośrednictwem odpowiedniego
                           formularza kontaktowego dostępnego w Serwisie na
                           stronie internetowej https://www.moneytransfer.pl
-                          (zgodnie z art. 6 ust.1 lit. f RODO).
+                          (zgodnie with art. 6 ust.1 lit. f RODO).
                         </span>
                       </li>
                     </ul>
@@ -497,7 +489,6 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                 </div>
               </section>
 
-              {/* Adding additional sections in the same format */}
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">
                   §3 Formularz Zapytania o Ofertę
@@ -514,7 +505,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           dostarczania Klientowi informacji marketingowych za
                           zgodą Klienta na uczynienie użytku z danych w tym celu
-                          (zgodnie z art. 6 ust.1 lit. a RODO);
+                          (zgodnie with art. 6 ust.1 lit. a RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -522,8 +513,8 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           bezpośredniego marketingu, a w szczególności
                           przygotowywania i prezentowania Klientowi
-                          spersonalizowanej oferty (zgodnie z art. 6 ust.1 lit.
-                          f RODO);
+                          spersonalizowanej oferty (zgodnie with art. 6 ust.1
+                          lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -531,7 +522,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           udzielenia odpowiedzi na zgłoszone zapytanie Klienta,
                           w szczególności dotyczące przedstawienia oferty imprez
-                          i/lub usług turystycznych (zgodnie z art. 6 ust. 1
+                          i/lub usług turystycznych (zgodnie with art. 6 ust. 1
                           lit. b RODO).
                         </span>
                       </li>
@@ -707,15 +698,15 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           wypełnienia obowiązków prawnych ciążących na
                           Administratorze, m.in. udzielaniu informacja i
-                          sprawozdawczości rachunkowej (zgodnie z art. 6 ust.1
-                          lit. c RODO);
+                          sprawozdawczości rachunkowej (zgodnie with art. 6
+                          ust.1 lit. c RODO);
                         </span>
                       </li>
                       <li className="flex">
                         <span className="font-semibold mr-2">ii.</span>
                         <span>
                           modernizacja jakości usług świadczonych w Serwisie
-                          (zgodnie z art. 6 ust. 1 lit. f RODO);
+                          (zgodnie with art. 6 ust. 1 lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -723,16 +714,16 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           ustalenia i dochodzenia roszczeń, a także obrona przed
                           roszczeniami, w celu realizacji prawnie uzasadnionego
-                          interesu Administratora (zgodnie z art. 6 ust.1 lit. f
-                          RODO);
+                          interesu Administratora (zgodnie with art. 6 ust.1
+                          lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
                         <span className="font-semibold mr-2">iv.</span>
                         <span>
                           udzielenia odpowiedzi na postawione przez Klienta w
-                          czasie rozmowy telefonicznej pytanie (zgodnie z art. 6
-                          ust. 1 lit. f RODO);
+                          czasie rozmowy telefonicznej pytanie (zgodnie with
+                          art. 6 ust. 1 lit. f RODO);
                         </span>
                       </li>
                       <li className="flex">
@@ -740,7 +731,7 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         <span>
                           gromadzenie i wykorzystanie danych osobowych przy
                           pomocy systemu nagrywania rozmów telefonicznych w celu
-                          oceny prawidłowości realizowanych usług (zgodnie z
+                          oceny prawidłowości realizowanych usług (zgodnie with
                           art. 6 ust.1 lit. f RODO).
                         </span>
                       </li>
@@ -950,8 +941,8 @@ export default function GDPRClientPage({ lang }: GDPRClientPageProps) {
                         chronologiczny pełni funkcję jedynie materiału
                         pomocniczego, na podstawie którego zapewnia się
                         bezpieczeństwo Serwisu, wykrywa się zagrożenia, a także
-                        dokonuje badań statystycznych (zgodnie z art. 6 ust. 1
-                        lit. f RODO).
+                        dokonuje badań statystycznych (zgodnie with art. 6 ust.
+                        1 lit. f RODO).
                       </p>
                     </div>
                   </div>

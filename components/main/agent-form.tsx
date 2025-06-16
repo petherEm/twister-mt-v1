@@ -294,7 +294,7 @@ const AgentForm = ({
                   <Input
                     placeholder={
                       formDict.businessType?.placeholder ||
-                      "Travel agency, currency exchange, store, etc."
+                      "Biuro podróży, kantor, sklep itp."
                     }
                     {...field}
                     className="bg-white/10 border-white/20 text-white placeholder:text-white/50"

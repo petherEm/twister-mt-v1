@@ -43,8 +43,10 @@ export async function generateMetadata({
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
+  // await params first as we are in Next.js 15
+  const paramsAwaited = await params;
   // Get dictionary for the current locale
-  const dict = await getDictionary(params.lang as "en" | "pl" | "ua");
+  const dict = await getDictionary(paramsAwaited.lang as "en" | "pl" | "ua");
 
   // Base URL for absolute URLs
   const baseUrl =
@@ -78,10 +80,11 @@ export async function generateMetadata({
     // Canonical URL
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `/${params.lang}`,
+      canonical: `/${paramsAwaited.lang}`,
       languages: {
         en: "/en",
         pl: "/pl",
+        //@ts-expect-error
         ua: "/ua",
       },
     },
@@ -89,8 +92,8 @@ export async function generateMetadata({
     // Open Graph
     openGraph: {
       type: "website",
-      locale: params.lang,
-      url: `${baseUrl}/${params.lang}`,
+      locale: paramsAwaited.lang,
+      url: `${baseUrl}/${paramsAwaited.lang}`,
       title: "Money Transfer PL | Twister",
       description:
         dict.metadata?.ogDescription ||

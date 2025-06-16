@@ -64,23 +64,6 @@ type HeaderProps = {
     };
   };
 };
-type WUHistoryProps = {
-  dict: {
-    westernUnion: {
-      history?: {
-        title?: string;
-        lead?: string;
-        paragraphs?: string[];
-        images?: {
-          headquarters?: string;
-          telegraphEquipment?: string;
-          telegraphStation?: string;
-          telegraphOperator?: string;
-        };
-      };
-    };
-  };
-};
 
 type FAQProps = {
   dict: {
@@ -106,7 +89,9 @@ function Header({ dict }: HeaderProps) {
           <Heading as="h1" className="!font-bold text-white">
             Western Union
           </Heading>
-          <Lead className="mt-6 text-white">{dict.westernUnion.lead}</Lead>
+          <Lead className="mt-6 text-white whitespace-pre-line">
+            {dict.westernUnion.lead}
+          </Lead>
         </div>
         <div className="mt-6 lg:mt-0 lg:ml-8 lg:flex-shrink-0">
           <div className="w-full lg:max-w-[480px] mx-auto lg:mx-0 relative">
@@ -141,10 +126,13 @@ function Header({ dict }: HeaderProps) {
           <h2 className="text-2xl font-medium tracking-tight">
             {dict.westernUnion.services.title}
           </h2>
-          <ul className="mt-6 space-y-4 text-sm/6 text-white">
+          <ul className="mt-6 space-y-4 text-sm/6 text-white ">
             {dict.westernUnion.services.items.map(
               (item: { title: string; description: string }, index: number) => (
-                <li key={index} className="flex items-start">
+                <li
+                  key={index}
+                  className="flex items-start whitespace-pre-line"
+                >
                   <span className="mr-2 text-wu-official text-lg">■</span>
                   <span>
                     <strong>{item.title}:</strong> {item.description}
@@ -198,7 +186,7 @@ function Header({ dict }: HeaderProps) {
 
 function FrequentlyAskedQuestions({ dict, lang }: FAQProps) {
   // Default to English if the current language is not supported
-  const language = ["en", "pl", "ua"].includes(lang) ? lang : "en";
+  const language = ["en", "pl", "ua"].includes(lang) ? lang : "pl";
 
   return (
     <Container className="py-16">

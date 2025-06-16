@@ -91,7 +91,7 @@ function TestimonialCard({
       />
       <figure className="relative p-10">
         <blockquote>
-          <p className="relative text-xl/7 text-white">
+          <p className="relative text-xl/7 text-white whitespace-pre-line">
             <span aria-hidden="true" className="absolute -translate-x-full">
               "
             </span>

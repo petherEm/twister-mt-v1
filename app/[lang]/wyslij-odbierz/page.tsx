@@ -66,14 +66,14 @@ function AboutPrices({ dict, lang }: { dict: any; lang: string }) {
               {dict.prices.title}
             </h1>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-white sm:text-xl/8">
-              We are waiting for you at our office in Wrocław.
+              {dict.prices.description}
             </p>
             <div className="mt-10">
               <Button
                 variant="primary"
                 href={`/${lang}/wyslij-odbierz/#footer`}
               >
-                Contact us
+                {dict.prices.contactButton}
               </Button>
             </div>
           </div>

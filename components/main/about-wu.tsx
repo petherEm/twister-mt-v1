@@ -14,7 +14,9 @@ function Header({ dict, lang }: { dict: any; lang: string }) {
           <Heading as="h1" className="!font-bold text-white">
             {dict.westernUnion.title}
           </Heading>
-          <Lead className="mt-12 text-white">{dict.westernUnion.lead}</Lead>
+          <Lead className="mt-12 text-white whitespace-pre-line">
+            {dict.westernUnion.lead}
+          </Lead>
         </div>
         <div className="mt-6 lg:mt-0 lg:ml-8 lg:flex-shrink-0">
           <Image
@@ -37,7 +39,7 @@ function Header({ dict, lang }: { dict: any; lang: string }) {
             {dict.westernUnion.services.items.map(
               (item: any, index: number) => (
                 <li key={index} className="flex items-start">
-                  <span className="mr-2 text-wu-official text-lg">■</span>
+                  <span className="mr-2 text-wu-official text-lg ">■</span>
                   <span>
                     <strong>{item.title}:</strong> {item.description}
                   </span>
@@ -94,8 +96,8 @@ function Header({ dict, lang }: { dict: any; lang: string }) {
                 {lang === "en"
                   ? "Join WU network with us and start earning money:"
                   : lang === "pl"
-                  ? "Dołącz do sieci WU z nami i zacznij zarabiać:"
-                  : "Приєднуйтесь до мережі WU з нами та почніть заробляти:"}
+                    ? "Dołącz do sieci WU z nami i zacznij zarabiać:"
+                    : "Приєднуйтесь до мережі WU з нами та почніть заробляти:"}
               </p>
             </div>
 

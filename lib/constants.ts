@@ -279,13 +279,13 @@ export const COUNTRY_PRICING = [
       ua: "Україна"
     },
     cash: {
-      price: 9,
+      price: 9.50,
       timeEn: "Arrives in minutes",
       timePl: "Realizacja w minutach",
       timeUa: "Надходить за хвилини"
     },
     bank: {
-      price: 12,
+      price: 9.90,
       timeEn: "Arrives in 1 day",
       timePl: "Realizacja w ciągu 1 dnia",
       timeUa: "Надходить за 1 день"
@@ -300,16 +300,16 @@ export const COUNTRY_PRICING = [
       ua: "Грузія"
     },
     cash: {
-      price: 12,
+      price: 9.50,
       timeEn: "Arrives in 1-2 days",
       timePl: "Realizacja w ciągu 1-2 dni",
       timeUa: "Надходить за 1-2 дні"
     },
     bank: {
-      price: 15,
-      timeEn: "Arrives in 2-3 days",
-      timePl: "Realizacja w ciągu 2-3 dni",
-      timeUa: "Надходить за 2-3 дні"
+      price: 9.90,
+      timeEn: "Arrives in 1 day",
+      timePl: "Realizacja w ciągu 1 dnia",
+      timeUa: "Надходить за 1 день"
     }
   },
   {
@@ -321,16 +321,16 @@ export const COUNTRY_PRICING = [
       ua: "Молдова"
     },
     cash: {
-      price: 11,
+      price: 9.50,
       timeEn: "Arrives in 1 day",
       timePl: "Realizacja w ciągu 1 dnia",
       timeUa: "Надходить за 1 день"
     },
     bank: {
-      price: 14,
-      timeEn: "Arrives in 2 days",
-      timePl: "Realizacja w ciągu 2 dni",
-      timeUa: "Надходить за 2 дні"
+      price: 9.90,
+      timeEn: "Arrives in 1 day",
+      timePl: "Realizacja w ciągu 1 dnia",
+      timeUa: "Надходить за 1 день"
     }
   },
   {
@@ -342,16 +342,16 @@ export const COUNTRY_PRICING = [
       ua: "Таїланд"
     },
     cash: {
-      price: 11,
+      price: 9.50,
       timeEn: "Arrives in 1 day",
       timePl: "Realizacja w ciągu 1 dnia",
       timeUa: "Надходить за 1 день"
     },
     bank: {
-      price: 13,
+      price: 9.90,
       timeEn: "Arrives in 2 days",
-      timePl: "Realizacja w ciągu 2 dni",
-      timeUa: "Надходить за 2 дні"
+      timePl: "Realizacja w ciągu 1 dnia",
+      timeUa: "Надходить за 1 день"
     }
   },
   {
@@ -363,16 +363,16 @@ export const COUNTRY_PRICING = [
       ua: "Філіппіни"
     },
     cash: {
-      price: 11,
+      price: 9.50,
       timeEn: "Arrives in 1 day",
       timePl: "Realizacja w ciągu 1 dnia",
       timeUa: "Надходить за 1 день"
     },
     bank: {
-      price: 14,
+      price: 9.90,
       timeEn: "Arrives in 2 days",
-      timePl: "Realizacja w ciągu 2 dni",
-      timeUa: "Надходить за 2 дні"
+      timePl: "Realizacja w ciągu 1 dnia",
+      timeUa: "Надходить за 1 день"
     }
   },
   {
@@ -384,16 +384,16 @@ export const COUNTRY_PRICING = [
       ua: "Нігерія"
     },
     cash: {
-      price: 11,
+      price: 30,
       timeEn: "Arrives in 1 day",
       timePl: "Realizacja w ciągu 1 dnia",
       timeUa: "Надходить за 1 день"
     },
     bank: {
-      price: 14,
+      price: 9.90,
       timeEn: "Arrives in 2 days",
-      timePl: "Realizacja w ciągu 2 dni",
-      timeUa: "Надходить за 2 дні"
+      timePl: "Realizacja w ciągu 1 dnia",
+      timeUa: "Надходить за 1 день"
     }
   }
 ];

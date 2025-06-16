@@ -1,11 +1,15 @@
 {
+  "metadata": {
+    "description": "Send money worldwide with Twister. Fast, secure, and affordable money transfer services powered by Western Union.",
+    "ogDescription": "Fast and secure international money transfers with Twister and Western Union."
+  },
   "navbar": {
     "becomeAgent": "Become an Agent",
     "aboutUs": "About Us",
     "westernUnion": "Western Union",
     "trackTransfer": "Send / Receive",
     "contact": "Contact",
-    "login": "Agent Zone"
+    "login": "Agent Area"
   },
   "aboutUs": {
     "title": "About Us",
@@ -78,10 +82,12 @@
       "title": "History Brief",
       "lead": "Western Union was founded in 1851 as a telegraph company and has evolved into a global leader in cross-border, cross-currency money movement and payments.",
       "paragraphs": [
-        "The company began as a telegraph service provider, revolutionizing communication across the United States. By 1861, Western Union had completed the first transcontinental telegraph line, connecting the east and west coasts.",
-        "In 1871, Western Union introduced money transfer services, which would eventually become the company's primary business. Throughout the 20th century, Western Union continued to expand its services and global reach.",
-        "Today, with a presence in over 200 countries and territories, WU has adapted to the changing needs of customers, offering a wide range of financial services that connect people and businesses worldwide.",
-        "Western Union's legacy of innovation continues as it embraces digital transformation while maintaining its commitment to serving communities globally."
+        "WU started its business as a telegraph service provider, revolutionizing communications in the United States. ",
+        "By 1861, Western Union had completed the first transcontinental telegraph line, connecting the East and West coasts.",
+        "In 1871, Western Union introduced money transfer services, which in time became the company's main business.",
+        "Throughout the 20th century, Western Union continuously developed its services and global reach around the world. Today, with a presence in more than 200 countries and territories, WU has adapted to the changing needs of its customers. It offers a wide range of financial services that connect people and businesses around the world.",
+        "Western Union's legacy of innovation continues as the company embraces digital transformation while maintaining its commitment to serving communities around the world."
+
       ],
       "images": {
         "headquarters": "Western Union Headquarters",
@@ -111,44 +117,63 @@
   },
   "prices": {
     "title": "Visit us and Send Money Now!",
+    "description": "At our office in Wrocław, you can send or receive money. We're waiting for you.",
+    "contactButton": "Contact us",
     "promotion": "Current promotion: Send money to Ukraine for only 9.99 PLN!",
     "rates": "Our Transfer Rates",
     "toCash": "To Cash",
     "toBank": "To Bank",
     "from": "from",
-    "disclaimer": {
-      "title": "Disclaimer",
-      "text": "Global Reach: Transfer money to over 200 countries and territories.",
-      "westernUnionNotice": "Western Union makes money from foreign exchange. When choosing a money transmitter, carefully compare both transfer fees and exchange rates. Fees, foreign exchange rates, and taxes may vary by brand, channel, and location based on a number of factors."
+    "howToSend": {
+      "title": "How to Send a Money Transfer",
+      "steps": [
+        {
+          "title": "Visit an Agent Location",
+          "description": "Find your nearest Western Union agent location using online agent locator tool."
+        },
+        {
+          "title": "Provide Recipient Details",
+          "description": "Share the recipient's name and destination country. For bank transfers, you'll need their account information."
+        },
+        {
+          "title": "Show Valid ID",
+          "description": "Present a government-issued photo ID and provide your contact information."
+        },
+        {
+          "title": "Pay for Your Transfer",
+          "description": "Pay the transfer amount plus fees using your preferred payment method."
+        },
+        {
+          "title": "Get Your Receipt",
+          "description": "Keep your receipt with the tracking number (MTCN) to share with your recipient and track your transfer."
+        }
+      ]
     },
     "howToReceive": {
       "title": "How to Receive a Money Transfer",
       "steps": [
         {
-          "title": "Visit Our Location",
-          "description": "Come to any of our service points during working hours."
-        },
-        {
-          "title": "Prepare MTCN",
-          "description": "Have your Money Transfer Control Number (MTCN) ready. This is provided by the sender."
-        },
-        {
-          "title": "Bring Valid ID",
-          "description": "Present a valid government-issued photo ID (passport, ID card, residence permit)."
+          "title": "Visit an Agent Location",
+          "description": "Go to any Western Union agent location with proper identification."
         },
         {
           "title": "Provide Transfer Details",
-          "description": "Inform about the expected amount and country of origin of the transfer."
+          "description": "Give the agent your tracking number (MTCN) and sender's information."
         },
         {
-          "title": "Additional Verification",
-          "description": "Be prepared to answer additional questions as part of our security procedures."
+          "title": "Show Valid ID",
+          "description": "Present a government-issued photo ID that matches the recipient name."
         },
         {
           "title": "Receive Your Money",
-          "description": "After verification, you'll receive your money in the local currency."
+          "description": "Collect your money and keep the receipt for your records."
         }
       ]
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "Global Reach: Transfer money to over 200 countries and territories.",
+      "westernUnionNotice": "Western Union makes money from foreign exchange. When choosing a money transmitter, carefully compare both transfer fees and exchange rates. Fees, foreign exchange rates, and taxes may vary by brand, channel, and location based on a number of factors."
     }
   },
   "testimonials": {
@@ -164,6 +189,7 @@
     },
     "titles": {
       "ukraineSender": "regularly sending to Ukraine",
+      "moldovaSender": "sends money to Moldova",
       "georgiaSupporter": "supports his family in Georgia",
       "ukReceiver": "receives money from the UK",
       "zimbabweSupporter": "supports relatives in Zimbabwe"
@@ -219,7 +245,7 @@
     },
     "header": {
       "title": "Become an agent even today!",
-      "subtitle": "We are an official partner of Western Union with 120+ agents in Poland. We will help you to become an agent and start earning money. We offer a starter kit, training, and marketing support. We are here to help you every step of the way."
+      "subtitle": "We offer professional advice, a starter kit with a gift, training and marketing support. Don't wait, open yourself to new opportunities and join our network of Western Union agents today! Our company is an official Western Union partner with 25 years of experience. We work with more than 200 agents in Poland. Our partners include currency exchange offices, travel agencies, toll agencies, postal outlets and many others."
     },
     "form": {
       "title": "Complete the form and start earning!",
@@ -248,6 +274,11 @@
           "placeholder": "Enter your company name",
           "description": ""
         },
+        "city": {
+          "label": "City",
+          "placeholder": "Enter your city",
+          "description": ""
+        },
         "locationCount": {
           "label": "Number of Locations",
           "placeholder": "How many locations do you have?",
@@ -263,6 +294,11 @@
           "placeholder": "Enter your phone number",
           "description": "We'll use this to contact you about becoming an agent"
         },
+        "businessType": {
+          "label": "Business Type",
+          "placeholder": "Travel agency, currency exchange, store, etc.",
+          "description": ""
+        },
         "message": {
           "label": "Additional Message",
           "placeholder": "Any additional information you'd like to share",
@@ -276,7 +312,7 @@
     "brand": {
       "title": {
         "part1": "Western Union,",
-        "part2": "wiodąca i znana marka"
+        "part2": "World's Leading Money Transfer Service"
       },
       "description": "With more than 170 years' experience moving money, Western Union is an industry leader in global money transfer and payment services. Western Union offers innovative and effective money transfers. Sending money faster by initiating the transfer from the Western Union app and paying directly at an agent location."
     },

@@ -49,7 +49,7 @@ function Header({ dict }: { dict: any }) {
           <Heading className="mt-12 text-white text-left mb-6" as="h1">
             {dict.agent.header.title}
           </Heading>
-          <Lead className="text-left max-w-2xl text-white/75">
+          <Lead className="text-left max-w-2xl text-white/75 whitespace-pre-line">
             {dict.agent.header.subtitle}
           </Lead>
         </div>
@@ -87,7 +87,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
                 <h3 className="text-xl font-semibold text-white">
                   {dict.agent.form.benefits.customers.title}
                 </h3>
-                <p className="text-white/70">
+                <p className="text-white/70 whitespace-pre-line">
                   {dict.agent.form.benefits.customers.description}
                 </p>
               </div>
@@ -101,7 +101,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
                 <h3 className="text-xl font-semibold text-white">
                   {dict.agent.form.benefits.global.title}
                 </h3>
-                <p className="text-white/70">
+                <p className="text-white/70 whitespace-pre-line">
                   {dict.agent.form.benefits.global.description}
                 </p>
               </div>
@@ -115,7 +115,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
                 <h3 className="text-xl font-semibold text-white">
                   {dict.agent.form.benefits.innovative.title}
                 </h3>
-                <p className="text-white/70">
+                <p className="text-white/70 whitespace-pre-line">
                   {dict.agent.form.benefits.innovative.description}
                 </p>
               </div>
@@ -129,7 +129,7 @@ function FormContainer({ dict, lang }: { dict: any; lang: string }) {
                 <h3 className="text-xl font-semibold text-white">
                   {dict.agent.form.benefits.earnings.title}
                 </h3>
-                <p className="text-white/70">
+                <p className="text-white/70 whitespace-pre-line">
                   {dict.agent.form.benefits.earnings.description}
                 </p>
               </div>

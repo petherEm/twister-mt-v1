@@ -123,7 +123,7 @@ export default function BecomeAgentMain({
                         index === dict.becomeAgent.description.length - 1
                           ? "font-bold"
                           : ""
-                      } leading-relaxed`}
+                      } leading-relaxed whitespace-pre-line`}
                     >
                       {paragraph}
                     </p>

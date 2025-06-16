@@ -1,6 +1,5 @@
 import { Button } from "@/components/util/button";
 import Image from "next/image";
-import { GradientBackground } from "@/components/util/gradient";
 import { Link } from "@/components/util/link";
 
 import { Checkbox, Field, Input, Label } from "@headlessui/react";

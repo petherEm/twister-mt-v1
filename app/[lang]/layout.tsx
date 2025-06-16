@@ -43,14 +43,13 @@ export async function generateMetadata({
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
-  // await params first as we are in Next.js 15
   const paramsAwaited = await params;
-  // Get dictionary for the current locale
   const dict = await getDictionary(paramsAwaited.lang as "en" | "pl" | "ua");
 
-  // Base URL for absolute URLs
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://moneytransfer.pl";
+  // Fix the baseUrl handling
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+    ? process.env.NEXT_PUBLIC_BASE_URL.replace(/\/$/, "") // Remove trailing slash
+    : "https://moneytransfer.pl";
 
   return {
     // Basic metadata
@@ -84,8 +83,7 @@ export async function generateMetadata({
       languages: {
         en: "/en",
         pl: "/pl",
-        //@ts-expect-error
-        ua: "/ua",
+        ua: "/ua", // Remove the @ts-expect-error
       },
     },
 
